@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roma | Comércio e Tecnologia</title>
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <header class="topo">
+      <a class="marca" href="index.html" aria-label="Página inicial">
+        <span>Roma</span> <small>Comércio e Tecnologia</small>
+      </a>
+      <nav class="menu" aria-label="Navegação principal">
+        <ul>
+          <li><a class="ativo" href="index.html">Início</a></li>
+          <li><a href="comercio.html">Comércio</a></li>
+          <li><a href="tecnologia.html">Tecnologia</a></li>
+          <li><a href="rotas.html">Rotas</a></li>
+          <li><a href="#linha-do-tempo">Linha do tempo</a></li>
+          <li><a href="curiosidades.html">Curiosidades</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+      <div class="acoes-topo">
+        <button class="botao-icone" type="button" aria-label="Pesquisar">
+          <span aria-hidden="true"></span>
+        </button>
+        <a class="botao-contorno" href="#mapa">Explorar</a>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-conteudo">
+          <span class="ornamento" aria-hidden="true"></span>
+          <h1>
+            Comércio e circulação de tecnologia <span>na Roma Antiga</span>
+          </h1>
+          <p>
+            Descubra como Roma conectou povos, ideias e inovações, transformando
+            o Mediterrâneo no maior centro de integração do mundo antigo.
+          </p>
+          <div class="hero-botoes">
+            <a class="botao-principal" href="comercio.html"
+              >Explorar o império</a
+            >
+            <a class="botao-secundario" href="rotas.html">Explorar o mapa</a>
+          </div>
+        </div>
+      </section>
+      <section class="destaques" aria-label="Temas principais">
+        <article class="destaque">
+          <div class="bloco-visual"></div>
+          <div class="circulo"></div>
+          <div>
+            <h2>Comércio</h2>
+            <p>
+              Mercadorias, moedas e mercados que movimentaram o Império Romano.
+            </p>
+            <a href="comercio.html">Saiba mais</a>
+          </div>
+        </article>
+        <article class="destaque">
+          <div class="bloco-visual"></div>
+          <div class="circulo"></div>
+          <div>
+            <h2>Tecnologia</h2>
+            <p>Inovações que facilitaram a vida e fortaleceram o império.</p>
+            <a href="tecnologia.html">Saiba mais</a>
+          </div>
+        </article>
+        <article class="destaque">
+          <div class="bloco-visual"></div>
+          <div class="circulo"></div>
+          <div>
+            <h2>Rotas</h2>
+            <p>
+              Estradas, portos e caminhos que conectaram todo o Mediterrâneo.
+            </p>
+            <a href="rotas.html">Saiba mais</a>
+          </div>
+        </article>
+      </section>
+      <section class="mapa-area" id="mapa">
+        <figure
+          class="mapa-imagem"
+          aria-label="Mapa estilizado das rotas do Império Romano"
+        >
+          <svg viewBox="0 0 900 380" role="img" aria-labelledby="titulo-mapa">
+            <title id="titulo-mapa">
+              Rotas comerciais romanas pelo Mediterrâneo
+            </title>
+            <rect width="900" height="380" fill="#e8ddd3" />
+            <path
+              d="M0 55 C85 25 165 46 240 36 C330 23 388 52 464 43 C553 32 633 16 722 35 C795 51 853 39 900 22 L900 0 L0 0 Z"
+              fill="#a8c7dc"
+            />
+            <path
+              d="M0 240 C112 218 192 230 292 206 C389 183 442 219 533 196 C650 167 763 187 900 150 L900 380 L0 380 Z"
+              fill="#a8c7dc"
+            />
+            <g fill="#cfc6bd">
+              <path
+                d="M54 72 C123 50 188 70 246 60 C320 46 380 70 446 58 C522 44 604 42 673 58 C740 74 796 65 870 48 L890 136 C804 146 740 132 670 132 C582 132 520 156 450 140 C365 121 293 147 220 128 C151 110 93 132 25 114 Z"
+              />
+              <path
+                d="M94 213 C178 190 257 206 328 184 C389 165 462 188 532 174 C604 158 688 168 782 147 L875 181 C807 208 744 213 676 205 C596 195 537 221 466 214 C384 206 331 236 245 225 C179 216 129 236 57 232 Z"
+              />
+              <path
+                d="M444 214 C496 216 544 230 600 225 C650 221 701 232 761 221 L818 267 C721 303 626 286 541 300 C466 312 411 290 341 307 C278 323 219 300 146 320 L80 278 C154 258 230 273 306 252 C359 238 397 211 444 214 Z"
+              />
+            </g>
+            <g
+              fill="none"
+              stroke="#cd3a35"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M122 112 L178 95 L246 124 L315 97 L390 126 L458 104 L526 140 L612 116 L706 132"
+                stroke-width="3"
+              />
+              <path
+                d="M178 95 L208 170 L292 184 L390 126 L466 214 L548 176 L638 205 L745 178"
+                stroke-width="2.5"
+              />
+              <path
+                d="M246 124 L245 225 L341 307 L466 214 L533 196 L706 132"
+                stroke-width="2"
+              />
+              <path
+                d="M315 97 L328 184 L444 214 L600 225 L761 221"
+                stroke-width="2"
+              />
+              <path
+                d="M94 213 L208 170 L315 97 L446 58 L612 116"
+                stroke-width="1.8"
+              />
+              <path
+                d="M122 112 L57 232 L146 320 L245 225 L328 184"
+                stroke-width="1.8"
+              />
+              <path
+                d="M390 126 L532 174 L676 205 L818 267"
+                stroke-width="1.8"
+              />
+              <path d="M526 140 L604 158 L782 147 L870 48" stroke-width="1.8" />
+              <path
+                d="M208 170 L466 214 L541 300 L761 221"
+                stroke-width="1.8"
+              />
+            </g>
+            <g fill="#8b1111">
+              <circle cx="390" cy="126" r="7" />
+              <circle cx="466" cy="214" r="6" />
+              <circle cx="245" cy="225" r="5" />
+              <circle cx="706" cy="132" r="5" />
+            </g>
+          </svg>
+        </figure>
+        <div class="mapa-texto">
+          <span>Mapa interativo</span>
+          <h2>Explore as rotas do Império</h2>
+          <p>
+            Navegue pelo mapa e descubra as principais rotas comerciais
+            terrestres e marítimas, além das tecnologias e mercadorias.
+          </p>
+          <a class="botao-principal compacto" href="rotas.html"
+            >Abrir mapa interativo</a
+          >
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
