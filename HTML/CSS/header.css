@@ -1,0 +1,28 @@
+header {
+    background-color: #420906;
+    padding: 2vw 2vw 2vw 2vw;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+header nav ul {
+    padding: 2vw 2vw 2vw 2vw;
+    display: flex;
+    gap: 20px;
+}
+
+
+header .ativo {
+    color: #D69D2A;
+}
+
+header h1 {
+    font-size: 2vw;
+    color: white;
+}
+
+header h1 span {
+    color: #D69D2A;
+    font-size: 4vw;
+}
+

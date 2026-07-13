@@ -1,0 +1,33 @@
+.mercadoria {
+    background-image: url("IMG/Roma-Antiga.webp");
+    background-size: 100% 100%; 
+    background-image: brightness(80%);
+
+
+          
+
+}
+  
+.mercadoria {
+    color: white;
+    padding: 6vw 4vw 15vw 4vw;
+   
+}
+
+.mercadoria h2 {
+    font-size: 5vw;
+   
+}
+
+.mercadoria span {
+    color: #D69D2A;
+    font-size: 5vw;
+    display: flex;
+    padding: 0 0 3vw 0;
+}
+
+.mercadoria a {
+    background-color: #5E0C0C;
+    padding: 1vw 1vw 1vw 1vw;
+    border: #D69D2A 1px solid;
+}
