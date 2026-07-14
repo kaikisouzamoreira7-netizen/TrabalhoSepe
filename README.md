@@ -130,4 +130,20 @@ Pesquisas em Geral: Andreus Cesar Coelho, Vinicius Kormann de Freitas
 	Ausentes: Vinicius Kormann de Freitas
 Responsabilidades: Concluindo o GitHub e iniciando os códigos no VS Code
 
+7° dia - 14/07/2026:
+
+Grupo: Cauã Wlodarczyk, Guilherme Luciano da Silva, Kaiki de Souza Moreira e Andreus Cesar Coelho.
+
+Coordenador: Kaiki de Souza Moreira
+Secretário: Cauã Wlodarczyk (responsável pela ATA)
+Ata: data, assuntos, ausentes e responsabilidades no dia
+Figma: Guilherme Luciano da Silva,Andreus Cesar Coelho.
+Github: Kaiki de Souza Moreira.
+Estilização (CSS): Cauã Wlodarczyk
+Marcação (HTML): Cauã Wlodarczyk
+Pesquisas em Geral: Andreus Cesar Coelho.
+	Ausentes:Nenhum ausente.
+Responsabilidades: Concluindo o GitHub e iniciando os códigos no VS Code
+Por decisão do Prof. Dr. Mehran Misaghi, o discente Vinicius Kormann de Freitas foi transferido de equipe.
+
 
