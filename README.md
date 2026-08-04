@@ -8,7 +8,7 @@ G6 - Comércio e Circulação de Tecnologia
 Data: 02 de Junho de 2026
 Turma: 1Info1 - Instituto Federal Catarinense, Campus Araquari
 Grupo: Cauã Wlodarczyk, Guilherme Luciano da Silva, Kaiki de Souza Moreira, Andreus Cesar Coelho e Vinicius Kormann de Freitas
-
+ 
 Coordenador: Kaiki de Souza Moreira
 Secretário: Cauã Wlodarczyk (responsável pela ATA)
 Ata: data, assuntos, ausentes e responsabilidades no dia
@@ -145,5 +145,21 @@ Pesquisas em Geral: Andreus Cesar Coelho.
 	Ausentes:Nenhum ausente.
 Responsabilidades: Concluindo o GitHub e iniciando os códigos no VS Code
 Por decisão do Prof. Dr. Mehran Misaghi, o discente Vinicius Kormann de Freitas foi transferido de equipe.
+
+8° dia - 04/08/2026:
+
+Grupo: Cauã Wlodarczyk, Guilherme Luciano da Silva, Kaiki de Souza Moreira e Andreus Cesar Coelho.
+
+Coordenador: Kaiki de Souza Moreira
+Secretário: Cauã Wlodarczyk (responsável pela ATA)
+Ata: data, assuntos, ausentes e responsabilidades no dia
+Figma: Cauã Wlodarczyk
+Github: todos os integrantes
+Estilização (CSS): Guilherme L. e Kaiki de Souza M.
+Marcação (HTML): Guilherme L. e Kaiki de Souza M.
+Pesquisas em Geral: Cauã Wlodarczyk
+	Ausentes: Andreus Cesar Coelho, Faltou por motivos pessoais
+Responsabilidades: Melhorar o figma e completar o index das páginas.
+
 
 
