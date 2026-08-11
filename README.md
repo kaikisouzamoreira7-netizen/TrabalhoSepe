@@ -1,165 +1,274 @@
+# G6 - Comércio e Circulação de Tecnologia
 
-￼
-Documentos
+**Instituto Federal Catarinense — Campus Araquari**
+**Turma:** 1Info1
+**Data de início:** 02 de junho de 2026
 
-￼
-￼
-G6 - Comércio e Circulação de Tecnologia
-Data: 02 de Junho de 2026
-Turma: 1Info1 - Instituto Federal Catarinense, Campus Araquari
-Grupo: Cauã Wlodarczyk, Guilherme Luciano da Silva, Kaiki de Souza Moreira, Andreus Cesar Coelho e Vinicius Kormann de Freitas
- 
-Coordenador: Kaiki de Souza Moreira
-Secretário: Cauã Wlodarczyk (responsável pela ATA)
-Ata: data, assuntos, ausentes e responsabilidades no dia
-Figma: Guilherme Luciano da Silva
-Pesquisas em Geral: Andreus Cesar Coelho 
-1° dia - 02/06/2026:
-	Assuntos: Escolher o tema do trabalho, após isso fazer a pesquisa sobre os mesmo.
-	Ausentes: Kaiki de Souza Moreira
-	Responsabilidades: Decidir quem seria o Coordenador e Secretário.
+## Integrantes
 
+* **Cauã Wlodarczyk**
+* **Guilherme Luciano da Silva**
+* **Kaiki de Souza Moreira**
+* **Andreus Cesar Coelho**
+* **Vinicius Kormann de Freitas**
 
+### Organização do grupo
 
+| Função             | Responsável                |
+| ------------------ | -------------------------- |
+| Coordenador        | Kaiki de Souza Moreira     |
+| Secretário / ATA   | Cauã Wlodarczyk            |
+| Figma              | Guilherme Luciano da Silva |
+| Pesquisas em Geral | Andreus Cesar Coelho       |
 
+---
 
+# Atas e atividades
 
+## 1º dia — 02/06/2026
 
+**Assuntos:**
 
+* Escolha do tema do trabalho.
+* Início das pesquisas sobre o tema escolhido.
 
+**Ausente:**
 
+* Kaiki de Souza Moreira.
 
+**Responsabilidades:**
 
+* Decidir quem seria o Coordenador e o Secretário.
 
+---
 
-Data: 09 de Junho de 2026
-Turma: 1Info1 - Instituto Federal Catarinense, Campus Araquari
+## 2º dia — 09/06/2026
 
-2° dia - 09/06/2026:
+**Assuntos:**
 
+* Pesquisas sobre a Roma Antiga.
 
-Grupo: Cauã Wlodarczyk, Guilherme Luciano da Silva, Kaiki de Souza Moreira, Andreus Cesar Coelho e Vinicius Kormann de Freitas
+**Ausentes:**
 
-Coordenador: Kaiki de Souza Moreira
-Secretário: Cauã Wlodarczyk (responsável pela ATA)
-Ata: data, assuntos, ausentes e responsabilidades no dia
-Figma: Guilherme Luciano da Silva
-Pesquisas em Geral: Guilherme Luciano da Silva e Andreus Cesar Coelho 
+* Todos compareceram à aula.
 
-	Assuntos: Pesquisas Sobre a roma antiga.
-	Ausentes: Todos compareceram à aula.
-	Responsabilidades: Escolher o modelo do site, definir quem vai cuidar do Figma e Github
+**Responsabilidades:**
 
+* Escolher o modelo do site.
+* Definir os responsáveis pelo Figma e pelo GitHub.
 
+**Pesquisas em Geral:**
 
+* Guilherme Luciano da Silva.
+* Andreus Cesar Coelho.
 
+---
 
+## 3º dia — 16/06/2026
 
-3° dia - 16/06/2026:
+### Responsabilidades
 
-Grupo: Cauã Wlodarczyk, Guilherme Luciano da Silva, Kaiki de Souza Moreira, Andreus Cesar Coelho e Vinicius Kormann de Freitas
+| Área      | Responsáveis                                      |
+| --------- | ------------------------------------------------- |
+| Figma     | Guilherme Luciano da Silva e Andreus Cesar Coelho |
+| GitHub    | Kaiki de Souza Moreira                            |
+| CSS       | Todos os integrantes                              |
+| HTML      | Todos os integrantes                              |
+| Pesquisas | Andreus Cesar Coelho e Cauã Wlodarczyk            |
 
-Coordenador: Kaiki de Souza Moreira
-Secretário: Cauã Wlodarczyk (responsável pela ATA)
-Ata: data, assuntos, ausentes e responsabilidades no dia
-Figma: Guilherme Luciano da Silva,Andreus Cesar Coelho
-Github: Kaiki de Souza Moreira
-Estilização (CSS): Todos os integrantes
-Marcação (HTML): Todos os integrantes
-Pesquisas em Geral: Andreus Cesar Coelho, Cauã Wlodarczyk
-	Assuntos: Pesquisas Sobre a roma antiga.
-	Ausentes: Todos compareceram à aula.
-	Responsabilidades: Criar repositório no Github , procurar por fontes para o site.
+**Assuntos:**
 
+* Pesquisas sobre a Roma Antiga.
 
+**Ausentes:**
 
+* Todos compareceram à aula.
 
-4° dia - 23/06/2026:
+**Responsabilidades do dia:**
 
-Grupo: Cauã Wlodarczyk, Guilherme Luciano da Silva, Kaiki de Souza Moreira, Andreus Cesar Coelho e Vinicius Kormann de Freitas
+* Criar o repositório no GitHub.
+* Procurar fontes para o site.
 
-Coordenador: Kaiki de Souza Moreira
-Secretário: Cauã Wlodarczyk (responsável pela ATA)
-Ata: data, assuntos, ausentes e responsabilidades no dia
-Figma: Guilherme Luciano da Silva,Andreus Cesar Coelho
-Github: Kaiki de Souza Moreira
-Estilização (CSS): Todos os integrantes
-Marcação (HTML): Todos os integrantes
-Pesquisas em Geral: Andreus Cesar Coelho, Cauã Wlodarczyk
-	Ausentes:
-Kaiki de Souza Moreira: faltou, pois havia treino para o JIFC
-Vinicius Kormann de Freitas: faltou, pois havia treino para o JIFC
-Cauã Wlodarczyk: precisou ir embora mais cedo, pois teve um problema com sua roupa (rasgou).
-Responsabilidades: Finalização do Figma e Criação do GitHub
+---
 
+## 4º dia — 23/06/2026
 
+### Responsabilidades
 
+| Área      | Responsáveis                                      |
+| --------- | ------------------------------------------------- |
+| Figma     | Guilherme Luciano da Silva e Andreus Cesar Coelho |
+| GitHub    | Kaiki de Souza Moreira                            |
+| CSS       | Todos os integrantes                              |
+| HTML      | Todos os integrantes                              |
+| Pesquisas | Andreus Cesar Coelho e Cauã Wlodarczyk            |
 
+**Ausentes:**
 
+* **Kaiki de Souza Moreira:** faltou devido a treino para o JIFC.
+* **Vinicius Kormann de Freitas:** faltou devido a treino para o JIFC.
+* **Cauã Wlodarczyk:** precisou sair mais cedo devido a um problema com sua roupa.
 
-5° dia - 30/06/2026:
+**Responsabilidades:**
 
-Grupo: Cauã Wlodarczyk, Guilherme Luciano da Silva, Kaiki de Souza Moreira, Andreus Cesar Coelho e Vinicius Kormann de Freitas
+* Finalização do Figma.
+* Criação do GitHub.
 
-Coordenador: Kaiki de Souza Moreira
-Secretário: Cauã Wlodarczyk (responsável pela ATA)
-Ata: data, assuntos, ausentes e responsabilidades no dia
-Figma: Guilherme Luciano da Silva,Andreus Cesar Coelho
-Github: Kaiki de Souza Moreira
-Estilização (CSS): Todos os integrantes
-Marcação (HTML): Todos os integrantes
-Pesquisas em Geral: Andreus Cesar Coelho, Vinicius Kormann de Freitas
-	Ausentes: todos estavam presentes
-Responsabilidades: Concluindo o GitHub e iniciando os códigos no VS Code
+---
 
+## 5º dia — 30/06/2026
 
+### Responsabilidades
 
+| Área      | Responsáveis                                       |
+| --------- | -------------------------------------------------- |
+| Figma     | Guilherme Luciano da Silva e Andreus Cesar Coelho  |
+| GitHub    | Kaiki de Souza Moreira                             |
+| CSS       | Todos os integrantes                               |
+| HTML      | Todos os integrantes                               |
+| Pesquisas | Andreus Cesar Coelho e Vinicius Kormann de Freitas |
 
-6° dia - 07/07/2026:
+**Ausentes:**
 
-Grupo: Cauã Wlodarczyk, Guilherme Luciano da Silva, Kaiki de Souza Moreira, Andreus Cesar Coelho e Vinicius Kormann de Freitas
+* Todos estavam presentes.
 
-Coordenador: Kaiki de Souza Moreira
-Secretário: Cauã Wlodarczyk (responsável pela ATA)
-Ata: data, assuntos, ausentes e responsabilidades no dia
-Figma: Guilherme Luciano da Silva,Andreus Cesar Coelho
-Github: Kaiki de Souza Moreira,Cauã Wlodarczyk
-Estilização (CSS): Cauã Wlodarczyk
-Marcação (HTML): Cauã Wlodarczyk
-Pesquisas em Geral: Andreus Cesar Coelho, Vinicius Kormann de Freitas
-	Ausentes: Vinicius Kormann de Freitas
-Responsabilidades: Concluindo o GitHub e iniciando os códigos no VS Code
+**Responsabilidades:**
 
-7° dia - 14/07/2026:
+* Conclusão do GitHub.
+* Início dos códigos no VS Code.
 
-Grupo: Cauã Wlodarczyk, Guilherme Luciano da Silva, Kaiki de Souza Moreira e Andreus Cesar Coelho.
+---
 
-Coordenador: Kaiki de Souza Moreira
-Secretário: Cauã Wlodarczyk (responsável pela ATA)
-Ata: data, assuntos, ausentes e responsabilidades no dia
-Figma: Guilherme Luciano da Silva,Andreus Cesar Coelho.
-Github: Kaiki de Souza Moreira.
-Estilização (CSS): Cauã Wlodarczyk
-Marcação (HTML): Cauã Wlodarczyk
-Pesquisas em Geral: Andreus Cesar Coelho.
-	Ausentes:Nenhum ausente.
-Responsabilidades: Concluindo o GitHub e iniciando os códigos no VS Code
-Por decisão do Prof. Dr. Mehran Misaghi, o discente Vinicius Kormann de Freitas foi transferido de equipe.
+## 6º dia — 07/07/2026
 
-8° dia - 04/08/2026:
+### Responsabilidades
 
-Grupo: Cauã Wlodarczyk, Guilherme Luciano da Silva, Kaiki de Souza Moreira e Andreus Cesar Coelho.
+| Área      | Responsáveis                                       |
+| --------- | -------------------------------------------------- |
+| Figma     | Guilherme Luciano da Silva e Andreus Cesar Coelho  |
+| GitHub    | Kaiki de Souza Moreira e Cauã Wlodarczyk           |
+| CSS       | Cauã Wlodarczyk                                    |
+| HTML      | Cauã Wlodarczyk                                    |
+| Pesquisas | Andreus Cesar Coelho e Vinicius Kormann de Freitas |
 
-Coordenador: Kaiki de Souza Moreira
-Secretário: Cauã Wlodarczyk (responsável pela ATA)
-Ata: data, assuntos, ausentes e responsabilidades no dia
-Figma: Cauã Wlodarczyk
-Github: todos os integrantes
-Estilização (CSS): Guilherme L. e Kaiki de Souza M.
-Marcação (HTML): Guilherme L. e Kaiki de Souza M.
-Pesquisas em Geral: Cauã Wlodarczyk
-	Ausentes: Andreus Cesar Coelho, Faltou por motivos pessoais
-Responsabilidades: Melhorar o figma e completar o index das páginas.
+**Ausente:**
 
+* Vinicius Kormann de Freitas.
 
+**Responsabilidades:**
 
+* Conclusão do GitHub.
+* Início dos códigos no VS Code.
+
+---
+
+## 7º dia — 14/07/2026
+
+**Grupo:**
+
+* Cauã Wlodarczyk
+* Guilherme Luciano da Silva
+* Kaiki de Souza Moreira
+* Andreus Cesar Coelho
+
+### Responsabilidades
+
+| Área      | Responsáveis                                      |
+| --------- | ------------------------------------------------- |
+| Figma     | Guilherme Luciano da Silva e Andreus Cesar Coelho |
+| GitHub    | Kaiki de Souza Moreira                            |
+| CSS       | Cauã Wlodarczyk                                   |
+| HTML      | Cauã Wlodarczyk                                   |
+| Pesquisas | Andreus Cesar Coelho                              |
+
+**Ausentes:**
+
+* Nenhum.
+
+**Responsabilidades:**
+
+* Conclusão do GitHub.
+* Continuação dos códigos no VS Code.
+
+> **Observação:** Por decisão do Prof. Dr. Mehran Misaghi, o discente **Vinicius Kormann de Freitas** foi transferido de equipe.
+
+---
+
+## 8º dia — 04/08/2026
+
+**Grupo:**
+
+* Cauã Wlodarczyk
+* Guilherme Luciano da Silva
+* Kaiki de Souza Moreira
+* Andreus Cesar Coelho
+
+### Responsabilidades
+
+| Área      | Responsáveis                                        |
+| --------- | --------------------------------------------------- |
+| Figma     | Cauã Wlodarczyk                                     |
+| GitHub    | Todos os integrantes                                |
+| CSS       | Guilherme Luciano da Silva e Kaiki de Souza Moreira |
+| HTML      | Guilherme Luciano da Silva e Kaiki de Souza Moreira |
+| Pesquisas | Cauã Wlodarczyk                                     |
+
+**Ausente:**
+
+* Andreus Cesar Coelho — faltou por motivos pessoais.
+
+**Responsabilidades:**
+
+* Melhorar o Figma.
+* Completar o `index` das páginas.
+
+---
+
+# Resumo do projeto
+
+O grupo está desenvolvendo um **site sobre a Roma Antiga**, utilizando:
+
+* **HTML** para a estrutura das páginas;
+* **CSS** para a estilização;
+* **Figma** para o planejamento e prototipação;
+* **GitHub** para versionamento e organização do projeto;
+* Pesquisas em diferentes fontes para elaboração do conteúdo.
+
+## 9º dia — 11/08/2026
+
+**Grupo:**
+
+* Cauã Wlodarczyk
+* Guilherme Luciano da Silva
+* Kaiki de Souza Moreira
+* Andreus Cesar Coelho
+
+### Responsabilidades
+
+| Área      | Responsáveis                                                    |
+| --------- | --------------------------------------------------------------- |
+| Figma     | Não foi utilizado nesse dia.                                    |
+| GitHub    | Todos os integrantes                                            |
+| CSS       | Guilherme Luciano da Silva e Kaiki de Souza Moreira e Cauã W.   |
+| HTML      | Kaiki de Souza Moreira, Guilherme Luciano da Silva e Cauã W.    |
+| Pesquisas | Andreus Cesar Coelho (está ausente mas está fazendo em casa)    |
+
+**Ausente:**
+
+* Andreus Cesar Coelho — faltou pois lesionou o tornozelo.
+
+**Responsabilidades:**
+
+* Completar o `index` das páginas e o `css` *
+
+---
+
+# Resumo do projeto
+
+O grupo está desenvolvendo um **site sobre a Roma Antiga**, utilizando:
+
+* **HTML** para a estrutura das páginas;
+* **CSS** para a estilização;
+* **Figma** para o planejamento e prototipação;
+* **GitHub** para versionamento e organização do projeto;
+* Pesquisas em diferentes fontes para elaboração do conteúdo.
