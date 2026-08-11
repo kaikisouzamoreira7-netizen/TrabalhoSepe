@@ -1,67 +1,67 @@
-.mercadoria {
-    background-image: url("IMG/Roma-Antiga.webp");
-    background-size: 100% 100% ; 
-    
-}
-  
-.mercadoria {
-    color: white;
-    padding: 3vw 2vw 7vw 2vw;
-   
+html {
+  font-size: 16px;
 }
 
-.mercadoria h2 {
-    font-size: 3vw;
-   
+body {
+  background-color: rgb(255, 252, 247);
 }
 
-.mercadoria span {
-    color: #D69D2A;
-    font-size: 5vw;
-    display: flex;
-    padding: 0 0 3vw 0;
+.banner h1 {
+  padding: 70px 15px 70px 15px;
+  font-size: 20px;
+  color: white;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(https://storage.caosplanejado.com/uploads/2019/04/coliseu-1-910x607.png);
+  background-position: center;
 }
 
-.mercadoria a {
-    background-color: #5E0C0C;
-    padding: 1vw 1vw 1vw 1vw;
-    border: #D69D2A 1px solid;
+.banner h2 {
+  font-size: 23px;
+  text-align: center;
+  margin-top: 20px;
 }
 
-.cards {
-    background-color: black;
-    padding: 3vw;
+.banner span {
+  color: #d69d2a;
 }
 
-.cards ul {
-    display: flex;
+.banner h3 {
+  text-align: center;
+  color: #d69d2a;
+  margin-bottom: 5px;
 }
 
-.cards li {
-    background-color: #5E0C0C;
-    margin: 2vw;
-    border-radius: 6px;
-    padding:2vw;
+.banner div {
+  margin: 10px 25px 25px 25px;
+  padding: 22px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
 }
 
-.cards h2{
-    color: #D69D2A;
-    font-size: 2.5vw;
+.mercadorias img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.cards p {
-    color: white;
-    font-size: 1.5vw;
-    margin: 0 0 1vw 0;
+.cards div {
+  margin: 30px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #420906;
+  color: white;
+  line-height: 17px;
 }
 
-
-
-.cards summary {
-    background-color: #D69D2A;
-    color:white;
-    display: inline;
-    padding: 5px 5px 5px 5px;
-    border:  1px black solid;
-    
+.cards h2 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 5px;
+  color: #d69d2a;
 }
