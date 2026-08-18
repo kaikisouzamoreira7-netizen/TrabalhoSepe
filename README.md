@@ -277,7 +277,7 @@ O grupo está desenvolvendo um **site sobre a Roma Antiga**, utilizando:
 
 | Área      | Responsáveis                                                    |
 | --------- | --------------------------------------------------------------- |
-| Figma     | Nenhuma altertação.                                             |
+| Figma     | Nenhuma alteração.                                             |
 | GitHub    | Todos os integrantes                                            |
 | CSS       | Todos os integrantes.                                           |
 | HTML      | Todos os integrantes.                                           |
