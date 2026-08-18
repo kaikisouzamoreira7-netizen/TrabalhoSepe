@@ -1,0 +1,52 @@
+
+.banner {
+    background-color: black;
+    padding: 4vw;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 4vw;
+}
+
+.banner span {
+    color: #D69D2A;
+    display: flex;
+    
+}
+
+.banner p {
+    color: white;
+    padding: 2vw 0 2vw 0;
+    font-size: 2.3vw;
+}
+
+.rotas h2 {
+    color: white;
+    text-align: center;
+    background-color:#420906 ;
+}
+
+
+
+@media  screen and (min-width: 600px){
+    .banner div  {
+        display: flex;
+    }
+
+    .banner span {
+        display: inline;
+    }
+
+    .banner p {
+        padding: 0;
+    }
+
+    .banner div div {
+        padding: 0 2vw 0 2vw;
+        width: 50%;
+    }
+
+    
+
+}
