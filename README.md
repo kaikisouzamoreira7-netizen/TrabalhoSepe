@@ -224,15 +224,6 @@
 
 ---
 
-# Resumo do projeto
-
-O grupo está desenvolvendo um **site sobre a Roma Antiga**, utilizando:
-
-* **HTML** para a estrutura das páginas;
-* **CSS** para a estilização;
-* **Figma** para o planejamento e prototipação;
-* **GitHub** para versionamento e organização do projeto;
-* Pesquisas em diferentes fontes para elaboração do conteúdo.
 
 ## 9º dia — 11/08/2026
 
@@ -272,3 +263,32 @@ O grupo está desenvolvendo um **site sobre a Roma Antiga**, utilizando:
 * **Figma** para o planejamento e prototipação;
 * **GitHub** para versionamento e organização do projeto;
 * Pesquisas em diferentes fontes para elaboração do conteúdo.
+
+* ## 10º dia — 18/08/2026
+
+**Grupo:**
+
+* Cauã Wlodarczyk
+* Guilherme Luciano da Silva
+* Kaiki de Souza Moreira
+* Andreus Cesar Coelho
+
+### Responsabilidades
+
+| Área      | Responsáveis                                                    |
+| --------- | --------------------------------------------------------------- |
+| Figma     | Nenhuma altertação.                                             |
+| GitHub    | Todos os integrantes                                            |
+| CSS       | Todos os integrantes.                                           |
+| HTML      | Todos os integrantes.                                           |
+| Pesquisas | Não foram realizadas pesquisas nesse dia.                       |
+
+**Ausente:**
+
+* Nenhum ausente.
+
+**Responsabilidades:**
+
+* Completar o `index` das páginas e o `css` *
+
+---
