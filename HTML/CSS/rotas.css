@@ -23,8 +23,52 @@
 
 .rotas h2 {
     color: white;
-    text-align: center;
     background-color:#420906 ;
+    padding: 2vw;
+    font-size: 4vw;
+}
+
+.rotas {
+    background-color: rgb(224, 188, 120);
+     text-align: center;
+}
+
+.rotas p {
+    padding: 4vw;
+    font-size: 3vw;
+    text-align: left;
+}
+
+
+.info {
+    background-color: wheat;
+    padding: 4vw;
+}
+
+.info h2 {
+    color: #D69D2A;
+    padding: 2vw 0 2vw 0;
+}
+
+.info li {
+    background-color: #420906;
+    margin: 2vw;
+    padding: 3vw;
+    border-radius: 10px;
+}
+
+.info details {
+    color: white;
+}
+
+.info p {
+    color: white;
+
+}
+
+.info summary {
+    color: #D69D2A;
+    padding: 2vw 0 2vw 0;
 }
 
 
@@ -46,6 +90,15 @@
         padding: 0 2vw 0 2vw;
         width: 50%;
     }
+
+    .rotas div {
+        display : flex;
+    }
+
+    .rotas div {
+        width: 100%;
+    }
+    
 
     
 
