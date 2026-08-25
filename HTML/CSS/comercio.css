@@ -14,15 +14,18 @@ body {
 }
 
 /* === Header e Nav === */
-
 header {
   background-color: #420906;
   padding: 15px 30px;
-  display: flex;
+  text-align: center;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   color: white;
   gap: 30px;
+}
+
+header li {
+  margin-bottom: 20px;
 }
 
 #logoRoma {
@@ -32,46 +35,12 @@ header {
   object-fit: cover;
 }
 
-header nav ul {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-header nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  transition: 0.3s;
-}
-
-header nav a:hover {
-  color: #d69d2a;
-}
-
 header .ativo {
   color: #d69d2a;
-}
-
-header h1 {
-  font-size: 2vw;
-  color: white;
-}
-
-header h1 span {
-  color: #d69d2a;
-  font-size: 4vw;
+  font-weight: 600;
 }
 
 /* === Banner === */
-
-.banner {
-  width: 100%;
-}
-
 .banner h1 {
   margin: 0;
   padding: 90px 20px;
@@ -90,84 +59,5 @@ header h1 span {
 
 .banner span {
   color: #d69d2a;
-}
-
-.banner h2 {
-  font-size: 28px;
-  text-align: center;
-  margin: 40px 0 25px;
-  color: #420906;
-}
-
-.banner h3 {
-  text-align: center;
-  color: #d69d2a;
-  margin: 0 0 15px;
-  font-size: 21px;
-}
-
-/* === Mercadorias === */
-
-.mercadorias {
-  margin: 0 auto 25px;
-  padding: 25px;
-  width: 90%;
-  max-width: 1000px;
-
-  background-color: white;
-
-  border: 1px solid #ddd;
-  border-radius: 10px;
-
-  line-height: 1.7;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-}
-
-.mercadorias img {
-  width: 250px;
-  max-width: 100%;
-  height: auto;
-
-  border-radius: 10px;
-
-  display: block;
-  margin: 20px auto 0;
-}
-
-/* === História === */
-
-.Historia {
-  padding: 50px 30px;
-}
-
-.containerHistoria {
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
-
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-
-  gap: 30px;
-}
-
-.cardAbout {
-  flex: 1;
-
-  background-color: #420906;
-  border-radius: 10px;
-  padding: 30px;
-
-  color: white;
-  line-height: 1.7;
-
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.Historia h2 {
-  font-size: 20px;
-  text-align: center;
-  margin: 0 0 15px;
-  color: #d69d2a;
+  font-weight: 550;
 }
