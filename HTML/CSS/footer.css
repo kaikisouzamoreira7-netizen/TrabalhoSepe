@@ -1,0 +1,24 @@
+footer {
+    padding: 4vw;
+}
+
+footer img {
+    width: 15%;
+}
+
+footer a {
+    color: white;
+}
+
+footer div {
+    padding: 1vw 0 1vw 0;
+}
+
+footer div.links {
+    background-color: burlywood;
+    width: 50%;
+}
+
+footer div div {
+    margin: 1vw 0 1vw 0;
+}
