@@ -1,3 +1,7 @@
+@import url('header.css');
+@import url('footer.css');
+@import url('style.css');
+@import url(reset.css);
 header {
     background-color: #420906;
     padding: 2vw 2vw 2vw 2vw;
