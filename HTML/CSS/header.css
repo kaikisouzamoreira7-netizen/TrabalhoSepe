@@ -8,12 +8,19 @@ header {
 header nav ul {
     padding: 2vw 2vw 2vw 2vw;
     display: flex;
+    justify-content: space-around;
+   align-items: center;
     gap: 20px;
+
 }
 
-
-header .ativo {
+header A:hover{
     color: #D69D2A;
+}
+
+header a{
+
+    font-weight: 500
 }
 
 header h1 {
@@ -24,4 +31,5 @@ header h1 {
 header h1 span {
     color: #D69D2A;
     font-size: 4vw;
+    font-weight: 600;
 }
