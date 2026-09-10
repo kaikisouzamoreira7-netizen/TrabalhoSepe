@@ -1,7 +1,7 @@
 @import url('footer.css');
 @import url('header.css');
 @import url('reset.css');
-@import url(reset.css);
+@import url('reset.css');
 
 * {
     margin: 0;
@@ -118,7 +118,7 @@ header h1 span {
 }
 
 .integrantes h2 {
-    color: #B0885C
+    color: #B0885C;
     font-size: 24px;
     margin-bottom: 25px;
 }

@@ -1,7 +1,7 @@
 @import url('header.css');
 @import url('footer.css');
 @import url('style.css');
-@import url(reset.css);
+@import url('reset.css');
 header {
     background-color: #420906;
     padding: 2vw 2vw 2vw 2vw;
@@ -30,9 +30,7 @@ header h1 span {
     font-size: 4vw;
 }
 
-.hero{
-    
-}
+
 
 .area{
     background-color: #420906;
