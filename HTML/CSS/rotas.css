@@ -2,8 +2,10 @@
 @import url('header.css');
 @import url('footer.css');
 @import url('reset.css');
+
+
 .banner {
-    background-color: black;
+    background-image: url('IMG/banner.rotas.png');
     padding: 4vw;
 }
 
