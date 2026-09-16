@@ -9,6 +9,14 @@ header nav {
     font-family: 'Inter', sans-serif;
 }
 
+header .ativo {
+    color: #d69d2a;
+}
+
+header img {
+    width: 70px;
+    margin: 0 0 0 1vw ;
+}
 
 header {
     background-color: #420906;
@@ -16,13 +24,20 @@ header {
     color: white;
     text-transform: uppercase;
 }
-header nav ul {
+header nav  {
     padding: 1vw;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    gap: 40vw;
     align-items: center;
-    gap: 30px;
+    
 
+}
+
+header ul {
+    display: flex;
+    
+    gap: 30px;
 }
 
 
@@ -39,12 +54,7 @@ header a{
     font-weight: 500
 }
 
-header h1 {
-    font-size: 1vw;
-    color: white;
-    padding: 0 25vw 0 2vw;
-    margin: 0;
-}
+
 
 header h1 span {
     color: #D69D2A;
