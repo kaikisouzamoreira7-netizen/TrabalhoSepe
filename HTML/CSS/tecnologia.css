@@ -1,7 +1,7 @@
 @import url('header.css');
-@import url('footer.css');
 @import url('style.css');
 @import url('reset.css');
+
 header {
     background-color: #420906;
     padding: 2vw 2vw 2vw 2vw;
@@ -9,6 +9,7 @@ header {
     justify-content: space-between;
     color: white;
 }
+
 header nav ul {
     padding: 2vw 2vw 2vw 2vw;
     display: flex;
@@ -32,9 +33,7 @@ header h1 span {
 
 
 
-.area{
+.area {
     background-color: #420906;
-    
+
 }
-
-

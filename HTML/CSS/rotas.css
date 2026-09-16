@@ -1,7 +1,7 @@
 @import url('reset.css');
 @import url('header.css');
-@import url('footer.css');
 @import url('reset.css');
+@import url('footer.css');
 
 
 .banner {
@@ -17,7 +17,7 @@
 .banner span {
     color: #D69D2A;
     display: flex;
-    
+
 }
 
 .banner p {
@@ -28,14 +28,14 @@
 
 .rotas h2 {
     color: white;
-    background-color:#420906 ;
+    background-color: #420906;
     padding: 2vw;
     font-size: 4vw;
 }
 
 .rotas {
     background-color: rgb(224, 188, 120);
-     text-align: center;
+    text-align: center;
 }
 
 .rotas p {
@@ -74,37 +74,4 @@
 .info summary {
     color: #D69D2A;
     padding: 2vw 0 2vw 0;
-}
-
-
-
-@media  screen and (min-width: 600px){
-    .banner div  {
-        display: flex;
-    }
-
-    .banner span {
-        display: inline;
-    }
-
-    .banner p {
-        padding: 0;
-    }
-
-    .banner div div {
-        padding: 0 2vw 0 2vw;
-        width: 50%;
-    }
-
-    .rotas div {
-        display : flex;
-    }
-
-    .rotas div {
-        width: 100%;
-    }
-    
-
-    
-
 }
