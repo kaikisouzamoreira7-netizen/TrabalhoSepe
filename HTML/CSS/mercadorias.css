@@ -1,0 +1,24 @@
+@import url('header.css');
+body {
+    padding: 10vw;
+}
+
+
+.mercadorias {
+  background-color: #420906;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.mercadorias h3 {
+    font-size: 0.7rem;
+    margin: 2vw 0 0 2vw;
+}
+
+.mercadorias p {
+    padding: 0 2vw 2vw 2vw;
+    font-size: 0.6rem;
+}
