@@ -1,3 +1,51 @@
 @import url('header.css');
 @import url('reset.css');
 @import url('footer.css');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap');
+
+
+.banner {
+    background-image: url('IMG/image\ 12.png');
+    padding: 5vw;
+}
+
+
+
+.banner h2 {
+    color: white;
+}
+
+.banner span {
+    color: #D69D2A;
+}
+
+.cards {
+    padding: 5vw;
+    background-color: #D9D9D9;
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+.cards h2 {
+    color: #5E0C0C;
+    font-size: 4vw;
+    
+}
+
+.cards p {
+    padding: 2vw 0 2vw;
+    font-size: 3vw;
+}
+
+.cards li {
+    background-color: white;
+    margin: 4vw 0 4vw 0;
+    padding: 2vw;
+    border-radius: 5px;
+}
+
+.cards details {
+    color: #D69D2A;
+}
+
+
+
