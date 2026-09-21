@@ -1,4 +1,6 @@
 @import url('footer.css');
+@import url('header.css');
+@import url('reset.css');
 
 html {
   font-size: 16px;
@@ -11,63 +13,6 @@ body {
   padding-bottom: 80px;
 }
 
-header {
-  padding: 10px;
-  text-align: center;
-  background-color: #420906;
-}
-
-#logoRoma {
-  width: 40px;
-  height: auto;
-}
-
-.ativo {
-  color: #b9831c;
-}
-
-header ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px 18px;
-  padding: 0;
-  margin: 10px 0 0;
-}
-
-header li {
-  margin-bottom: 0;
-}
-
-header a {
-  color: white;
-  text-decoration: none;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.7px;
-}
-
-@media (min-width: 700px) {
-  header.topo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 12px 30px;
-  }
-
-  header ul {
-    margin: 0;
-    gap: 25px;
-  }
-
-  header a {
-    font-size: 13px;
-  }
-}
 
 /* === Banner === */
 .banner h1 {

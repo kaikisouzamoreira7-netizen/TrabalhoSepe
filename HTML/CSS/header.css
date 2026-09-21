@@ -2,6 +2,7 @@
 
 
 
+
 header h1 {
     font-family: 'Ibarra Real Nova', serif;
 }
@@ -16,7 +17,7 @@ header .ativo {
 }
 
 header img {
-    width: 70px;
+    width: 100%;
     margin: 0 0 0 1vw ;
 }
 
