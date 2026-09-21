@@ -1,66 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap');
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap");
 
 header h1 {
-    font-family: 'Ibarra Real Nova', serif;
+  font-family: "Ibarra Real Nova", serif;
 }
 
-
 header nav {
-    font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 header .ativo {
-    color: #d69d2a;
-}
-
-header img {
-    width: 100%;
-    margin: 0 0 0 1vw ;
+  color: #d69d2a;
 }
 
 header {
     background-color: #420906;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+header img {
+  width: 30%;
+  margin: 0 0 0 1vw;
+}
+
+
+@media (min-width: 600px) {
+  header {
+    background-color: #420906;
     display: flex;
     color: white;
     text-transform: uppercase;
-}
-header nav  {
+  }
+  header nav {
     padding: 1vw;
     display: flex;
     justify-content: space-between;
     gap: 40vw;
     align-items: center;
-    
+  }
 
-}
-
-header ul {
+  header ul {
     display: flex;
-    
+
     gap: 30px;
-}
+  }
 
-
-
-header li {
+  header li {
     font-size: 1vw;
-}
+  }
 
-header A:hover{
-    color: #D69D2A;
-}
+  header A:hover {
+    color: #d69d2a;
+  }
 
-header a{
-    font-weight: 500
-}
+  header a {
+    font-weight: 500;
+  }
 
-
-
-header h1 span {
-    color: #D69D2A;
+  header h1 span {
+    color: #d69d2a;
     font-size: 2vw;
     font-weight: 600;
+  }
 }
