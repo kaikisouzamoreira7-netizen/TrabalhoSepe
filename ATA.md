@@ -313,3 +313,32 @@
 
 ---
 
+* ## 12º dia — 22/09/2026
+
+**Grupo:**
+
+* Cauã Wlodarczyk
+* Guilherme Luciano da Silva
+* Kaiki de Souza Moreira
+* Andreus Cesar Coelho
+
+### Responsabilidades
+
+| Área      | Responsáveis                                                    |
+| --------- | --------------------------------------------------------------- |
+| Figma     | todos os integrantes.                                               |
+| GitHub    | Todos os integrantes.                                           |
+| CSS       | Todos os integrantes.                                           |
+| HTML      | Todos os integrantes.                                           |
+| Pesquisas | Não foram realizadas pesquisas nesse dia.                       |
+
+**Ausente:**
+
+* Nenhum ausente.
+
+**Responsabilidades:**
+
+* Completar o `css` das páginas o *
+
+---
+
