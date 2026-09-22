@@ -17,12 +17,25 @@ header {
     color: white;
     text-transform: uppercase;
     text-align: center;
+    padding: 2vw;
   }
 
 header img {
-  width: 30%;
-  margin: 0 0 0 1vw;
+  width: 40px;
+  padding-top: 3vw;
+  
 }
+
+header a {
+  line-height: 28px;
+  font-size: 0.7rem;
+}
+
+
+
+   header a {
+    font-weight: 500;
+  } 
 
 
 @media (min-width: 600px) {
@@ -31,7 +44,23 @@ header img {
     display: flex;
     color: white;
     text-transform: uppercase;
+    padding: 0;
   }
+
+  header img {
+    padding: 0 0 0 1vw;
+    width: 70px;
+    
+  }
+
+  header a {
+    font-size: 1rem;
+  }
+
+  header A:hover {
+    color: #d69d2a;
+  }
+
   header nav {
     padding: 1vw;
     display: flex;
@@ -42,7 +71,6 @@ header img {
 
   header ul {
     display: flex;
-
     gap: 30px;
   }
 
@@ -50,17 +78,4 @@ header img {
     font-size: 1vw;
   }
 
-  header A:hover {
-    color: #d69d2a;
-  }
-
-  header a {
-    font-weight: 500;
-  }
-
-  header h1 span {
-    color: #d69d2a;
-    font-size: 2vw;
-    font-weight: 600;
-  }
 }
