@@ -4,54 +4,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Sobre | Roma Antiga</title>
   <link rel="stylesheet" href="CSS/sobre.css" />
-
-  <!doctype html>
-  <html lang="pt-BR">
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sobre - Roma</title>
-  </head>
+</head>
 
 <body>
   <header>
-      
-        <nav>
+      <nav>
+        <a class="logo-link" href="index.html" aria-label="Roma Antiga — página inicial">
+          <h1><img src="CSS/IMG/ROMA.jpg" alt="Emblema do projeto Roma Antiga" /></h1>
+        </a>
 
-          <h1>
-              <img src="CSS/IMG/ROMA.jpg" alt="">
-             </h1>
-          <ul>
-            
-              
-          
-            
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-btn" aria-label="Abrir menu de navegação">
+          <span></span><span></span><span></span>
+        </label>
 
+        <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="comercio.html">COMÉRCIO</a></li>
-            <li><a href="mercadorias.html">TECNOLOGIA</a></li>
+            <li><a href="tecnologia.html">TECNOLOGIA</a></li>
             <li><a href="rotas.html">ROTAS</a></li>
             <li><a href="poder.html">PODER</a></li>
-            <li><a class="ativo"  href="sobre.html">SOBRE</a></li>
-          </ul>
-        </nav>
-      
+            <li><a class="ativo" href="sobre.html">SOBRE</a></li>
+        </ul>
+      </nav>
     </header>
         <main>
           <section class="banner">
-            <h1>
+            <h1 class="reveal">
               SOBRE O PROJETO<br />
               <span>Conheça o objetivo<br />do nosso trabalho</span>
             </h1>
             </section>
 
             <section class="sobre">
-              <h2>NOSSO TRABALHO</h2>
+              <h2 class="reveal">NOSSO TRABALHO</h2>
 
-              <p>
+              <p class="reveal">
                 Este site foi desenvolvido com o objetivo de apresentar
                 informações sobre o comércio na Roma Antiga de forma clara,
                 organizada e acessível. O projeto busca reunir os principais
@@ -68,29 +58,29 @@
             <section class="integrantes">
               <h2>Nossos integrantes</h2>
 
-              <div class="equipe">
+              <div class="equipe reveal-stagger">
                 <div class="card">
-                  <div class="foto"></div>
+                  <div class="foto" data-iniciais="GS" role="img" aria-label="Foto de Guilherme Luciano Da Silva"></div>
                   <p>Guilherme Luciano Da Silva</p>
                 </div>
 
                 <div class="card">
-                  <div class="foto"></div>
+                  <div class="foto" data-iniciais="VF" role="img" aria-label="Foto de Vinicius Kormann De Freitas"></div>
                   <p>Vinicius Kormann De Freitas</p>
                 </div>
 
                 <div class="card">
-                  <div class="foto"></div>
+                  <div class="foto" data-iniciais="CW" role="img" aria-label="Foto de Cauã Wlodarczyk"></div>
                   <p>Cauã Wlodarczyk</p>
                 </div>
 
                 <div class="card">
-                  <div class="foto"></div>
+                  <div class="foto" data-iniciais="KM" role="img" aria-label="Foto de Kaiki De Souza Moreira"></div>
                   <p>Kaiki De Souza Moreira</p>
                 </div>
 
                 <div class="card">
-                  <div class="foto"></div>
+                  <div class="foto" data-iniciais="AC" role="img" aria-label="Foto de Andreus Cesar Coelho"></div>
                   <p>Andreus Cesar Coelho</p>
                 </div>
               </div>
@@ -131,8 +121,5 @@
               </div>
             </footer>
 </body>
-
-</html>
-</head>
 
 </html>

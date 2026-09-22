@@ -1,196 +1,161 @@
+@import url('tokens.css');
 @import url('header.css');
 @import url('reset.css');
 @import url('footer.css');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('transitions.css');
 
 body {
-    background-color: #ffffff;
-    font-family: Georgia, "Times New Roman", serif;
-    color: #ffffff;
+  background-color: var(--color-bg);
 }
 
-header {
-    width: 100%;
-    height: 58px;
-    background-color: #4b0805;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 30px;
-}
-
-.logo {
-    color: #d69b16;
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-
-
-header {
-    background-color: #420906;
-    padding: 2vw 2vw 2vw 2vw;
-    display: flex;
-    justify-content: space-between;
-    color: white;
-}
-
-header nav ul {
-    padding: 2vw 2vw 2vw 2vw;
-    display: flex;
-    gap: 20px;
-}
-
-
-header .ativo {
-    color: #D69D2A;
-}
-
-header h1 {
-    font-size: 2vw;
-    color: white;
-}
-
-header h1 span {
-    color: #D69D2A;
-    font-size: 4vw;
-}
-
-
-
-
-
+/* ---- Banner ----
+   Imagem: HTML/CSS/IMG/roma-hero.svg — ilustração do fórum romano ao
+   entardecer (asset local do projeto, sem dependência externa).
+   Enquadramento: cover, centralizado. ---- */
 .banner {
-    width: 100%;
-    height: 250px;
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
-        url("https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1200&q=80");
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    align-items: center;
-    padding-left: 85px;
+  width: 100%;
+  min-height: 280px;
+  background-image: linear-gradient(rgba(8, 3, 2, 0.4), rgba(8, 3, 2, 0.68)), url("IMG/roma-hero.svg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-2xl) var(--gutter);
+  text-align: center;
 }
 
 .banner h1 {
-    font-family: Arial, sans-serif;
-    font-size: 25px;
-    line-height: 1.05;
-    text-transform: uppercase;
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  line-height: var(--lh-tight);
+  text-transform: uppercase;
+  color: var(--color-text-on-dark);
 }
 
 .banner h1 span {
-    color: #d69b16;
+  display: block;
+  margin-top: var(--space-xs);
+  color: var(--color-accent);
+  font-size: var(--fs-md);
+  text-transform: none;
+  letter-spacing: 0.5px;
 }
 
 .sobre {
-    background-color: #4b0805;
-    padding: 35px 45px 40px;
-    text-align: center;
+  background-color: var(--color-primary);
+  padding: var(--space-2xl) var(--gutter);
+  text-align: center;
 }
 
 .sobre h2 {
-    color: #d69b16;
-    font-size: 25px;
-    margin-bottom: 18px;
+  color: var(--color-accent);
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  margin-bottom: var(--space-md);
+  letter-spacing: 1px;
 }
 
 .sobre p {
-    max-width: 720px;
-    margin: 0 auto;
-    text-align: left;
-    font-size: 17px;
-    line-height: 1.35;
+  max-width: var(--container-narrow);
+  margin: 0 auto;
+  text-align: left;
+  color: var(--color-text-on-dark-muted);
+  font-size: var(--fs-base);
+  line-height: var(--lh-body);
 }
 
 .integrantes {
-    background-color: #000000;
-    padding: 15px 40px 35px;
-    text-align: center;
+  background-color: var(--color-primary-dark);
+  padding: var(--space-2xl) var(--gutter);
+  text-align: center;
 }
 
 .integrantes h2 {
-    color: #B0885C;
-    font-size: 24px;
-    margin-bottom: 25px;
+  color: var(--color-accent);
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  margin-bottom: var(--space-lg);
+  letter-spacing: 0.5px;
 }
 
 .equipe {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px 55px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-lg) var(--space-xl);
+  max-width: var(--container);
+  margin: 0 auto;
 }
 
 .card {
-    width: 150px;
-    height: 190px;
-    background-color: #ffffff;
-    border: 4px solid #ffffff;
-    border-radius: 4px;
-    overflow: hidden;
+  width: 168px;
+  background-color: var(--color-surface);
+  border: 4px solid var(--color-surface);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--t-base) var(--ease-out), border-color var(--t-base) var(--ease-out),
+    box-shadow var(--t-base) var(--ease-out);
 }
 
+.card:hover {
+  transform: translateY(-8px);
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-md);
+}
+
+/* Avatar com iniciais: substitua por uma foto real (proporção 1:1, rosto
+   centralizado) quando disponível — não usar fotos genéricas de terceiros. */
 .foto {
-    width: 100%;
-    height: 125px;
-    background-color: #b99161;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-accent), var(--color-primary-light));
+  position: relative;
+}
+
+.foto::before {
+  content: attr(data-iniciais);
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: rgba(255, 248, 237, 0.9);
+  letter-spacing: 1px;
 }
 
 .card p {
-    height: 57px;
-    color: #6c1712;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    font-size: 11px;
-    line-height: 1.2;
-    text-align: center;
+  min-height: 57px;
+  color: var(--color-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xs);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: center;
 }
 
-
 @media (max-width: 700px) {
+  .banner {
+    min-height: 220px;
+    padding: var(--space-lg) var(--gutter);
+  }
 
-    header {
-        height: auto;
-        padding: 18px;
-        flex-direction: column;
-        gap: 15px;
-    }
+  .sobre,
+  .integrantes {
+    padding: var(--space-xl) var(--gutter);
+  }
 
-    nav {
-        gap: 12px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+  .equipe {
+    gap: var(--space-md);
+  }
 
-    .banner {
-        height: 220px;
-        padding: 30px;
-    }
-
-    .banner h1 {
-        font-size: 21px;
-    }
-
-    .sobre {
-        padding: 30px 25px;
-    }
-
-    .sobre p {
-        font-size: 15px;
-    }
-
-    .equipe {
-        gap: 25px;
-    }
+  .card {
+    width: 42vw;
+    max-width: 168px;
+  }
 }

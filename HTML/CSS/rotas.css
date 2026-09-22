@@ -1,76 +1,273 @@
+@import url('tokens.css');
 @import url('reset.css');
 @import url('header.css');
 @import url('footer.css');
+@import url('transitions.css');
+@import url("https://fonts.googleapis.com/css2?family=Jaini&display=swap");
 
+body {
+  background-color: var(--color-bg);
+}
 
+/* ---- Banner ----
+   Imagem: HTML/CSS/IMG/banner.rotas.png — ilustração de embarque em navio
+   mercante romano num porto. Enquadramento: cover, centralizado; gradiente
+   diagonal mais escuro à esquerda (onde fica o texto) e uma leve vinheta
+   nas bordas para dar profundidade. ---- */
 .banner {
-    background-image: url('IMG/banner.rotas.png');
-    padding: 4vw;
+  position: relative;
+  background-image: linear-gradient(115deg, rgba(8, 3, 2, 0.88) 10%, rgba(8, 3, 2, 0.45) 55%, rgba(8, 3, 2, 0.2) 100%),
+    url('IMG/banner.rotas.png');
+  background-size: cover;
+  background-position: center 60%;
+  padding: var(--space-2xl) var(--gutter);
+  min-height: 360px;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 -60px 60px -40px rgba(8, 3, 2, 0.6);
+}
+
+.banner-content {
+  max-width: 640px;
+  margin-inline: auto;
+  text-align: center;
 }
 
 .banner h1 {
-    color: white;
-    font-size: 4vw;
+  color: var(--color-text-on-dark);
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  line-height: var(--lh-tight);
+  letter-spacing: 1px;
 }
 
 .banner span {
-    color: #D69D2A;
-    display: flex;
-
+  color: var(--color-accent);
 }
 
 .banner p {
-    color: white;
-    padding: 2vw 0 2vw 0;
-    font-size: 2.3vw;
+  color: var(--color-text-on-dark-muted);
+  padding-top: var(--space-sm);
+  font-size: var(--fs-base);
+  line-height: var(--lh-body);
+}
+
+/* ---- Seção "Rotas da Roma Antiga" ----
+   Fundo: gradiente quente (tokens) sobreposto por uma textura sutil de
+   pergaminho (o mesmo ícone .svg usado no card "ROTAS" da home), repetida
+   em baixa opacidade — substitui a antiga cor sólida "--color-accent-light". ---- */
+.rotas {
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0) 30%),
+    linear-gradient(160deg, var(--color-accent-light) 0%, #e2b563 100%);
+  text-align: center;
+  padding: var(--space-2xl) var(--gutter);
+  overflow: hidden;
+}
+
+.rotas::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('IMG/rotas.svg');
+  background-repeat: repeat;
+  background-size: 260px 277px;
+  opacity: 0.07;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.rotas > * {
+  position: relative;
 }
 
 .rotas h2 {
-    color: white;
-    background-color: #420906;
-    padding: 2vw;
-    font-size: 4vw;
+  color: var(--color-text-on-dark);
+  background-color: var(--color-primary);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  letter-spacing: 1px;
+  margin-bottom: var(--space-lg);
+  box-shadow: var(--shadow-md);
 }
 
-.rotas {
-    background-color: rgb(224, 188, 120);
-    text-align: center;
+.rotas-mapa {
+  max-width: var(--container);
+  margin: 0 auto var(--space-xl);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.rotas p {
-    padding: 4vw;
-    font-size: 3vw;
-    text-align: left;
+.rotas-mapa img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
+.rotas-mapa figcaption {
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-primary);
+  color: var(--color-text-on-dark-muted);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.5px;
+}
 
+.rotas-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  max-width: var(--container);
+  margin: 0 auto;
+  align-items: center;
+  text-align: left;
+}
+
+.rotas-media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.rotas-text p {
+  font-size: var(--fs-base);
+  line-height: var(--lh-body);
+  color: var(--color-text);
+}
+
+@media (min-width: 800px) {
+  .rotas-content {
+    grid-template-columns: 1.1fr 1fr;
+  }
+
+  .rotas-media img {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* ---- Cards de destinos ----
+   Fundo: o mapa real do império romano (imperio-romano.gif) em tela cheia,
+   escurecido por um degradê — substitui a cor solta "wheat" que não fazia
+   parte do sistema de cores do site. Os cards ganham um verniz de vidro
+   fosco para permanecerem legíveis sobre a imagem. ---- */
 .info {
-    background-color: wheat;
-    padding: 4vw;
+  position: relative;
+  isolation: isolate;
+  padding: var(--space-2xl) var(--gutter);
+  overflow: hidden;
 }
 
-.info h2 {
-    color: #D69D2A;
-    padding: 2vw 0 2vw 0;
+.info-media {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.info-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(0.7) contrast(1.05);
+}
+
+.info-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 3, 2, 0.88) 0%, rgba(20, 7, 5, 0.82) 55%, rgba(8, 3, 2, 0.92) 100%);
+}
+
+.info-inner {
+  position: relative;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.info .section-head .section-kicker {
+  color: var(--color-accent);
+}
+
+.info .section-title {
+  color: var(--color-text-on-dark);
+}
+
+.info .section-title span {
+  color: var(--color-accent);
+}
+
+.info ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  list-style: none;
 }
 
 .info li {
-    background-color: #420906;
-    margin: 2vw;
-    padding: 3vw;
-    border-radius: 10px;
+  background-color: rgba(20, 7, 5, 0.55);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid var(--color-border-on-dark);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--t-base) var(--ease-out), box-shadow var(--t-base) var(--ease-out),
+    background-color var(--t-base) var(--ease-out);
 }
 
-.info details {
-    color: white;
+.info li:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  background-color: rgba(20, 7, 5, 0.72);
+}
+
+.info li h2 {
+  color: var(--color-accent);
+  text-align: left;
+  font-size: var(--fs-md);
+  padding-bottom: var(--space-sm);
 }
 
 .info p {
-    color: white;
+  color: var(--color-text-on-dark-muted);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-body);
+  text-align: left;
+}
 
+.info details {
+  color: var(--color-text-on-dark);
+  margin-top: var(--space-sm);
+  border-top: 1px solid var(--color-border-on-dark);
+  padding-top: var(--space-sm);
+}
+
+.info details p {
+  margin-top: var(--space-xs);
+  animation: reveal-up var(--t-slow) var(--ease-out) both;
 }
 
 .info summary {
-    color: #D69D2A;
-    padding: 2vw 0 2vw 0;
+  color: var(--color-accent);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: color var(--t-base) var(--ease-out);
+}
+
+.info summary:hover,
+.info summary:focus-visible {
+  color: var(--color-text-on-dark);
+}
+
+@media (min-width: 700px) {
+  .info ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

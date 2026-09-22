@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Poder | Roma Antiga</title>
     <link rel="stylesheet" href="CSS/poder.css">
 
 
 </head>
 
 <body>
-</body>
-
-<header>
-
+    <header>
     <nav>
+        <a class="logo-link" href="index.html" aria-label="Roma Antiga — página inicial">
+          <h1><img src="CSS/IMG/ROMA.jpg" alt="Emblema do projeto Roma Antiga" /></h1>
+        </a>
 
-        
-            <img src="CSS/IMG/ROMA.jpg" alt="">
-        
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-btn" aria-label="Abrir menu de navegação">
+          <span></span><span></span><span></span>
+        </label>
+
         <ul>
 
 
@@ -28,7 +30,7 @@
 
             <li><a href="index.html">HOME</a></li>
             <li><a href="comercio.html">COMÉRCIO</a></li>
-            <li><a href="mercadorias.html">TECNOLOGIA</a></li>
+            <li><a href="tecnologia.html">TECNOLOGIA</a></li>
             <li><a href="rotas.html">ROTAS</a></li>
             <li><a class="ativo" href="poder.html">PODER</a></li>
             <li><a href="sobre.html">SOBRE</a></li>
@@ -38,62 +40,59 @@
 </header>
 <main>
     <section class="banner">
-        <h2>O PODER QUE <br> GOVERNOU O <br> <span>MUNDO ANTIGO</span></h2>
-
-
-
+        <h2 class="reveal">O PODER QUE <br> GOVERNOU O <br> <span>MUNDO ANTIGO</span></h2>
     </section>
 
     <section class="cards">
-        <ul>
+        <div class="section-head">
+          <span class="section-kicker">Pilares do governo</span>
+          <h2 class="section-title">COMO ROMA <span>SE ORGANIZAVA</span></h2>
+        </div>
+        <ul class="reveal-stagger">
             <li>
+                <div class="card-num" aria-hidden="true">I</div>
                 <h2>ADMINISTRAÇÃO IMPERIAL</h2>
                 <p>A administração imperial mantinha o funcionamento do Império por meio de uma burocracia organizada, responsável por aplicar leis, arrecadar tributos e administrar as províncias.</p>
-                <img src="" alt="">
                 <details>
                     <summary>Saiba mais</summary>
-
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim deleniti laborum accusantium velit magnam commodi neque quidem molestiae, animi temporibus omnis aliquid libero asperiores tempore tempora optio quasi nobis magni?
+                        O imperador dividia o território em províncias, cada uma comandada por um governador que respondia diretamente a Roma. Funcionários imperiais cuidavam da coleta de impostos, do abastecimento das cidades e da manutenção de estradas e edifícios públicos.
                     </p>
                 </details>
             </li>
 
             <li>
+                <div class="card-num" aria-hidden="true">II</div>
                 <h2>LEIS E JUSTIÇA</h2>
                 <p>O Direito Romano estabelecia leis que organizavam a sociedade, protegiam direitos, resolviam conflitos e garantiam a autoridade do Estado em todo o império.</p>
-                <img src="" alt="">
                 <details>
                     <summary>Saiba mais</summary>
-
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim deleniti laborum accusantium velit magnam commodi neque quidem molestiae, animi temporibus omnis aliquid libero asperiores tempore tempora optio quasi nobis magni?
+                        Tribunais e magistrados aplicavam um conjunto de normas escritas que influenciou os sistemas jurídicos ocidentais até hoje. Princípios como o direito à defesa e a diferenciação entre contratos, propriedade e crimes surgiram nesse período.
                     </p>
                 </details>
             </li>
 
             <li>
+                <div class="card-num" aria-hidden="true">III</div>
                 <h2>O EXÉRCITO ROMANO</h2>
                 <p>O exército romano protegia as fronteiras, conquistava novos territórios e garantia a autoridade de Roma por meio de legiões altamente organizadas e disciplinadas.</p>
-                <img src="" alt="">
                 <details>
                     <summary>Saiba mais</summary>
-
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim deleniti laborum accusantium velit magnam commodi neque quidem molestiae, animi temporibus omnis aliquid libero asperiores tempore tempora optio quasi nobis magni?
+                        As legiões combinavam disciplina rígida, engenharia militar e logística eficiente, sendo capazes de construir acampamentos fortificados e estradas em poucas horas. Veteranos recebiam terras ao final do serviço, o que ajudava a romanizar as fronteiras.
                     </p>
                 </details>
             </li>
 
             <li>
+                <div class="card-num" aria-hidden="true">IV</div>
                 <h2>CONTROLE E PROPAGANDA</h2>
                 <p>Roma utilizava propaganda, distribuição de alimentos e grandes espetáculos para fortalecer a autoridade do governo e manter a estabilidade do império.</p>
-                <img src="" alt="">
                 <details>
                     <summary>Saiba mais</summary>
-
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim deleniti laborum accusantium velit magnam commodi neque quidem molestiae, animi temporibus omnis aliquid libero asperiores tempore tempora optio quasi nobis magni?
+                        A política do "pão e circo" garantia alimento gratuito e entretenimento em anfiteatros e circos, reduzindo tensões sociais. Moedas, estátuas e monumentos espalhavam a imagem do imperador e reforçavam sua autoridade em todo o território.
                     </p>
                 </details>
             </li>
@@ -137,5 +136,7 @@
         <p>© 2026 Roma Antiga — SEPE</p>
     </div>
 </footer>
+
+</body>
 
 </html>

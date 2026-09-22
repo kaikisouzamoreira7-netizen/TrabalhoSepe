@@ -1,77 +1,146 @@
+@import url("tokens.css");
 @import url("header.css");
 @import url("reset.css");
 @import url("footer.css");
+@import url("transitions.css");
 @import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jaini&display=swap");
 
+body {
+  background-color: var(--color-bg-alt);
+}
+
+/* ---- Banner ----
+   Imagem: HTML/CSS/IMG/images.jpg — Panteão de Roma ao entardecer.
+   (Substitui a imagem anterior, que era do Panteão de Paris — bandeira
+   francesa visível — e não representava Roma Antiga.)
+   Enquadramento: cover, foco no topo do edifício. ---- */
 .banner {
-  background-image: url("IMG/image\ 12.png");
+  background-image: linear-gradient(90deg, rgba(8, 3, 2, 0.82), rgba(8, 3, 2, 0.45)), url("IMG/images.jpg");
   background-size: cover;
-  background-size: 100% 100%;
-  background-position: center;
-  padding: 5vw;
+  background-position: center 30%;
+  padding: var(--space-2xl) var(--gutter);
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .banner h2 {
-  color: white;
-  font-family: "Jaini", cursive;
+  color: var(--color-text-on-dark);
+  font-family: "Jaini", var(--font-display), cursive;
+  font-size: var(--fs-xl);
+  line-height: var(--lh-tight);
+  letter-spacing: 1px;
 }
 
 .banner span {
-  color: #d69d2a;
+  color: var(--color-accent);
 }
 
 .cards {
-  padding: 5vw;
-  background-color: #d9d9d9;
-  font-family: "Ibarra Real Nova", serif;
+  padding: var(--space-2xl) var(--gutter);
+  background-color: var(--color-bg-alt);
+  font-family: var(--font-nav);
+}
+
+.cards .section-title {
+  font-family: var(--font-nav);
+}
+
+.cards ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.cards li {
+  position: relative;
+  background-color: var(--color-surface);
+  padding: var(--space-lg) var(--space-md) var(--space-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
+  transition: transform var(--t-base) var(--ease-out), box-shadow var(--t-base) var(--ease-out);
+}
+
+.cards li:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-md);
+}
+
+.card-num {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark));
+  color: var(--color-primary-dark);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-base);
+  margin-bottom: var(--space-sm);
 }
 
 .cards h2 {
-  color: #5e0c0c;
-  font-size: 4vw;
+  color: var(--color-primary);
+  font-size: var(--fs-md);
+  letter-spacing: 0.5px;
+  margin-bottom: var(--space-xs);
 }
 
-.cards p {
-  padding: 2vw 0 0 0;
-  font-size: 3vw;
-}
-
-.cards li {
-  background-color: white;
-  margin: 4vw 0 4vw 0;
-  padding: 2vw;
-  border-radius: 5px;
-  box-shadow: 0 10px 8px 3px rgba(0, 0, 0, 0.2);
+.cards li > p {
+  padding: 0;
+  font-size: var(--fs-sm);
+  line-height: var(--lh-body);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
 }
 
 .cards details {
-  color: #d69d2a;
+  color: var(--color-accent-dark);
+  border-top: 1px dashed var(--color-border);
+  padding-top: var(--space-sm);
 }
 
-@media (min-width: 600px) {
-  .banner h2 {
-    font-size: 4vw;
-  }
+.cards summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  letter-spacing: 0.5px;
+  transition: color var(--t-base) var(--ease-out);
+}
 
-  .cards li h2 {
-    font-size: 2.5vw;
-  }
+.cards summary:hover,
+.cards summary:focus-visible {
+  color: var(--color-primary);
+}
 
-  .cards li p {
-    font-size: 1.8vw;
-  }
+.cards details[open] summary {
+  margin-bottom: var(--space-xs);
+}
 
+.cards details p {
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-body);
+  animation: reveal-up var(--t-slow) var(--ease-out) both;
+}
+
+@media (min-width: 640px) {
   .cards ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 40px;
-    list-style: none;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.cards li {
-    margin: 1vw 0 1vw 0;
-    padding: 20px;
-    height: auto;
-}
+@media (min-width: 1024px) {
+  .cards ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

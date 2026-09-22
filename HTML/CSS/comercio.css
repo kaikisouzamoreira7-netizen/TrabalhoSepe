@@ -1,188 +1,242 @@
+@import url('tokens.css');
 @import url('footer.css');
 @import url('header.css');
 @import url('reset.css');
-
-html {
-  font-size: 16px;
-}
+@import url('transitions.css');
 
 body {
-  background-color: #fff8ed;
-  color: #333;
-  font-family: Arial, Helvetica, sans-serif;
-  padding-bottom: 80px;
+  background-color: var(--color-bg);
+  padding-bottom: 0;
 }
 
-
-/* === Banner === */
-.banner h1 {
-  padding: 80px 15px;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)),
-    url("IMG/Imagem roma.webp");
+/* ---- Banner ----
+   Imagem: HTML/CSS/IMG/Imagem roma.webp — ilustração de mercado romano.
+   Enquadramento: cover, centralizado; gradiente escuro garante contraste. ---- */
+.banner {
+  background-image: linear-gradient(rgba(10, 4, 3, 0.62), rgba(10, 4, 3, 0.62)), url("IMG/Imagem roma.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
+  padding: var(--space-2xl) var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
   text-align: center;
-  font-size: 30px;
-  line-height: 24px;
-  letter-spacing: 4px;
+}
+
+.banner h1 {
+  color: var(--color-text-on-dark);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-xl);
+  line-height: var(--lh-tight);
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .banner span {
-  color: #d69d2a;
-  font-weight: 600;
+  color: var(--color-accent);
 }
 
-@media (max-width: 420px) {
-  .banner h1 {
-    padding: 60px 15px;
-    font-size: 24px;
-    line-height: 30px;
-  }
+/* === Cards "O que foi" / "Comércio de escravos" === */
+.Historia {
+  padding: var(--space-2xl) 0;
 }
 
 .containerHistoria {
-  padding: 40px 18px;
-  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+  max-width: var(--container);
   margin: 0 auto;
+  padding: 0 var(--gutter);
 }
 
 .cardAbout {
-  margin-bottom: 25px;
-  padding: 22px;
-  background-color: #ffffff;
-  box-shadow: 0 10px 8px 3px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  line-height: 1.6;
-  text-align: justify;
+  padding: var(--space-lg);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--radius-md);
+  line-height: var(--lh-body);
+  transition: transform var(--t-base) var(--ease-out), box-shadow var(--t-base) var(--ease-out);
+}
+
+.cardAbout:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
 }
 
 .cardAbout h2 {
-  color: #420906;
-  font-size: 22px;
+  color: var(--color-primary);
+  font-family: var(--font-display);
+  font-size: var(--fs-md);
   font-weight: 700;
-  text-align: center;
+  margin-bottom: var(--space-sm);
   letter-spacing: 0.5px;
+  position: relative;
+  padding-bottom: var(--space-sm);
+}
+
+.cardAbout h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 46px;
+  height: 3px;
+  background: var(--color-accent);
+  border-radius: var(--radius-pill);
 }
 
 .cardAbout p {
-  font-size: 14px;
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+  text-align: left;
 }
 
 @media (min-width: 700px) {
   .containerHistoria {
-    display: flex;
-    gap: 25px;
-  }
-
-  .cardAbout {
-    flex: 1;
-    margin-bottom: 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
   }
 }
 
-/* === Comércio === */
-
+/* === Estrutura do comércio romano === */
 .estruturaComercio {
-  padding: 40px 18px;
-  background-color: #fff8ed;
+  padding: var(--space-2xl) var(--gutter) var(--space-xl);
+  background-color: var(--color-bg-alt);
 }
 
-.estruturaComercio h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 22px;
-  color: #420906;
-  font-weight: 700;
+.estruturaComercio > .container,
+.estruturaComercio > .section-head {
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.containerEstrutura {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  max-width: var(--container);
+  margin: 0 auto;
 }
 
 .cardEstrutura {
-  box-shadow: 0 10px 8px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-sm);
   overflow: hidden;
-  background-color: white;
-  border: 1px solid #dfd5c8;
-  border-radius: 10px;
-  margin-bottom: 30px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: transform var(--t-base) var(--ease-out), box-shadow var(--t-base) var(--ease-out);
 }
 
-@media (min-width: 700px) {
-  .estruturaComercio {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-
-  .containerEstrutura {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-  }
-
-  .cardEstrutura {
-    margin-bottom: 0;
-  }
+.cardEstrutura:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
 }
 
+/* Fotografias reais de acervo já presentes no projeto, uma por card:
+   importação (roma-antiga.png), mercados (roma_antiga_cidade_capa.jpeg),
+   moedas (economia-roma-antiga-denarius...jpg) e mapa do império (imperio-romano.gif) */
 .estruturaComercio img {
   display: block;
   width: 100%;
-  height: 155px;
+  aspect-ratio: 16 / 10;
   object-fit: cover;
+  transition: transform var(--t-slow) var(--ease-out);
+}
+
+.cardEstrutura:hover img {
+  transform: scale(1.05);
 }
 
 .cardEstrutura h3 {
   margin: 0;
-  padding: 18px 15px 5px;
-  color: #420906;
+  padding: var(--space-md) var(--space-sm) var(--space-xs);
+  color: var(--color-primary);
+  font-family: var(--font-display);
   letter-spacing: 1px;
-  font-size: 16px;
+  font-size: var(--fs-base);
   font-weight: 700;
   text-align: center;
 }
 
 .cardEstrutura details {
-  padding-bottom: 18px;
+  padding-bottom: var(--space-md);
 }
 
 .cardEstrutura summary {
   width: fit-content;
-  margin: 13px auto 5px;
-  padding: 8px 15px;
-  background-color: #420906;
-  padding: 8px 15px;
-  color: #fff8ed;
-  border-radius: 5px;
-  font-size: 11px;
-  font-weight: bold;
+  margin: var(--space-xs) auto var(--space-2xs);
+  padding: 9px 18px;
+  background-color: var(--color-primary);
+  color: var(--color-text-on-dark);
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.5px;
   list-style: none;
+  transition: background-color var(--t-base) var(--ease-out), transform var(--t-fast) var(--ease-out);
 }
 
 .cardEstrutura summary:hover {
-  background-color: #610702;
+  background-color: var(--color-accent-dark);
+  transform: translateY(-2px);
+}
+
+.cardEstrutura details[open] p:first-of-type {
+  animation: reveal-up var(--t-slow) var(--ease-out) both;
 }
 
 .cardEstrutura details p {
-  margin: 12px 18px 0;
-  color: #212121;
-  font-size: 13px;
-  line-height: 1.55;
-  text-align: justify;
+  margin: var(--space-sm) var(--space-md) 0;
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  line-height: 1.7;
+  text-align: left;
 }
 
 #mercadoria-button {
   display: block;
   width: fit-content;
-  margin: 40px auto 0;
-  padding: 11px 18px;
-  background-color: #420906;
-  color: white;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 600;
+  margin: var(--space-xl) auto 0;
+  padding: 14px 32px;
+  background-color: var(--color-primary);
+  color: var(--color-text-on-dark);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  letter-spacing: 0.5px;
   text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition: background-color var(--t-base) var(--ease-out), transform var(--t-fast) var(--ease-out),
+    box-shadow var(--t-base) var(--ease-out);
 }
 
 #mercadoria-button:hover {
-  background-color: #610702;
+  background-color: var(--color-accent-dark);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+#mercadoria-button:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+@media (min-width: 640px) {
+  .containerEstrutura {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .containerEstrutura {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .estruturaComercio img {
+    aspect-ratio: 4 / 3;
+  }
 }

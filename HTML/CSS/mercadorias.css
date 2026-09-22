@@ -1,13 +1,24 @@
+@import url("tokens.css");
 @import url("footer.css");
 @import url("header.css");
+@import url("reset.css");
+@import url("transitions.css");
 
 body {
+<<<<<<< HEAD
 font-family: Arial, Helvetica, sans-serif;
 background-color: #f5f2ec;
 color: #222;
+=======
+  background-color: var(--color-bg-alt);
+>>>>>>> 087fe5e (Feat- projeto)
 }
 
+/* ---- Banner ----
+   Imagem: HTML/CSS/IMG/imgbanner.inicio.png — fachada do Panteão de Roma.
+   Enquadramento: cover, centralizado. ---- */
 .banner {
+<<<<<<< HEAD
 width: 100%;
 min-height: 300px;
 
@@ -126,4 +137,183 @@ margin: 0 auto;
 .produto img {
 height: 190px;
 }
+=======
+  width: 100%;
+  min-height: 300px;
+  background-image: linear-gradient(90deg, rgba(8, 3, 2, 0.82), rgba(8, 3, 2, 0.4)), url("IMG/imgbanner.inicio.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: var(--space-lg) var(--gutter);
+}
+
+.banner-conteudo {
+  max-width: 600px;
+  color: var(--color-text-on-dark);
+}
+
+.banner h1 {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  line-height: var(--lh-tight);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: var(--space-sm);
+}
+
+.banner h1 span {
+  color: var(--color-accent);
+}
+
+.banner p {
+  font-size: var(--fs-base);
+  line-height: var(--lh-body);
+  color: var(--color-text-on-dark-muted);
+}
+
+.introducao {
+  text-align: center;
+  padding: var(--space-xl) var(--gutter) var(--space-md);
+}
+
+.introducao h2 {
+  font-family: var(--font-display);
+  color: var(--color-primary);
+  font-size: var(--fs-lg);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.introducao p {
+  margin-top: var(--space-sm);
+  color: var(--color-text-muted);
+  font-size: var(--fs-base);
+  line-height: var(--lh-body);
+}
+
+.mercadorias {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: var(--space-lg) var(--gutter) var(--space-2xl);
+  display: grid;
+  gap: var(--space-md);
+}
+
+.produto {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: transform var(--t-base) var(--ease-out), box-shadow var(--t-base) var(--ease-out);
+  box-shadow: var(--shadow-sm);
+}
+
+.produto:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-md);
+}
+
+.produto-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Monograma decorativo para os produtos sem fotografia própria ainda —
+   substitua a div .produto-img correspondente por um <img> real quando
+   houver fotos (ver comentário acima de cada bloco no HTML). */
+.produto-img::after {
+  font-family: var(--font-display);
+  font-size: 3.2rem;
+  color: rgba(255, 255, 255, 0.55);
+  letter-spacing: 2px;
+}
+
+.produto-img--trigo {
+  background: linear-gradient(135deg, #d69d2a, #a9711a);
+}
+.produto-img--trigo::after {
+  content: "T";
+}
+
+.produto-img--vinho {
+  background: linear-gradient(135deg, #7b1e17, #420906);
+}
+.produto-img--vinho::after {
+  content: "V";
+}
+
+.produto-img--ceramica {
+  background: linear-gradient(135deg, #b5651d, #7a431a);
+}
+.produto-img--ceramica::after {
+  content: "C";
+}
+
+.produto-img--azeitonas {
+  background: linear-gradient(135deg, #5c6e33, #3c4a1f);
+}
+.produto-img--azeitonas::after {
+  content: "A";
+}
+
+.produto-img--marmore {
+  background: linear-gradient(135deg, #cfc7ba, #96897a);
+}
+.produto-img--marmore::after {
+  color: rgba(66, 9, 6, 0.45);
+  content: "M";
+}
+
+.produto-img--especiarias {
+  background: linear-gradient(135deg, #b9481f, #7c2c10);
+}
+.produto-img--especiarias::after {
+  content: "E";
+}
+
+.produto-info {
+  padding: var(--space-md);
+}
+
+.produto h3 {
+  font-family: var(--font-display);
+  color: var(--color-primary);
+  font-size: var(--fs-md);
+  margin-bottom: var(--space-2xs);
+}
+
+.produto p {
+  font-size: var(--fs-sm);
+  line-height: var(--lh-body);
+  color: var(--color-text-muted);
+}
+
+@media (min-width: 620px) {
+  .mercadorias {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 901px) {
+  .banner {
+    height: 300px;
+    padding-left: 70px;
+  }
+
+  .banner h1 {
+    font-size: var(--fs-xl);
+  }
+
+  .mercadorias {
+    grid-template-columns: repeat(3, 1fr);
+  }
+>>>>>>> 087fe5e (Feat- projeto)
 }

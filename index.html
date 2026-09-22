@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Roma</title>
-    <link rel="stylesheet" href="HTML/CSS/reset.css">
+    <title>Roma Antiga | Início</title>
     <link rel="stylesheet" href="HTML/CSS/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap"
@@ -20,33 +19,31 @@
 
   <body>
     <header>
-      
-        <nav>
+      <nav>
+        <a class="logo-link" href="index.html" aria-label="Roma Antiga — página inicial">
+          <h1><img src="HTML/CSS/IMG/ROMA.jpg" alt="Emblema do projeto Roma Antiga" /></h1>
+        </a>
 
-          <h1>
-              <img src="HTML/CSS/IMG/ROMA.jpg" alt="">
-             </h1>
-          <ul>
-            
-              
-          
-            
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-btn" aria-label="Abrir menu de navegação">
+          <span></span><span></span><span></span>
+        </label>
 
+        <ul>
             <li><a class="ativo" href="index.html">HOME</a></li>
             <li><a href="HTML/comercio.html">COMÉRCIO</a></li>
-            <li><a href="HTML/mercadorias.html">TECNOLOGIA</a></li>
+            <li><a href="HTML/tecnologia.html">TECNOLOGIA</a></li>
             <li><a href="HTML/rotas.html">ROTAS</a></li>
             <li><a href="HTML/poder.html">PODER</a></li>
             <li><a href="HTML/sobre.html">SOBRE</a></li>
-          </ul>
-        </nav>
-      
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="hero">
 
         <div class="overlay"></div>
-        <div class="hero-content">
+        <div class="hero-content reveal">
           <h2>
             COMÉRCIO E<br />
             CIRCULAÇÃO DE<br />
@@ -89,9 +86,13 @@
         </div>
       </section>
       <section class="comercio">
-        <ul>
+        <div class="section-head">
+          <span class="section-kicker">Explore por tema</span>
+          <h2 class="section-title">TRÊS CAMINHOS PARA <span>ENTENDER ROMA</span></h2>
+        </div>
+        <ul class="reveal-stagger">
           <li>
-            <img src="HTML/CSS/IMG/comercio.svg" alt="comercio" />
+            <img src="HTML/CSS/IMG/comercio.svg" alt="Ilustração representando o comércio romano" />
             <h2>COMÉRCIO</h2>
             <p>
               Mercadorias, moedas e mercados que movimentaram o Império Romano
@@ -99,13 +100,13 @@
             <a href="HTML/comercio.html">SAIBA MAIS</a>
           </li>
           <li>
-            <img src="HTML/CSS/IMG/tecnologia.svg" alt="" />
+            <img src="HTML/CSS/IMG/tecnologia.svg" alt="Ilustração representando a tecnologia romana" />
             <h2>TECNOLOGIA</h2>
             <p>Inovações que facilitaram a vida e fortaleceram o Império</p>
             <a href="HTML/tecnologia.html">SAIBA MAIS</a>
           </li>
           <li>
-            <img src="HTML/CSS/IMG/rotas.svg" alt="" />
+            <img src="HTML/CSS/IMG/rotas.svg" alt="Ilustração representando as rotas romanas" />
             <h2>ROTAS</h2>
             <p>
               Estradas, portos e caminhos que conectaram todo o Mediterrâneo
@@ -115,8 +116,7 @@
         </ul>
       </section>
     </main>
-  </body>
-  <footer>
+    <footer>
       <div class="footer-container">
         <div class="footer-info">
           <img id="logo-Footer" src="HTML/CSS/IMG/ROMA.jpg" alt="roma-logo" />
@@ -150,4 +150,5 @@
         <p>© 2026 Roma Antiga — SEPE</p>
       </div>
     </footer>
+  </body>
 </html>

@@ -9,37 +9,35 @@
   </head>
   <body>
      <header>
-      
-        <nav>
+      <nav>
+        <a class="logo-link" href="index.html" aria-label="Roma Antiga — página inicial">
+          <h1><img src="CSS/IMG/ROMA.jpg" alt="Emblema do projeto Roma Antiga" /></h1>
+        </a>
 
-          <h1>
-              <img src="CSS/IMG/ROMA.jpg" alt="">
-             </h1>
-          <ul>
-            
-              
-          
-            
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-btn" aria-label="Abrir menu de navegação">
+          <span></span><span></span><span></span>
+        </label>
 
+        <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a class="ativo" href="comercio.html">COMÉRCIO</a></li>
-            <li><a href="mercadorias.html">TECNOLOGIA</a></li>
+            <li><a href="tecnologia.html">TECNOLOGIA</a></li>
             <li><a href="rotas.html">ROTAS</a></li>
             <li><a href="poder.html">PODER</a></li>
             <li><a href="sobre.html">SOBRE</a></li>
-          </ul>
-        </nav>
-      
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="banner">
-        <h1>
+        <h1 class="reveal">
           COMÉRCIO NA<br />
           <span>ROMA ANTIGA</span>
         </h1>
       </section>
       <section class="Historia">
-        <div class="containerHistoria">
+        <div class="containerHistoria reveal-stagger">
           <div class="cardAbout">
             <h2>O QUE FOI?</h2>
             <p>
@@ -66,8 +64,11 @@
         </div>
       </section>
       <section class="estruturaComercio">
-        <h2>ESTRUTURA DO COMÉRCIO ROMANO</h2>
-        <div class="containerEstrutura">
+        <div class="section-head">
+          <span class="section-kicker">Como funcionava</span>
+          <h2 class="section-title">ESTRUTURA DO <span>COMÉRCIO ROMANO</span></h2>
+        </div>
+        <div class="containerEstrutura reveal-stagger">
           <div class="cardEstrutura">
             <img src="CSS/IMG/roma-antiga.png" alt="importacao-Mercadorias" />
             <h3>IMPORTAÇÃO E EXPORTAÇÃO</h3>

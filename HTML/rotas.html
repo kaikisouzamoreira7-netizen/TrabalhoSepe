@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rotas | Roma Antiga</title>
     <link rel="stylesheet" href="CSS/rotas.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,68 +14,79 @@
 
 <body>
     <header>
-      
-        <nav>
+      <nav>
+        <a class="logo-link" href="index.html" aria-label="Roma Antiga — página inicial">
+          <h1><img src="CSS/IMG/ROMA.jpg" alt="Emblema do projeto Roma Antiga" /></h1>
+        </a>
 
-          <h1>
-              <img src="CSS/IMG/ROMA.jpg" alt="">
-             </h1>
-          <ul>
-            
-              
-          
-            
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-btn" aria-label="Abrir menu de navegação">
+          <span></span><span></span><span></span>
+        </label>
 
-            <li><a href="">INÌCIO</a></li>
+        <ul>
+            <li><a href="index.html">INÍCIO</a></li>
             <li><a href="comercio.html">COMÉRCIO</a></li>
-            <li><a href="mercadorias.html">TECNOLOGIA</a></li>
+            <li><a href="tecnologia.html">TECNOLOGIA</a></li>
             <li><a class="ativo"  href="rotas.html">ROTAS</a></li>
             <li><a href="poder.html">PODER</a></li>
             <li><a href="sobre.html">SOBRE</a></li>
-          </ul>
-        </nav>
-      
+        </ul>
+      </nav>
     </header>
 
     <main>
 
         <section class="banner">
-            <div>
-                <div>
-                    <h1>ROTAS MARÍTIMAS NA <SPAN>ROMA ANTIGA</SPAN></h1>
+            <div class="banner-content reveal">
+                <div class="banner-title-wrap">
+                    <h1>ROTAS MARÍTIMAS NA <span>ROMA ANTIGA</span></h1>
                 </div>
-                <div>
+                <div class="banner-text-wrap">
                     <p>A imensa quantidade de estradas e rotas marítimas foi a infraestrutura que conectou continentes,
                         permitindo o fluxo rápido das moedas e mercadorias por todo o território do império</p>
                 </div>
             </div>
-
-
-
         </section>
 
         <section class="rotas">
 
             <h2>ROTAS DA ROMA ANTIGA</h2>
 
-            <div>
-                <div>
-                    <img src="CSS/IMG/image 11.png" alt="">
+            <figure class="rotas-mapa reveal">
+                <img src="CSS/IMG/mapa-rotas.svg" alt="Mapa ilustrado com as principais rotas comerciais do Império Romano" loading="lazy">
+                <figcaption>Principais rotas comerciais que conectavam o Mediterrâneo ao restante do império</figcaption>
+            </figure>
+
+            <div class="rotas-content">
+                <div class="rotas-media">
+                    <!-- Aqueduto romano: exemplo real de engenharia que sustentava as rotas terrestres -->
+                    <img src="CSS/IMG/image 8.png" alt="Aqueduto romano em pedra, exemplo da engenharia que sustentava as rotas do império" loading="lazy">
                 </div>
-                <div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, dicta soluta sed amet omnis
-                        beatae sit molestiae libero, repellat eum ipsa fugiat placeat explicabo quae, aliquam
-                        voluptatum? Dolores, aspernatur quisquam!</p>
+                <div class="rotas-text">
+                    <p>Para além do mar, uma rede de mais de 80 mil quilômetros de estradas pavimentadas — como a
+                        famosa Via Ápia — ligava Roma a todas as suas províncias. Construídas por engenheiros
+                        militares em camadas de pedra e cascalho, essas vias permitiam que legiões, correios e
+                        mercadorias se deslocassem em qualquer estação do ano, sustentadas por pontes e aquedutos
+                        que ainda hoje resistem ao tempo.</p>
                 </div>
             </div>
-
-
 
         </section>
 
         <section class="info">
+            <div class="info-media">
+                <img class="info-bg" src="CSS/IMG/imperio-romano.gif" alt="" aria-hidden="true" loading="lazy">
+                <div class="info-overlay"></div>
+            </div>
 
-            <ul>
+            <div class="info-inner">
+                <div class="section-head">
+                    <span class="section-kicker">Pontos-chave no mapa</span>
+                    <h2 class="section-title">DESTINOS QUE <span>MOVIMENTAVAM O IMPÉRIO</span></h2>
+                </div>
+
+                <ul class="reveal-stagger">
                 <li>
                     <h2>MAR MEDITERRÂNEO</h2>
                     <p>O Mar Mediterrâneo era a artéria vital do Império Romano, carinhosamente chamado por eles de Mare
@@ -84,10 +95,12 @@
                         permitindo que navios cargueiros monumentais transportassem toneladas de grãos do Egito, azeite
                         da Hispânia e vinhos da Gália com rapidez e baixo custo para abastecer o coração de Roma.</p>
 
-
                     <details>
                         <summary>Saiba Mais</summary>
-                        lalalalala
+                        <p>Frotas de vigilância patrulhavam as águas contra a pirataria, enquanto rotas fixas ligavam
+                            Alexandria, Cartago, Cartagena e Antioquia a Roma. A navegação era sazonal: a maior parte
+                            das viagens de longo curso acontecia entre a primavera e o outono, quando o mar era mais
+                            seguro.</p>
                     </details>
                 </li>
 
@@ -100,10 +113,11 @@
                         descarregados, catalogados em grandes armazéns de pedra e transferidos para barcaças menores que
                         subiam o rio até os mercados de Roma</p>
 
-
                     <details>
                         <summary>Saiba Mais</summary>
-                        lalalalala
+                        <p>Os imperadores Cláudio e Trajano ampliaram o porto com bacias artificiais hexagonais capazes
+                            de abrigar centenas de navios simultaneamente. Estima-se que, nos períodos de pico, Óstia
+                            recebia o grão que alimentava mais de um milhão de pessoas em Roma.</p>
                     </details>
                 </li>
 
@@ -116,14 +130,16 @@
                         e incensos preciosos da Península Arábica. Esse comércio exótico movimentava fortunas e
                         representava a primeira grande rede de luxo globalizada da história humana.</p>
 
-
                     <details>
                         <summary>Saiba Mais</summary>
-                        lalalalala
+                        <p>Cidades como Palmira e Petra enriqueceram como entrepostos dessas caravanas, cobrando taxas
+                            de passagem sobre as mercadorias. O comércio de seda era tão valorizado que chegou a ser
+                            pago em ouro, o que preocupava autoridades romanas com o esvaziamento das reservas do
+                            império.</p>
                     </details>
                 </li>
-            </ul>
-
+                </ul>
+            </div>
         </section>
 
 
