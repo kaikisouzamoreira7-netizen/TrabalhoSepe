@@ -1,0 +1,77 @@
+@import url('tokens.css');
+@import url('header.css');
+@import url('reset.css');
+@import url('footer.css');
+@import url('transitions.css');
+
+.banner {
+  background-image: url("IMG/image\ 12.png");
+  background-size: cover;
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 5vw;
+}
+
+.banner h2 {
+  color: white;
+  font-family: "Jaini", cursive;
+}
+
+.banner span {
+  color: #d69d2a;
+}
+
+.cards {
+  padding: 5vw;
+  background-color: #d9d9d9;
+  font-family: "Ibarra Real Nova", serif;
+}
+
+.cards h2 {
+  color: #5e0c0c;
+  font-size: 4vw;
+}
+
+.cards p {
+  padding: 2vw 0 0 0;
+  font-size: 3vw;
+}
+
+.cards li {
+  background-color: white;
+  margin: 4vw 0 4vw 0;
+  padding: 2vw;
+  border-radius: 5px;
+  box-shadow: 0 10px 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+.cards details {
+  color: #d69d2a;
+}
+
+@media (min-width: 600px) {
+  .banner h2 {
+    font-size: 4vw;
+  }
+
+  .cards li h2 {
+    font-size: 2.5vw;
+  }
+
+  .cards li p {
+    font-size: 1.8vw;
+  }
+
+  .cards ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    list-style: none;
+}
+
+.cards li {
+    margin: 1vw 0 1vw 0;
+    padding: 20px;
+    height: auto;
+}
+}

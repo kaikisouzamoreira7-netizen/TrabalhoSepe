@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 320" role="img">
+  <defs>
+    <filter id="paper">
+      <feTurbulence type="fractalNoise" baseFrequency=".65" numOctaves="3"/>
+      <feColorMatrix type="saturate" values=".25"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 .18"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+  <rect width="300" height="320" fill="#b58b5d"/>
+  <rect width="300" height="320" fill="#6f4d31" opacity=".12" filter="url(#paper)"/>
+  <path d="M38 232h224v42H38z" fill="#8d6743" opacity=".55"/>
+  <path d="M62 155h176l22 77H40z" fill="#d0ad7a" opacity=".42"/>
+  <path d="M78 124h144l27 32H51z" fill="#765238" opacity=".48"/>
+  <g fill="#f0d69e" opacity=".34">
+    <circle cx="98" cy="207" r="24"/>
+    <circle cx="150" cy="198" r="31"/>
+    <circle cx="204" cy="207" r="24"/>
+  </g>
+</svg>

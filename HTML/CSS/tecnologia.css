@@ -1,0 +1,313 @@
+@import url('tokens.css');
+@import url('header.css');
+@import url('reset.css');
+@import url('footer.css');
+@import url('transitions.css');
+
+body {
+  background-color: var(--color-bg);
+}
+
+/* ---- Hero ----
+   Imagem: HTML/CSS/IMG/tecnologia.webp — fachada do Panteão de Roma.
+   Enquadramento: cover, centralizado; overlay escuro para contraste do
+   título sobreposto. ---- */
+.hero-tec {
+  position: relative;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  padding: var(--space-lg) var(--gutter);
+}
+
+.hero-tec-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-tec-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 3, 2, 0.55), rgba(8, 3, 2, 0.8));
+}
+
+.hero-tec h2 {
+  position: relative;
+  z-index: 1;
+  max-width: 780px;
+  color: var(--color-text-on-dark);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-xl);
+  line-height: var(--lh-tight);
+  letter-spacing: 0.5px;
+}
+
+.hero-tec h2 span {
+  color: var(--color-accent);
+}
+
+/* ---- Áreas da tecnologia romana ---- */
+.area {
+  background-color: rgb(196, 177, 173);
+  padding: var(--space-2xl) var(--gutter);
+}
+
+.area .section-title,
+.area .section-kicker {
+  color: var(--color-text-on-dark);
+}
+
+.area .section-title span {
+  color: var(--color-accent);
+}
+
+.area .section-kicker {
+  color: var(--color-accent);
+}
+
+.area ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.area li {
+  background-color: var(--color-surface);
+  padding: var(--space-lg) var(--space-md) var(--space-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--t-base) var(--ease-out), box-shadow var(--t-base) var(--ease-out);
+}
+
+.area li:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.area-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-sm);
+  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark));
+  box-shadow: var(--shadow-sm);
+}
+
+.area-icon::before {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.area-icon--arquitetura::before {
+  content: "🏛️";
+}
+
+.area-icon--militar::before {
+  content: "⚔️";
+}
+
+.area-icon--hidraulica::before {
+  content: "💧";
+}
+
+.area-icon--transporte::before {
+  content: "🛞";
+}
+
+.area h4 {
+  color: var(--color-primary);
+  font-family: var(--font-display);
+  font-size: var(--fs-md);
+  letter-spacing: 0.5px;
+  margin-bottom: var(--space-xs);
+}
+
+.area li > p {
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-body);
+  margin-bottom: var(--space-sm);
+}
+
+.area details {
+  border-top: 1px dashed var(--color-border);
+  padding-top: var(--space-sm);
+}
+
+.area summary {
+  font-weight: 700;
+  font-size: var(--fs-sm);
+  color: var(--color-accent-dark);
+  letter-spacing: 0.5px;
+  transition: color var(--t-base) var(--ease-out);
+}
+
+.area summary:hover,
+.area summary:focus-visible {
+  color: var(--color-primary);
+}
+
+.area details[open] summary {
+  margin-bottom: var(--space-xs);
+}
+
+.area details p {
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  line-height: var(--lh-body);
+  animation: reveal-up var(--t-slow) var(--ease-out) both;
+}
+
+@media (min-width: 640px) {
+  .area ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .area ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ---- Inovação em destaque ---- */
+.inovacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: var(--space-2xl) var(--gutter);
+  text-align: center;
+}
+
+.inovacao-texto {
+  max-width: 620px;
+}
+
+.inovacao h2 {
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  color: var(--color-primary);
+  margin: var(--space-2xs) 0 var(--space-sm);
+}
+
+.inovacao h2 span {
+  color: var(--color-accent-dark);
+}
+
+.inovacao p {
+  color: var(--color-text-muted);
+  font-size: var(--fs-base);
+  line-height: var(--lh-body);
+}
+
+.inovacao-img {
+  width: 220px;
+  max-width: 60vw;
+  aspect-ratio: 300 / 320;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+@media (min-width: 800px) {
+  .inovacao {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+}
+
+/* ---- Linha do tempo ---- */
+.linha {
+  background-color: var(--color-bg-alt);
+  padding: var(--space-2xl) var(--gutter);
+}
+
+.linha h2 {
+  text-align: center;
+  font-family: var(--font-display);
+  color: var(--color-primary);
+  font-size: var(--fs-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.linha h2 span {
+  color: var(--color-accent-dark);
+}
+
+.timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  max-width: var(--container);
+  margin: 0 auto;
+  list-style: none;
+}
+
+.timeline li {
+  position: relative;
+  padding-left: var(--space-lg);
+  border-left: 2px solid var(--color-border);
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -7px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  box-shadow: 0 0 0 4px var(--color-bg-alt), 0 0 0 5px var(--color-accent);
+}
+
+.timeline h3 {
+  font-family: var(--font-display);
+  color: var(--color-primary);
+  font-size: var(--fs-base);
+  letter-spacing: 0.5px;
+}
+
+.timeline p {
+  margin-top: var(--space-3xs);
+  color: var(--color-text-muted);
+  font-size: var(--fs-sm);
+  letter-spacing: 0.5px;
+}
+
+@media (min-width: 900px) {
+  .timeline {
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--space-sm);
+  }
+
+  .timeline li {
+    padding-left: 0;
+    padding-top: var(--space-lg);
+    border-left: 0;
+    border-top: 2px solid var(--color-border);
+    text-align: center;
+  }
+
+  .timeline-marker {
+    left: 50%;
+    top: -7px;
+    transform: translateX(-50%);
+  }
+}

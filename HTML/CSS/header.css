@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital@0;1&display=swap");
+
+/* ==========================================================================
+   CABEÇALHO
+   ========================================================================== */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--color-primary);
+  color: var(--color-text-on-dark);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.25);
+}
+
+header nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  max-width: var(--container);
+  margin-inline: auto;
+  padding: 0.6rem var(--gutter);
+}
+
+/* ==========================================================================
+   LOGOTIPO
+   ========================================================================== */
+
+header h1 {
+  margin: 0;
+  line-height: 0;
+}
+
+header .logo-link {
+  display: block;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+header h1 img {
+  display: block;
+  height: 42px;
+  width: auto;
+  aspect-ratio: 1404 / 640;
+  object-fit: cover;
+  object-position: top;
+  border-radius: var(--radius-sm);
+  border: 2px solid var(--color-accent);
+  background-color: var(--color-primary-dark);
+  transition:
+    transform var(--t-base) var(--ease-out),
+    border-color var(--t-base) var(--ease-out);
+}
+
+header .logo-link:hover img {
+  transform: scale(1.05);
+  border-color: var(--color-text-on-dark);
+}
+
+/* ==========================================================================
+   MENU MOBILE
+   ========================================================================== */
+
+.menu-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 9px;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  z-index: 20;
+}
+
+.menu-btn span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-text-on-dark);
+  border-radius: 2px;
+
+  transition:
+    transform var(--t-base) var(--ease-in-out),
+    opacity var(--t-fast) var(--ease-in-out);
+}
+
+.menu-toggle:checked + .menu-btn span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle:checked + .menu-btn span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle:checked + .menu-btn span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ==========================================================================
+   LINKS DO CABEÇALHO
+   ========================================================================== */
+
+header nav ul {
+  list-style: none;
+  text-transform: uppercase;
+  font-family: var(--font-nav);
+  margin: 0;
+  padding: 0;
+}
+
+header a {
+  display: inline-block;
+  line-height: 28px;
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  color: var(--color-text-on-dark);
+  text-decoration: none;
+  position: relative;
+  transition: color var(--t-fast) var(--ease-out);
+}
+
+/* Sublinhado animado */
+
+header nav ul a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+
+  transition:
+    width var(--t-base) var(--ease-out),
+    left var(--t-base) var(--ease-out);
+}
+
+header nav ul a:hover,
+header nav ul a:focus-visible {
+  color: var(--color-accent);
+}
+
+header nav ul a:hover::after,
+header nav ul a:focus-visible::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Link ativo */
+
+header .ativo {
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+header .ativo::after {
+  width: 100%;
+  left: 0;
+  background-color: var(--color-accent);
+}
+
+/* ==========================================================================
+   MOBILE — ATÉ 899px
+   ========================================================================== */
+
+@media (max-width: 899px) {
+  .menu-btn {
+    display: flex;
+  }
+
+  header nav ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+
+    background-color: var(--color-primary-dark);
+
+    max-height: 0;
+    overflow: hidden;
+
+    box-shadow: var(--shadow-lg);
+
+    transition: max-height var(--t-slow) var(--ease-in-out);
+  }
+
+  header nav ul li {
+    border-top: 1px solid var(--color-border-on-dark);
+  }
+
+  header nav ul a {
+    display: block;
+    width: 100%;
+    padding: 14px var(--gutter);
+    font-size: var(--fs-base);
+  }
+
+  header nav ul a::after {
+    display: none;
+  }
+
+  /* Abre o menu */
+
+  .menu-toggle:checked ~ ul {
+    max-height: 420px;
+  }
+}
+
+/* ==========================================================================
+   TABLET / DESKTOP — A PARTIR DE 900px
+   ========================================================================== */
+
+@media (min-width: 900px) {
+  header nav {
+    padding: 0.75rem var(--gutter);
+  }
+
+  header h1 img {
+    height: 50px;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  header nav ul {
+    position: static;
+
+    display: flex;
+    align-items: center;
+    gap: clamp(20px, 3vw, 44px);
+
+    max-height: none;
+    overflow: visible;
+
+    background: none;
+    box-shadow: none;
+  }
+
+  header nav ul li {
+    border-top: 0;
+  }
+
+  header nav ul a {
+    padding: 6px 2px;
+  }
+}
+
+/* ==========================================================================
+   ACESSIBILIDADE
+   ========================================================================== */
+
+.menu-toggle:focus-visible + .menu-btn {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
