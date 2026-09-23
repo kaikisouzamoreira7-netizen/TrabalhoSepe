@@ -1,19 +1,13 @@
-@import url('tokens.css');
 @import url('header.css');
 @import url('reset.css');
 @import url('footer.css');
-@import url('transitions.css');
 
-html {
-
-  font-family: "Hepta Slab", serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
+.banner {
+  padding-bottom: 40px;
 }
 
-.hero {
-    background-image: url('IMG/Roma-Antiga.webp'); 
+.banner {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('IMG/Roma-Antiga.webp') ; 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -23,135 +17,62 @@ html {
     overflow: hidden;
 }
 
-.hero img {
-
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.banner {
+    padding: 3vw;
 }
 
-.overlay {
-
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, .55);
+.banner h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2vw;
 }
 
-.hero-content {
-
-    position: absolute;
-    left: 17%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 520px;
-    color: #fff;
-}
-.hero-content h2 span{
-    color: #c9972c;
-
+.banner span {
+    color: #CF912B;
 }
 
-.hero h1 {
-
-    font-family: 'Cinzel', serif;
-    font-size: 60px;
-    line-height: 1.1;
-    letter-spacing: 1px;
-    font-weight: 400;
+.banner p {
+    color: white;
+    margin-top: 2vw;
 }
 
-.hero h2 {
-
-    margin-top: 10px;
-    font-family: 'Cinzel', serif;
-    font-size: 58px;
-    color: #fffefc;
-    font-weight: 700;
+.banner h3 {
+    color: #CF912B;
+    font-size: 1.3rem;
 }
 
-.linha {
 
-    display: flex;
-    align-items: center;
-    margin: 28px 0;
+.divisor {
+  display: flex;
+  align-items: center;
 }
 
 .losango {
-
-    width: 9px;
-    height: 9px;
-    background: #c9972c;
-    transform: rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background: #CF912B;
+  transform: rotate(45deg); 
 }
 
-.barra {
-
-    width: 90px;
-    height: 2px;
-    background: #c9972c;
-}
-
-.explore summary:hover{
-
-    color: #c9972c;
-}
-
-.comercio h2{
-
-    color: #420906;
-}
-
-.comercio h2:hover {
-    color: #D69D2A;
-}
-
-.comercio a:hover{
-
-    color: #c9972c;
-}
-
-.comercio ul  {
-    display: flex;
-    gap: 4vw; 
-    padding: 5vw 5vw 5vw 5vw; 
+.linha {
+  width: 130px;
+  height: 2px;
+  background: #CF912B;
 }
 
 .circulo {
-
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #c9972c;
+  width: 12px;
+  height: 12px;
+  background: #CF912B;
+  border-radius: 50%; 
 }
-
-.hero p {
-
-    width: 470px;
-    font-size: 18px;
-    line-height: 1.4;
-    margin-bottom: 28px;
-}
-
-.botao {
-
-    display: inline-block;
-    background: #7b1e17;
-    padding: 16px 36px;
-    color: white;
-    font-size: 15px;
-    font-weight: 600;
-    transition: .3s;
-
-}
-
-.botao:hover {
-    background: #5d130d;
-}
-
 details{
-    width:320px;
+    width:300px;
     margin-top:30px;
+    background-color: #7b1e17;
+    border: #CF912B 1px solid;
+    display: inline-block;
+
 }
 
 summary{
@@ -162,42 +83,34 @@ summary{
     cursor:pointer;
     font-weight:bold;
     transition:.3s;
+    
 }
 
-summary:hover{
-    background:#5d130d;
+
+details:hover {
+  background: #5d130d;
+  transition: .3s;
+}
+
+summary {
+  background: transparent;
 }
 
 details[open] summary{
     margin-bottom:15px;
+    border-bottom: none;
 }
 
-.conteudo{
-    background:rgba(0,0,0,.65);
-    color:white;
-    padding:20px;
-    border:1px solid #ffffff;
-    line-height:1.7;
-}
-
-.conteudo h4{
-    font-family:'Cinzel', serif;
-    color:#d9a63a;
-    font-size:26px;
-    margin-bottom:15px;
-}
-
-.conteudo p{
-    margin-bottom:15px;
-}
-
-summary::marker{
-    display:none;
+details[open] .conteudo {
+   padding: 0 2vw 2vw 2vw;
 }
 
 
-#logo-Footer {
-  width: 120px;
-}
+
+
+
+
+
+
 
 
