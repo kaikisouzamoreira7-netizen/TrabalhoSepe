@@ -1,11 +1,19 @@
-function guilherme()
- { document.getElementById("informacao").innerHTML = "Guilherme Luciano Da Silva<br> Desenvolvedor da pagina comercio."; }
+function guilherme() {
+    document.getElementById("informacao").innerHTML =
+        "<strong>Guilherme Luciano Da Silva</strong><br>Pesquisa sobre o comércio na Roma Antiga.";
+}
 
-function caua() 
-{ document.getElementById("informacao").innerHTML = "Cauã Wlodarczyk<br>Desenvolvedor da página Rotas e a poder."; }
+function caua() {
+    document.getElementById("informacao").innerHTML =
+        "<strong>Cauã Wlodarczyk</strong><br>Pesquisa sobre as mercadorias comercializadas.";
+}
 
-function kaiki()
- { document.getElementById("informacao").innerHTML = "Kaiki De Souza Moreira<br>Desenvolvedor da página inicial."; }
+function kaiki() {
+    document.getElementById("informacao").innerHTML =
+        "<strong>Kaiki De Souza Moreira</strong><br>Pesquisa sobre as rotas comerciais.";
+}
 
-function andreus()
- { document.getElementById("informacao").innerHTML = "Andreus Cesar Coelho<br>Desenvolvedor da página sobre."; }
+function andreus() {
+    document.getElementById("informacao").innerHTML =
+        "<strong>Andreus Cesar Coelho</strong><br>Desenvolvimento e organização do site.";
+}
