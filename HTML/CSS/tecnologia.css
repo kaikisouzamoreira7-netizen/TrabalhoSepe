@@ -3,9 +3,27 @@
 @import url('footer.css');
 
 
+.banner {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) , url('IMG/banner.tecnologia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 700px; 
+    height: auto;
+    padding: 3vw;
+    box-sizing: border-box; 
+}
 
+.banner {
+    padding: 3vw;
+}
 
-.area {
-    background-color: #420906;
+.banner h1 {
+    font-size: 2.7rem;
+    color: white;
+}
 
+.banner span {
+    color: #CF912B;;
 }
