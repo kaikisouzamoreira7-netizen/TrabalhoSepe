@@ -1,30 +1,43 @@
 @import url('header.css');
 @import url('reset.css');
 @import url('footer.css');
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap");
+
+
+  
+
+  
+
 
 .banner {
   padding-bottom: 40px;
 }
 
 .banner {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('IMG/Roma-Antiga.webp') ; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('IMG/Roma-Antiga.webp'); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: relative;
     width: 100%;
-    height: 700px;
-    overflow: hidden;
+    min-height: 700px; 
+    height: auto;
+    padding: 3vw;
+    box-sizing: border-box; 
 }
 
 .banner {
     padding: 3vw;
 }
 
-.banner h2 {
-    font-size: 2rem;
+.banner .fala {
+  font-size: 1.7rem;
+}
+
+.banner h1 {
+    font-size: 2.7rem;
     color: white;
     margin-bottom: 2vw;
+    font-family: "Ibarra Real Nova", serif;
 }
 
 .banner span {
@@ -36,7 +49,7 @@
     margin-top: 2vw;
 }
 
-.banner h3 {
+.banner h2 {
     color: #CF912B;
     font-size: 1.3rem;
 }
@@ -85,6 +98,23 @@ summary{
     transition:.3s;
     
 }
+
+
+.banner details {
+    width: 300px;
+    margin-top: 30px;
+    background-color: #7b1e17;
+    border: #CF912B 1px solid;
+    display: block;
+}
+
+/* Adiciona um limite de altura com rolagem ao conteúdo aberto */
+.banner details[open] .conteudo {
+    padding: 0 2vw 2vw 2vw;
+    max-height: 300px; /* Altura máxima para o texto */
+    overflow-y: auto;  /* Cria barra de rolagem se o texto for grande */
+}
+
 
 
 details:hover {
