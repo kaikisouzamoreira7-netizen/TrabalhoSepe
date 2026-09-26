@@ -1,29 +1,292 @@
-@import url('header.css');
-@import url('reset.css');
-@import url('footer.css');
+@import url("header.css");
+@import url("footer.css");
 
-
-.banner {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)) , url('IMG/banner.tecnologia.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    min-height: 700px; 
-    height: auto;
-    padding: 3vw;
-    box-sizing: border-box; 
+html {
+  font-size: 16px;
 }
 
+body {
+  background-color: #fff8ed;
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* === Banner === */
+
 .banner {
-    padding: 3vw;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)),
+    url("IMG/banner.tecnologia.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-conteudo {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .banner h1 {
-    font-size: 2.7rem;
-    color: white;
+  color: white;
+  font-family: "Cinzel", serif;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 2px;
 }
 
-.banner span {
-    color: #CF912B;;
+.banner h1 span {
+  color: #d69d2a;
+}
+
+.banner-conteudo > p {
+  max-width: 700px;
+  color: #f5f2ec;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 1.1px;
+}
+
+/* === Seção Introdução === */
+
+.introducao {
+  padding: 75px 20px 40px;
+  background-color: #fff8ed;
+}
+
+.introducao-texto {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.introducao h2,
+.circulacao h2,
+.conclusao h2 {
+  margin-bottom: 25px;
+  color: #420906;
+  font-family: "Cinzel", serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.introducao h2 span,
+.circulacao h2 span,
+.conclusao h2 span {
+  color: #7b1e17;
+}
+
+.introducao p {
+  margin-bottom: 15px;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* === Tecnologias === */
+
+.tecnologias {
+  padding: 70px 20px 80px;
+  background-color: #f5f2ec;
+}
+
+.titulo-secao {
+  max-width: 850px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.titulo-secao > p {
+  margin-bottom: 12px;
+  color: #d69d2a;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.titulo-secao h2 {
+  margin: 0;
+  color: #420906;
+  font-family: "Cinzel", serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.titulo-secao h2 span {
+  color: #7b1e17;
+}
+
+/* === Cards === */
+
+.container-tecnologias {
+  max-width: 1050px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card-tecnologia {
+  background-color: white;
+  border: 1px solid #dfd5c8;
+  border-radius: 8px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  transition: 0.4s ease;
+}
+
+.card-tecnologia:hover {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+  transform: translateY(-8px);
+}
+
+.card-tecnologia img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-conteudo {
+  padding: 22px;
+}
+
+.card-conteudo h3 {
+  margin: 7px 0 12px;
+  color: #420906;
+  font-family: "Cinzel", serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.card-conteudo > p {
+  margin-bottom: 15px;
+  color: #444;
+  font-size: 13px;
+  line-height: 1.65;
+  text-align: justify;
+}
+
+/* === Cards === */
+
+.card-conteudo details {
+  padding-top: 12px;
+}
+
+.card-conteudo summary {
+  width: fit-content;
+  color: #420906;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+
+.card-conteudo summary:hover {
+  letter-spacing: 0.1rem;
+  transition: 0.4s ease;
+}
+
+.card-conteudo details p {
+  margin-top: 9px;
+  color: #555;
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* === Seção Circulaçao === */
+
+.circulacao {
+  text-align: center;
+  padding: 75px 20px;
+  background-color: #fff8ed;
+}
+
+.circulacao-conteudo {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.circulacao h2 {
+  color: #420906;
+}
+
+.circulacao h2 span {
+  color: #d69d2a;
+}
+
+.circulacao-texto > p {
+  margin-bottom: 15px;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* === Responsividade Celular === */
+
+@media (max-width: 600px) {
+  .banner {
+    min-height: 520px;
+    padding: 50px 20px;
+  }
+
+  .banner h1 {
+    font-size: 30px;
+  }
+
+  .banner-conteudo > p:last-child {
+    font-size: 14px;
+  }
+
+  .introducao {
+    padding: 55px 20px;
+  }
+
+  .introducao h2,
+  .circulacao h2,
+  .conclusao h2 {
+    font-size: 25px;
+  }
+
+  .tecnologias {
+    padding: 55px 18px;
+  }
+
+  .titulo-secao {
+    margin-bottom: 30px;
+  }
+
+  .titulo-secao h2 {
+    font-size: 25px;
+  }
+
+  .container-tecnologias {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .circulacao {
+    padding: 55px 20px;
+  }
+
+  .circulacao-conteudo {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .circulacao-frase {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .conclusao {
+    padding: 60px 20px;
+  }
 }
