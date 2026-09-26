@@ -1,146 +1,345 @@
-@import url('header.css');
-@import url('reset.css');
-@import url('footer.css');
-@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap");
+@import url("header.css");
+@import url("reset.css");
+@import url("footer.css");
 
-
-  
-
-  
-
-
-.banner {
-  padding-bottom: 40px;
+/* === Cores Principais === */
+:root {
+  --bordo: #420906;
+  --bordo-claro: #7b1e17;
+  --dourado: #cf912b;
+  --dourado-claro: #e0ad55;
+  --creme: #fffaf3;
+  --branco: #ffffff;
+  --preto: #171312;
+  --cinza: #6b6460;
 }
 
-.banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('IMG/Roma-Antiga.webp'); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    min-height: 700px; 
-    height: auto;
-    padding: 3vw;
-    box-sizing: border-box; 
+html {
+  scroll-behavior: smooth;
 }
 
-.banner {
-    padding: 3vw;
+body {
+  user-select: none;
+  background: var(--creme);
+  color: var(--preto);
+  font-family: "Open Sans", sans-serif;
 }
 
-.banner .fala {
-  font-size: 1.7rem;
+/* === Banner === */
+
+.banner {
+  position: relative;
+  min-height: 720px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(20, 5, 3, 0.92) 0%,
+      rgba(20, 5, 3, 0.78) 45%,
+      rgba(20, 5, 3, 0.35) 100%
+    ),
+    url("IMG/Roma-Antiga.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 80px 8%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .banner h1 {
-    font-size: 2.7rem;
-    color: white;
-    margin-bottom: 2vw;
-    font-family: "Ibarra Real Nova", serif;
+  color: var(--branco);
+  font-family: "Cinzel", serif;
+  font-size: clamp(2.7rem, 5vw, 5rem);
+  line-height: 1.05;
+  font-weight: 500;
+  margin: 0 0 28px;
 }
 
-.banner span {
-    color: #CF912B;
+.banner h1 span {
+  color: var(--dourado);
 }
 
-.banner p {
-    color: white;
-    margin-top: 2vw;
+.banner-texto {
+  max-width: 600px;
+  color: #eee;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
 }
 
-.banner h2 {
-    color: #CF912B;
-    font-size: 1.3rem;
+/* === Details Seção Banner === */
+
+.explorar {
+  width: 320px;
+  background: rgba(66, 9, 6, 0.85);
+  border: 0.5px solid var(--dourado-claro);
+  border-radius: 8px;
+  color: white;
 }
 
-
-.divisor {
-  display: flex;
-  align-items: center;
+.explorar summary {
+  padding: 17px 20px;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-align: center;
 }
 
-.losango {
-  width: 10px;
-  height: 10px;
-  background: #CF912B;
-  transform: rotate(45deg); 
+.explorar summary::after {
+  content: "+";
+  margin-left: 15px;
+  color: var(--dourado);
+  font-size: 1.2rem;
 }
 
-.linha {
-  width: 130px;
+.explorar[open] summary::after {
+  content: "−";
+}
+
+.explorar .conteudo {
+  padding: 0 22px 22px;
+}
+
+.explorar h2 {
+  color: var(--dourado);
+  font-family: "Cinzel", serif;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.explorar p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* === Seção Introdução === */
+
+.introducao {
+  max-width: 1200px;
+  margin: auto;
+  padding: 110px 7px 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+#mini-titulo {
+  color: var(--dourado);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 5px;
+}
+
+.introducao h2 {
+  color: var(--bordo);
+  font-family: "Cinzel", serif;
+  font-size: 2.2rem;
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+.introducao-texto {
+  border-left: 1px solid #d8c7aa;
+  padding-left: 105px;
+}
+
+.introducao-texto p {
+  color: var(--cinza);
+  line-height: 1.9;
+  margin-bottom: 20px;
+}
+
+/* === Seção Exploração === */
+.exploracao {
+  background: #f4eee5;
+  padding: 100px 7%;
+}
+
+.exploracao > h2 {
+  max-width: 1200px;
+  margin: 0 auto 55px;
+  color: var(--bordo);
+  font-family: "Cinzel", serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+/* === Exploração > .Cards === */
+
+.cards {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+.card {
+  background: white;
+  padding: 35px;
+  border-radius: 3px;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  background-color: var(--bordo);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.332);
+}
+
+.card * {
+  transition: color 0.3s ease;
+}
+
+.card:hover * {
+  color: white;
+}
+
+.card-imagem img {
+  width: 38px;
+  height: 38px;
+  margin-bottom: 18px;
+}
+
+.card h3 {
+  color: var(--bordo);
+  font-weight: 600;
+  font-family: "Cinzel", serif;
+  font-size: 1.35rem;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: var(--cinza);
+  line-height: 1.7;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.card a {
+  color: var(--bordo);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.card a span {
+  margin-left: 8px;
+  font-size: 1rem;
+}
+
+/* === Seção Frase === */
+
+.linha-estilizada {
+  border: none;
   height: 2px;
-  background: #CF912B;
-}
-
-.circulo {
-  width: 12px;
-  height: 12px;
-  background: #CF912B;
-  border-radius: 50%; 
-}
-details{
-    width:300px;
-    margin-top:30px;
-    background-color: #7b1e17;
-    border: #CF912B 1px solid;
-    display: inline-block;
-
-}
-
-summary{
-    background:#7b1e17;
-    color:white;
-    padding:15px;
-    text-align:center;
-    cursor:pointer;
-    font-weight:bold;
-    transition:.3s;
-    
+  background-color: var(--dourado);
+  width: 20%;
+  margin: auto;
 }
 
 
-.banner details {
-    width: 300px;
-    margin-top: 30px;
-    background-color: #7b1e17;
-    border: #CF912B 1px solid;
-    display: block;
+.frase {
+  max-width: 1400px;
+  margin: auto;
+  padding: 120px 7%;
+  text-align: center;
 }
 
-/* Adiciona um limite de altura com rolagem ao conteúdo aberto */
-.banner details[open] .conteudo {
-    padding: 0 2vw 2vw 2vw;
-    max-height: 300px; /* Altura máxima para o texto */
-    overflow-y: auto;  /* Cria barra de rolagem se o texto for grande */
+.frase span {
+  color: var(--dourado);
+}
+
+.frase h2 {
+  margin-top: 20px;
+  color: var(--bordo);
+  font-family: "Ibarra Real Nova", serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+/* === Footer == */
+
+.frase-fixa {
+  background: var(--bordo);
+  padding: 100px 7%;
+  text-align: center;
+}
+
+.frase-conteudo {
+  max-width: 800px;
+  margin: auto;
+}
+
+.frase-fixa .mini-titulo {
+  color: var(--dourado);
+}
+
+.frase-fixa .mini-titulo:hover {
+  letter-spacing: 2.4px;
+  transition: 0.5s ease;
+}
+
+.frase-fixa h2 {
+  color: white;
+  font-family: "Cinzel", serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.frase-fixa p {
+  color: #ddd;
+  line-height: 1.8;
+  margin-bottom: 30px;
 }
 
 
 
-details:hover {
-  background: #5d130d;
-  transition: .3s;
+/* === Responsividade Celular === */
+
+@media (max-width: 850px) {
+  .banner {
+    min-height: 650px;
+    padding: 70px 7%;
+  }
+
+  .banner h1 {
+    font-size: 2.4rem;
+  }
+
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 80px 7%;
+  }
+
+  .introducao-texto {
+    border-left: none;
+    border-top: 1px solid #d8c7aa;
+    padding: 30px 0 0;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: auto;
+  }
+
+  .frase {
+    padding: 90px 7%;
+  }
+
+  .frase-fixa h2 {
+    font-size: 2rem;
+  }
 }
-
-summary {
-  background: transparent;
-}
-
-details[open] summary{
-    margin-bottom:15px;
-    border-bottom: none;
-}
-
-details[open] .conteudo {
-   padding: 0 2vw 2vw 2vw;
-}
-
-
-
-
-
-
-
-
-
-
