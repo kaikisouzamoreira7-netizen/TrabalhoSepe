@@ -1,135 +1,134 @@
 <!doctype html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="CSS/sobre.css" />
-  <script src="CSS/JS/sobre.js"></script>
-</head>
+    <title>Sobre - Roma</title>
 
-<!doctype html>
-<html lang="pt-BR">
+    <link rel="stylesheet" href="CSS/reset.css" />
+    <link rel="stylesheet" href="CSS/sobre.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sobre - Roma</title>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-<body>
-  <header>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Ibarra+Real+Nova:wght@400;500;600&family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <nav>
+  <body>
+    <header>
+      <nav>
+        <img src="CSS/IMG/ROMA.jpg" alt="Logo Roma" />
 
+        <ul>
+          <li><a href="../index.html">INÍCIO</a></li>
+          <li><a href="comercio.html">COMÉRCIO</a></li>
+          <li><a href="mercadorias.html">TECNOLOGIA</a></li>
+          <li><a href="rotas.html">ROTAS</a></li>
+          <li><a href="poder.html">PODER</a></li>
+          <li><a class="ativo" href="sobre.html">SOBRE</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <img src="CSS/IMG/ROMA.jpg" alt="">
+    <main>
+      <section class="banner">
+        <h1>SOBRE O NOSSO PROJETO<br /></h1>
 
-      <ul>
+        <p>Saiba mais sobre o nosso projeto e as pessoas responsáveis</p>
+      </section>
 
+      <section class="sobre">
+        <h2>NOSSO TRABALHO</h2>
 
+        <p>
+          Este site foi desenvolvido com o objetivo de apresentar informações
+          sobre o comércio na Roma Antiga de forma clara, organizada e
+          acessível. O projeto busca reunir os principais aspectos da economia
+          romana, abordando temas como as rotas comerciais, os produtos
+          negociados, o sistema monetário, a especialização regional e o papel
+          da escravidão na atividade econômica. Por meio de uma apresentação
+          visual e informativa, nosso objetivo é facilitar a compreensão desse
+          importante período histórico, proporcionando uma experiência de
+          aprendizagem dinâmica e enriquecedora para todos os visitantes do
+          site.
+        </p>
+      </section>
 
+      <section class="integrantes">
+        <h2>Nossos integrantes</h2>
 
+        <div class="equipe">
+          <div class="card" onclick="guilherme()">
+            <div class="foto">
+              <img src="" alt="">
+            </div>
+            <p>Guilherme Luciano Da Silva</p>
+          </div>
 
-        <li><a href="../index.html">INÍCIO</a></li>
-        <li><a href="comercio.html">COMÉRCIO</a></li>
-        <li><a href="mercadorias.html">TECNOLOGIA</a></li>
-        <li><a href="rotas.html">ROTAS</a></li>
-        <li><a href="poder.html">PODER</a></li>
-        <li><a class="ativo" href="sobre.html">SOBRE</a></li>
-      </ul>
-    </nav>
+          <div class="card" onclick="caua()">
+            <div class="foto"></div>
+            <p>Cauã Wlodarczyk</p>
+          </div>
 
-  </header>
-  <main>
-    <section class="banner">
-      <h1>
-        SOBRE O PROJETO<br />
-        <span>Conheça o objetivo<br />do nosso trabalho</span>
-      </h1>
-    </section>
+          <div class="card" onclick="kaiki()">
+            <div class="foto"></div>
+            <p>Kaiki De Souza Moreira</p>
+          </div>
 
-    <section class="sobre">
-      <h2>NOSSO TRABALHO</h2>
-
-      <p>
-        Este site foi desenvolvido com o objetivo de apresentar
-        informações sobre o comércio na Roma Antiga de forma clara,
-        organizada e acessível. O projeto busca reunir os principais
-        aspectos da economia romana, abordando temas como as rotas
-        comerciais, os produtos negociados, o sistema monetário, a
-        especialização regional e o papel da escravidão na atividade
-        econômica. Por meio de uma apresentação visual e informativa,
-        nosso objetivo é facilitar a compreensão desse importante período
-        histórico, proporcionando uma experiência de aprendizagem dinâmica
-        e enriquecedora para todos os visitantes do site.
-      </p>
-    </section>
-
-
-    <section class="integrantes">
-      <h2>Nossos integrantes</h2>
-      <div class="equipe">
-        <div class="card" onclick="guilherme()">
-          <div class="foto"></div>
-          <p>Guilherme Luciano Da Silva</p>
+          <div class="card" onclick="andreus()">
+            <div class="foto"></div>
+            <p>Andreus Cesar Coelho</p>
+          </div>
         </div>
-        <div class="card" onclick="caua()">
-          <div class="foto"></div>
-          <p>Cauã Wlodarczyk</p>
+
+        <div id="informacao"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-info">
+          <img id="logo-Footer" src="CSS/IMG/ROMA.jpg" alt="roma-logo" />
         </div>
-        <div class="card" onclick="kaiki()">
-          <div class="foto"></div>
-          <p>Kaiki De Souza Moreira</p>
+
+        <div class="footer-links">
+          <a href="#">Timeline</a>
+          <a href="#">Quiz</a>
+          <a href="#">Fontes</a>
+          <a href="#">Glossário</a>
+          <a href="#">Contribua</a>
+          <a href="#">Fale Conosco</a>
         </div>
-        <div class="card" onclick="andreus()">
-          <div class="foto"></div>
-          <p>Andreus Cesar Coelho</p>
+
+        <div class="footer-cadastro">
+          <h3>CADASTRE-SE</h3>
+
+          <input type="text" placeholder="Nome" />
+          <input type="email" placeholder="E-mail" />
+
+          <button type="submit">CADASTRAR</button>
         </div>
       </div>
-      <div id="informacao"></div>
 
-  </main>
-  <footer>
-    <div class="footer-container">
-      <div class="footer-info">
-        <img id="logo-Footer" src="CSS/IMG/ROMA.jpg" alt="roma-logo" />
+      <div class="footer-redes">
+        <a href="#">
+          <img src="CSS/IMG/whatsapp 1.svg" alt="WhatsApp" />
+        </a>
+
+        <a href="#">
+          <img src="CSS/IMG/instagram 1.svg" alt="Instagram" />
+        </a>
       </div>
 
-      <div class="footer-links">
-        <a href="#">Timeline</a>
-        <a href="#">Quiz</a>
-        <a href="#">Fontes</a>
-        <a href="#">Glossário</a>
-        <a href="#">Contribua</a>
-        <a href="#">Fale Conosco</a>
+      <div class="footer-bottom">
+        <p>© 2026 Roma Antiga — SEPE</p>
       </div>
+    </footer>
 
-      <div class="footer-cadastro">
-        <h3>CADASTRE-SE</h3>
-
-        <input type="text" placeholder="Nome" />
-        <input type="email" placeholder="E-mail" />
-
-        <button type="submit">CADASTRAR</button>
-      </div>
-    </div>
-
-    <div class="footer-redes">
-      <a href="#"><img src="CSS/IMG/whatsapp 1.svg" alt="icon-insta" /></a>
-      <a href="#"><img src="CSS/IMG/instagram 1.svg" alt="icon-face" /></a>
-    </div>
-
-    <div class="footer-bottom">
-      <p>© 2026 Roma Antiga — SEPE</p>
-    </div>
-  </footer>
-  <script src="CSS/JS/sobre.js"></script>
-</body>
-</body>
-
-</html>
-</head>
-
+    <script src="CSS/JS/sobre.js"></script>
+  </body>
 </html>
