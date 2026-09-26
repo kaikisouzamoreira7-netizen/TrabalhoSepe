@@ -1,178 +1,482 @@
-@import url('reset.css');
-@import url('header.css');
-@import url('footer.css');
+@import url("reset.css");
+@import url("header.css");
+@import url("footer.css");
 
+
+/* ============================= */
+/* CONFIGURAÇÕES GERAIS */
+/* ============================= */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #fff8ed;
+    color: #333;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+/* ============================= */
+/* BANNER */
+/* ============================= */
 
 .banner {
-    min-height: 600px;
+    min-height: 520px;
+
     display: flex;
     align-items: center;
+
+    padding: 50px 20px;
+
+    box-sizing: border-box;
+
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)),
+        linear-gradient(
+            rgba(0, 0, 0, 0.62),
+            rgba(0, 0, 0, 0.62)
+        ),
         url("IMG/banner.rotas1.jpg");
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 4vw;
+}
+
+.banner-conteudo {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .banner h1 {
+    margin: 0;
+
     color: white;
-    font-size: 2.5rem;
-}
 
-
-
-.banner span {
-    color: #D69D2A;
-    display: flex;
-
-}
-
-.banner p {
-    color: white;
-    padding: 2vw 0 2vw 0;
-    font-size: 2.3vw;
-}
-
-.vias h2,
-.rotas h2 {
-    margin-bottom: 25px;
-    color: #420906;
     font-family: "Cinzel", serif;
+
     font-size: 30px;
     font-weight: 600;
-    line-height: 1.3;
+
+    line-height: 1.25;
+    letter-spacing: 1px;
 }
 
-.vias span,
-.rotas span {
+.banner h1 span {
+    display: block;
+
+    color: #d69d2a;
+}
+
+.banner-conteudo > p:last-child {
+    max-width: 650px;
+
+    color: #f5f2ec;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* ============================= */
+/* INTRODUÇÃO */
+/* ============================= */
+
+.rotas {
+    padding: 60px 20px 65px;
+
+    background-color: #fff8ed;
+
+    text-align: center;
+}
+
+.rotas-conteudo {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.titulo-secao {
+    margin-bottom: 12px;
+
+    color: #d69d2a;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+.rotas h2,
+.vias h2,
+.comercio-rotas h2,
+.conclusao h2 {
+
+    margin-bottom: 25px;
+
+    color: #420906;
+
+    font-family: "Cinzel", serif;
+
+    font-size: 25px;
+    font-weight: 600;
+
+    line-height: 1.35;
+}
+
+.rotas h2 span,
+.vias h2 span,
+.comercio-rotas h2 span,
+.conclusao h2 span {
+
     color: #7b1e17;
 }
 
-.vias,
-.rotas {
-    padding: 75px 20px 40px;
-    background-color: #fff8ed;
-    text-align: center;
+.rotas-conteudo > p:not(.titulo-secao) {
 
-}
+    margin-bottom: 16px;
 
-.rotas p {
-    margin-bottom: 15px;
     color: #444;
-    font-size: 15px;
+
+    font-size: 14px;
     line-height: 1.8;
-    margin: 2vw;
 }
 
-.vias>p {
+
+/* ============================= */
+/* PRINCIPAIS VIAS */
+/* ============================= */
+
+.vias {
+    padding: 60px 18px 70px;
+
+    background-color: #f5f2ec;
+}
+
+.vias h2 {
+    max-width: 850px;
+
+    margin: 0 auto 35px;
+
+    text-align: center;
+}
+
+.vias > p {
+    text-align: center;
     margin-bottom: 12px;
+
     color: #d69d2a;
+
     font-size: 12px;
     font-weight: 600;
+
     letter-spacing: 3px;
 }
-.vias ul {
+
+.container-vias {
+
     max-width: 1050px;
+
     margin: 0 auto;
+
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 25px;
+
+    grid-template-columns: 1fr;
+
+    gap: 22px;
 }
 
-.vias li {
-    grid-column: span 2;
+
+/* ============================= */
+/* CARDS */
+/* ============================= */
+
+.card-via {
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
     background-color: white;
+
+    border: 1px solid #dfd5c8;
+
     border-radius: 8px;
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
-    transition: 0.4s ease;
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s ease;
 }
 
-/* Centraliza os dois últimos cards */
-.vias li:nth-child(4) {
-    grid-column: 2 / span 2;
+.card-via:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
 }
 
-.vias li:nth-child(5) {
-    grid-column: 4 / span 2;
+.card-via img {
+
+    display: block;
+
+    width: 100%;
+    height: 180px;
+
+    object-fit: cover;
 }
 
-.vias li {
-    display: flex;
-    flex-direction: column;
-}
+.conteudo {
 
-.vias .conteudo {
     padding: 22px;
+
     display: flex;
     flex-direction: column;
+
     height: 100%;
+
     box-sizing: border-box;
 }
 
-.vias .conteudo details {
-    margin-top: auto;
-    padding: 12px 0;
-}
-
-.vias li:hover {
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
-    transform: translateY(-8px);
-}
-
-.vias .conteudo {
-    padding: 22px;
-}
-
 .vias h3 {
-  margin: 7px 0 12px;
-  color: #420906;
-  font-family: "Cinzel", serif;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
+
+    margin: 7px 0 12px;
+
+    color: #420906;
+
+    font-family: "Cinzel", serif;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
 }
 
-.vias .conteudo > p {
-  margin-bottom: 15px;
-  color: #444;
-  font-size: 13px;
-  line-height: 1.65;
-  text-align: justify;
+.conteudo > p {
+
+    margin-bottom: 15px;
+
+    color: #444;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+
+    text-align: justify;
 }
 
-.vias .conteudo details {
-  padding: 12px 0 12px 0;
+
+/* ============================= */
+/* SAIBA MAIS */
+/* ============================= */
+
+.conteudo details {
+
+    margin-top: auto;
+
+    padding-top: 12px;
+
+    border-top: 1px solid #e5ddd3;
 }
 
-.vias .conteudo summary {
-  width: fit-content;
-  color: #420906;
-  font-size: 12px;
-  font-weight: 600;
-  cursor: pointer;
-  list-style: none;
+.conteudo summary {
+
+    width: fit-content;
+
+    color: #420906;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    list-style: none;
 }
 
-.vias .conteudo summary:hover {
-  letter-spacing: 0.1rem;
-  transition: 0.4s ease;
+.conteudo summary:hover {
+
+    color: #d69d2a;
 }
 
-.vias .conteudo details p {
-  margin-top: 9px;
-  color: #555;
-  font-size: 12px;
-  line-height: 1.6;
-  text-align: justify;
+.conteudo details p {
+
+    margin-top: 10px;
+
+    color: #555;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    text-align: justify;
 }
 
-.vias li img {
-    display: block;
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
+
+/* ============================= */
+/* DESTAQUE */
+/* ============================= */
+
+.destaque-rota {
+
+    padding: 30px;
+
+    border: 1px solid #d69d2a;
+
+    text-align: center;
+}
+
+.destaque-rota > span {
+
+    color: white;
+
+    font-family: "Cinzel", serif;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.linha-rota {
+
+    width: 80px;
+    height: 2px;
+
+    margin: 18px auto;
+
+    background-color: #d69d2a;
+}
+
+.destaque-rota p {
+
+    margin-top: 20px;
+
+    color: #f5eee5;
+
+    font-family: "Ibarra Real Nova", serif;
+
+    font-size: 16px;
+}
+
+
+/* ============================= */
+/* CONCLUSÃO */
+/* ============================= */
+
+.conclusao {
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    padding: 70px 20px;
+
+    text-align: center;
+}
+
+.conclusao h2 {
+
+    margin-bottom: 20px;
+}
+
+.conclusao > p:last-child {
+
+    color: #444;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+
+@media (min-width: 600px) {
+
+    .banner {
+
+        min-height: 580px;
+
+        padding: 60px 35px;
+    }
+
+    .banner h1 {
+
+        font-size: 38px;
+    }
+
+    .rotas h2,
+    .vias h2,
+    .comercio-rotas h2,
+    .conclusao h2 {
+
+        font-size: 28px;
+    }
+
+    .container-vias {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .comercio-rotas-conteudo {
+
+        flex-direction: row;
+
+        align-items: center;
+
+        gap: 50px;
+    }
+
+    .destaque-rota {
+
+        flex: 0 0 250px;
+    }
+}
+
+
+/* ============================= */
+/* DESKTOP */
+/* ============================= */
+
+@media (min-width: 900px) {
+
+    .banner {
+
+        min-height: 620px;
+
+        padding: 70px 50px;
+    }
+
+    .banner h1 {
+
+        font-size: 45px;
+    }
+
+    .banner-conteudo > p:last-child {
+
+        font-size: 16px;
+    }
+
+    .rotas {
+
+        padding: 80px 20px;
+    }
+
+    .vias {
+
+        padding: 80px 20px;
+    }
+
+    .container-vias {
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 25px;
+    }
+
+    .conclusao {
+
+        padding: 85px 20px;
+    }
 }
