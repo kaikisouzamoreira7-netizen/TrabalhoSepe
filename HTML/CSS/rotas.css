@@ -53,10 +53,18 @@ body {
 }
 
 /* === Seção Rotas === */
-
 .rotas {
   padding: 60px 35px 30px;
   background-color: #fff8ed;
+}
+
+.conteudo-rotas {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.texto-rotas {
   text-align: center;
 }
 
@@ -80,11 +88,46 @@ body {
   line-height: 1.35;
 }
 
-.rotas-conteudo > p:not(.titulo-secao) {
+.texto-rotas > p:not(.titulo-secao) {
   margin-bottom: 16px;
   color: #444;
   font-size: 14px;
   line-height: 1.8;
+}
+
+.img-rotas {
+  width: 100%;
+  max-width: 850px;
+  margin: 35px auto 0;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #dfd5c8;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.img-rotas img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.conteudo-rotas h3 {
+  text-align: center;
+  color: #420906;
+  font-family: "Cinzel", serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.conteudo-rotas p {
+  text-align: justify;
+  color: #444;
+  font-size: 13px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  letter-spacing: 0.2px;
 }
 
 /* === Seção Vias === */
@@ -233,6 +276,10 @@ body {
 
   .rotas {
     padding: 80px 20px;
+  }
+
+  .conteudo-rotas h3 {
+    text-align: left;
   }
 
   .vias {
