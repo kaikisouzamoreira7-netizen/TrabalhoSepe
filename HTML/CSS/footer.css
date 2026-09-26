@@ -112,6 +112,7 @@ footer {
     font-size: 13px;
     color: #b9831c;
     font-weight: 600;
+    transition: 0.2s;
   }
 
   .footer-cadastro {
