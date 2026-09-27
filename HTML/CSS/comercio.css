@@ -1,18 +1,15 @@
 @import url("header.css");
 @import url("footer.css");
 
-
 html {
   font-size: 16px;
 }
-
 
 body {
   background-color: #fff8ed;
   color: #333;
   font-family: "Open Sans", sans-serif;
 }
-
 
 /* === Banner === */
 
@@ -37,35 +34,20 @@ body {
   letter-spacing: 4px;
 }
 
-
 .banner span {
   color: #d69d2a;
   font-weight: 600;
 }
 
-
-@media (max-width: 420px) {
-
-  .banner h1 {
-    padding: 60px 15px;
-
-    font-size: 24px;
-    line-height: 30px;
-  }
-
-}
-
-
 /* === História === */
 
 .containerHistoria {
   padding: 40px 18px;
-
+  display: flex;
   max-width: 1000px;
-
+  gap: 25px;
   margin: 0 auto;
 }
-
 
 .cardAbout {
   margin-bottom: 25px;
@@ -83,7 +65,6 @@ body {
   text-align: justify;
 }
 
-
 .cardAbout h2 {
   color: #420906;
 
@@ -100,31 +81,16 @@ body {
   margin-bottom: 15px;
 }
 
-
 .cardAbout p {
   font-family: "Open Sans", sans-serif;
 
   font-size: 14px;
 }
+.cardAbout {
+  flex: 1;
 
-
-@media (min-width: 700px) {
-
-  .containerHistoria {
-    display: flex;
-
-    gap: 25px;
-  }
-
-
-  .cardAbout {
-    flex: 1;
-
-    margin-bottom: 0;
-  }
-
+  margin-bottom: 0;
 }
-
 
 /* === Estrutura do Comércio === */
 
@@ -133,7 +99,6 @@ body {
 
   background-color: #fff8ed;
 }
-
 
 .estruturaComercio h2 {
   text-align: center;
@@ -149,13 +114,11 @@ body {
   font-weight: 700;
 }
 
-
 .containerEstrutura {
   max-width: 1000px;
 
   margin: 0 auto;
 }
-
 
 .cardEstrutura {
   box-shadow: 0 10px 8px 3px rgba(0, 0, 0, 0.2);
@@ -171,15 +134,16 @@ body {
   margin-bottom: 30px;
 }
 
+.cardEstrutura ul {
+  
+}
 
 @media (min-width: 700px) {
-
   .estruturaComercio {
     max-width: 1000px;
 
     margin: 0 auto;
   }
-
 
   .containerEstrutura {
     display: grid;
@@ -189,13 +153,10 @@ body {
     gap: 25px;
   }
 
-
   .cardEstrutura {
     margin-bottom: 0;
   }
-
 }
-
 
 .estruturaComercio img {
   display: block;
@@ -206,7 +167,6 @@ body {
 
   object-fit: cover;
 }
-
 
 .cardEstrutura h3 {
   margin: 0;
@@ -226,11 +186,9 @@ body {
   text-align: center;
 }
 
-
 .cardEstrutura details {
   padding-bottom: 18px;
 }
-
 
 .cardEstrutura summary {
   width: fit-content;
@@ -256,11 +214,9 @@ body {
   cursor: pointer;
 }
 
-
 .cardEstrutura summary:hover {
   background-color: #610702;
 }
-
 
 .cardEstrutura details p {
   margin: 12px 18px 0;
@@ -275,7 +231,6 @@ body {
 
   text-align: justify;
 }
-
 
 /* === Botão Mercadorias === */
 
@@ -302,7 +257,6 @@ body {
 
   text-decoration: none;
 }
-
 
 #mercadoria-button:hover {
   background-color: #610702;

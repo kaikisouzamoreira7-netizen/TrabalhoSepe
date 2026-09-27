@@ -148,8 +148,6 @@ summary {
   Make lists unstyled by default.
 */
 
-ol,
-ul,
 menu {
   list-style: none;
 }
