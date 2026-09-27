@@ -282,6 +282,11 @@ body {
     text-align: left;
   }
 
+  .texto-rotas p {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   .vias {
     padding: 80px 20px;
   }
