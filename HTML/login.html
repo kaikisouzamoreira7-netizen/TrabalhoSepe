@@ -23,54 +23,97 @@
 
             <h1>ROMA</h1>
 
-            <h2>Entrar</h2>
+            <div id="loginView">
+                <h2>Entrar</h2>
 
-            <p class="descricao">
-                Acesse sua conta para continuar.
-            </p>
-
-            <form id="loginForm">
-
-                <div class="campo">
-                    <label for="email">E-mail</label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Digite seu e-mail"
-                        required
-                    >
-                </div>
-
-                <div class="campo">
-                    <label for="senha">Senha</label>
-
-                    <input
-                        type="password"
-                        id="senha"
-                        name="senha"
-                        placeholder="Digite sua senha"
-                        required
-                    >
-                </div>
-
-                <button type="submit">
-                    ENTRAR
-                </button>
-
-                <p id="mensagem"></p>
-
-            </form>
-
-            <div class="cadastro">
-                <p>
-                    Ainda não possui uma conta?
+                <p class="descricao">
+                    Acesse sua conta para continuar.
                 </p>
 
-                <button type="button" id="cadastrarBtn">
-                    CRIAR CONTA
-                </button>
+                <form id="loginForm">
+
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Digite seu e-mail"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="senha">Senha</label>
+
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            placeholder="Digite sua senha"
+                            required
+                        >
+                    </div>
+
+                    <button type="submit">
+                        ENTRAR
+                    </button>
+
+                    <p id="mensagem"></p>
+
+                </form>
+
+                <div class="cadastro">
+                    <p>
+                        Ainda não possui uma conta?
+                    </p>
+
+                    <button type="button" id="cadastrarBtn">
+                        CRIAR CONTA
+                    </button>
+                </div>
+            </div>
+
+            <div id="cadastroView" class="hidden">
+                <h2>Criar conta</h2>
+
+                <p class="descricao">
+                    Cadastre-se para guardar suas informações no banco local do site.
+                </p>
+
+                <form id="registerForm">
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="cadastroEmail">E-mail</label>
+                        <input type="email" id="cadastroEmail" name="cadastroEmail" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="cadastroSenha">Senha</label>
+                        <input type="password" id="cadastroSenha" name="cadastroSenha" placeholder="Crie sua senha" required>
+                    </div>
+
+                    <button type="submit">
+                        CADASTRAR
+                    </button>
+
+                    <p id="registerMensagem"></p>
+                </form>
+
+                <div class="cadastro">
+                    <p>
+                        Já tem uma conta?
+                    </p>
+
+                    <button type="button" id="voltarLoginBtn">
+                        VOLTAR AO LOGIN
+                    </button>
+                </div>
             </div>
 
         </section>

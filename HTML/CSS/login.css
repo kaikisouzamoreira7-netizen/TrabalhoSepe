@@ -210,7 +210,8 @@ body {
   box-shadow: 0 8px 20px rgba(66, 9, 6, 0.25);
 }
 
-#mensagem {
+#mensagem,
+#registerMensagem {
   min-height: 20px;
 
   margin-top: 15px;
@@ -226,6 +227,10 @@ body {
 
 .sucesso {
   color: #52751d;
+}
+
+.hidden {
+  display: none;
 }
 
 .login-status {
