@@ -1,0 +1,353 @@
+:root {
+    --bordo: #420906;
+    --bordo-claro: #7b1e17;
+    --dourado: #cf912b;
+    --dourado-claro: #e0ad55;
+    --creme: #fffaf3;
+    --branco: #ffffff;
+    --preto: #171312;
+    --cinza: #6b6460;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: var(--creme);
+    color: var(--preto);
+    font-family: "Open Sans", sans-serif;
+}
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 60px 7%;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(20, 5, 3, 0.92),
+            rgba(20, 5, 3, 0.70)
+        ),
+        url("IMG/Roma-Antiga.webp");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.login-box {
+    width: 430px;
+    max-width: 100%;
+    padding: 50px 45px;
+    box-sizing: border-box;
+
+    background: var(--creme);
+
+    border: 1px solid var(--dourado);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.45);
+
+    text-align: center;
+
+    position: relative;
+}
+
+.login-box::before {
+    content: "";
+    position: absolute;
+
+    top: 22px;
+    left: 50%;
+
+    width: 70px;
+    height: 2px;
+
+    background: var(--dourado);
+
+    transform: translateX(-50%);
+}
+
+.login-box::after {
+    content: "";
+    position: absolute;
+
+    bottom: 22px;
+    left: 50%;
+
+    width: 70px;
+    height: 2px;
+
+    background: var(--dourado);
+
+    transform: translateX(-50%);
+}
+
+.login-box h1 {
+    margin: 0 0 5px;
+
+    color: var(--bordo);
+
+    font-family: "Cinzel", serif;
+
+    font-size: 2.8rem;
+    font-weight: 500;
+
+    letter-spacing: 5px;
+}
+
+.login-box h2 {
+    margin: 18px 0 8px;
+
+    color: var(--bordo);
+
+    font-family: "Cinzel", serif;
+
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    text-transform: uppercase;
+}
+
+.descricao {
+    margin: 0 0 35px;
+
+    color: var(--cinza);
+
+    font-size: 0.9rem;
+
+    line-height: 1.7;
+}
+
+.campo {
+    margin-bottom: 22px;
+
+    text-align: left;
+}
+
+.campo label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--bordo);
+
+    font-family: "Cinzel", serif;
+
+    font-size: 0.78rem;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+.campo input {
+    width: 100%;
+    height: 48px;
+
+    padding: 0 15px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d8c7aa;
+
+    background: var(--branco);
+
+    color: var(--preto);
+
+    font-family: "Open Sans", sans-serif;
+
+    font-size: 0.9rem;
+
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+.campo input:focus {
+    border-color: var(--dourado);
+
+    box-shadow:
+        0 0 0 2px rgba(207, 145, 43, 0.15);
+}
+
+.campo input::placeholder {
+    color: #a29a95;
+}
+
+.login-box form > button {
+    width: 100%;
+    height: 50px;
+
+    margin-top: 8px;
+
+    border: 1px solid var(--dourado);
+
+    background: var(--bordo);
+
+    color: var(--branco);
+
+    font-family: "Open Sans", sans-serif;
+
+    font-size: 0.8rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.login-box form > button:hover {
+    background: var(--bordo-claro);
+
+    border-color: var(--dourado-claro);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(66, 9, 6, 0.25);
+}
+
+#mensagem {
+    min-height: 20px;
+
+    margin-top: 15px;
+
+    font-size: 0.8rem;
+
+    font-weight: 600;
+}
+
+.erro {
+    color: #a3150e;
+}
+
+.sucesso {
+    color: #52751d;
+}
+
+.login-status {
+    margin: 16px 0 20px;
+    padding: 14px 16px;
+    background: rgba(207, 145, 43, 0.12);
+    border: 1px solid rgba(207, 145, 43, 0.5);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-status p {
+    margin: 0 0 10px;
+    color: var(--bordo);
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+.status-link {
+    display: inline-block;
+    color: var(--bordo);
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    font-size: 0.72rem;
+}
+
+.usuario-logado {
+    display: inline-flex;
+    align-items: center;
+    color: var(--dourado-claro);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+}
+
+.logout-btn {
+    margin-left: 12px;
+    padding: 8px 12px;
+    border: 1px solid var(--dourado);
+    background: transparent;
+    color: var(--branco);
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+    background: var(--dourado);
+    color: var(--bordo);
+}
+
+.cadastro {
+    margin-top: 30px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #d8c7aa;
+}
+
+.cadastro p {
+    margin: 0 0 15px;
+
+    color: var(--cinza);
+
+    font-size: 0.8rem;
+}
+
+#cadastrarBtn {
+    padding: 11px 24px;
+
+    border: 1px solid var(--bordo);
+
+    background: transparent;
+
+    color: var(--bordo);
+
+    font-family: "Open Sans", sans-serif;
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+#cadastrarBtn:hover {
+    background: var(--bordo);
+
+    color: var(--branco);
+}
+
+@media (max-width: 600px) {
+
+    .login-container {
+        padding: 40px 7%;
+    }
+
+    .login-box {
+        padding: 45px 28px;
+    }
+
+    .login-box h1 {
+        font-size: 2.3rem;
+    }
+
+    .login-box h2 {
+        font-size: 1.5rem;
+    }
+}

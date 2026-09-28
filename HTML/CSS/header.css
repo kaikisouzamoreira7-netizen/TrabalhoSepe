@@ -27,7 +27,31 @@ header a {
   font-size: 0.7rem;
 }
 
+header .usuario-logado {
+  color: #f7d17d;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
 
+header .logout-btn {
+  background: transparent;
+  border: 1px solid #f7d17d;
+  color: #fff;
+  padding: 8px 10px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: 10px;
+}
+
+header .logout-btn:hover {
+  background: #f7d17d;
+  color: #420906;
+}
 
    header a {
     font-weight: 500;
