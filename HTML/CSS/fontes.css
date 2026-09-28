@@ -1,0 +1,128 @@
+@import url("header.css");
+@import url("footer.css");
+
+body{
+    background:#fff8ed;
+    color:#333;
+    font-family:"Open Sans",sans-serif;
+}
+
+.banner{
+    min-height:300px;
+    display:flex;
+    align-items:center;
+    padding:50px 25px;
+    background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.7)),url("IMG/banner.rotas1.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+.banner div{
+    width:100%;
+    max-width:1000px;
+    margin:auto;
+}
+
+.banner p,.titulo p{
+    margin-bottom:8px;
+    color:#d69d2a;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:3px;
+}
+
+.banner h1{
+    margin-bottom:12px;
+    color:white;
+    font-family:"Cinzel",serif;
+    font-size:38px;
+}
+
+.banner span{
+    color:#f5f2ec;
+    font-size:14px;
+}
+
+.fontes{
+    padding:70px 20px;
+    background:#f5f2ec;
+}
+
+.titulo{
+    max-width:1000px;
+    margin:0 auto 40px;
+}
+
+.titulo h2{
+    color:#420906;
+    font-family:"Cinzel",serif;
+    font-size:28px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.card{
+    padding:30px;
+    background:white;
+    border:1px solid #dfd5c8;
+    border-radius:6px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#420906;
+    font-family:"Cinzel",serif;
+    font-size:18px;
+}
+
+.card p{
+    margin-bottom:25px;
+    color:#555;
+    font-size:14px;
+    line-height:1.7;
+}
+
+.card a{
+    display:inline-block;
+    padding:10px 16px;
+    background:#420906;
+    color:white;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:1px;
+    text-decoration:none;
+    border-radius:3px;
+}
+
+.card a:hover{
+    background:#7b1e17;
+}
+
+@media(max-width:600px){
+    .banner{
+        min-height:260px;
+    }
+
+    .banner h1{
+        font-size:30px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .fontes{
+        padding:50px 15px;
+    }
+
+    .card{
+        padding:25px;
+    }
+}
