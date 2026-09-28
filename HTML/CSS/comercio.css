@@ -126,30 +126,28 @@ body {
   margin: 0 auto;
 }
 
+.cardEstrutura:hover{
+   transition: 0.4s ease;
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+
+}
+
 .cardEstrutura {
   box-shadow: 0 10px 8px 3px rgba(0, 0, 0, 0.2);
-
   overflow: hidden;
-
   background-color: white;
-
   border: 1px solid #dfd5c8;
-
   border-radius: 10px;
-
   margin-bottom: 30px;
 }
 
 .cardEstrutura h4 {
   padding: 14px 15px 0;
   color: #420906;
-
   font-family: "Cinzel", serif;
-
   letter-spacing: 1px;
-
   font-size: 16px;
-
   font-weight: 700;
 }
 
