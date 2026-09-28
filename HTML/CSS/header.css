@@ -9,17 +9,16 @@ header .ativo {
 }
 
 header {
-    background-color: #420906;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 2vw;
-  }
+  background-color: #420906;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2vw;
+}
 
 header img {
   width: 40px;
   padding-top: 3vw;
-  
 }
 
 header a {
@@ -53,10 +52,9 @@ header .logout-btn:hover {
   color: #420906;
 }
 
-   header a {
-    font-weight: 500;
-  } 
-
+header a {
+  font-weight: 500;
+}
 
 @media (min-width: 600px) {
   header {
@@ -70,7 +68,6 @@ header .logout-btn:hover {
   header img {
     padding: 0 0 0 1vw;
     width: 70px;
-   
   }
 
   header a {
@@ -79,7 +76,7 @@ header .logout-btn:hover {
 
   header A:hover {
     color: #d69d2a;
-    font-size:1.1rem ;
+    font-size: 1.1rem;
     transition: 0.5s ease;
   }
 
@@ -99,5 +96,4 @@ header .logout-btn:hover {
   header li {
     font-size: 1vw;
   }
-
 }
