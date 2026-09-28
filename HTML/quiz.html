@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Quiz | Roma Antiga</title>
+
+    <link rel="stylesheet" href="CSS/reset.css" />
+    <link rel="stylesheet" href="CSS/quiz.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <img src="CSS/IMG/ROMA.jpg" alt="Logo Roma Antiga" />
+        <ul>
+          <li><a href="../index.html">INÍCIO</a></li>
+          <li><a href="comercio.html">COMÉRCIO</a></li>
+          <li><a href="tecnologia.html">TECNOLOGIA</a></li>
+          <li><a href="rotas.html">ROTAS</a></li>
+          <li><a href="poder.html">PODER</a></li>
+          <li><a href="sobre.html">SOBRE</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="banner">
+        <div class="banner-conteudo">
+          <p class="titulo-secao">TESTE SEUS CONHECIMENTOS</p>
+
+          <h1>
+            QUIZ
+            <span>ROMA ANTIGA</span>
+          </h1>
+
+          <p>
+            Responda às perguntas e descubra quanto você aprendeu sobre o
+            comércio, as rotas, a tecnologia e o poder de Roma
+          </p>
+        </div>
+      </section>
+
+      <section class="quiz">
+        <div class="quiz-container">
+          <div class="quiz-topo">
+            <p id="numero-questao">QUESTÃO 1 DE 10</p>
+
+            <p id="pontuacao">PONTOS: 0</p>
+          </div>
+
+          <div class="barra">
+            <div id="progresso"></div>
+          </div>
+
+          <div id="quiz-conteudo">
+            <h2 id="pergunta">Pergunta</h2>
+
+            <div id="alternativas"></div>
+          </div>
+
+          <button id="proximo">PRÓXIMA</button>
+        </div>
+
+        <div id="resultado" class="resultado">
+          <p class="titulo-secao">QUIZ FINALIZADO</p>
+
+          <h2>SEU RESULTADO</h2>
+
+          <p id="pontuacao-final"></p>
+
+          <p id="mensagem-final"></p>
+
+          <button id="reiniciar">TENTAR NOVAMENTE</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-info">
+          <img id="logo-Footer" src="CSS/IMG/ROMA.jpg" alt="Roma Antiga" />
+        </div>
+
+        <div class="footer-links">
+          <a href="#">Timeline</a>
+          <a href="quiz.html">Quiz</a>
+          <a href="#">Fontes</a>
+          <a href="#">Glossário</a>
+          <a href="#">Contribua</a>
+          <a href="#">Fale Conosco</a>
+        </div>
+
+        <div class="footer-cadastro">
+          <h3>CADASTRE-SE</h3>
+
+          <input type="text" placeholder="Nome" />
+          <input type="email" placeholder="E-mail" />
+
+          <button type="submit">CADASTRAR</button>
+        </div>
+      </div>
+
+      <div class="footer-redes">
+        <a href="#">
+          <img src="CSS/IMG/whatsapp 1.svg" alt="WhatsApp" />
+        </a>
+
+        <a href="#">
+          <img src="CSS/IMG/instagram 1.svg" alt="Instagram" />
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Roma Antiga — SEPE</p>
+      </div>
+    </footer>
+
+    <script src="CSS/JS/quiz.js"></script>
+  </body>
+</html>
