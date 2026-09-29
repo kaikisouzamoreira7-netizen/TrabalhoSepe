@@ -292,8 +292,20 @@ body {
   }
 
   .container-vias {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 25px;
+  }
+
+  .card-via {
+    grid-column: span 2;
+  }
+
+  .card-via:nth-child(4) {
+    grid-column: 2 / 4;
+  }
+
+  .card-via:nth-child(5) {
+    grid-column: 4 / 6;
   }
 
   .conclusao {

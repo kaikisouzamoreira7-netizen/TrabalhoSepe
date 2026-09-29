@@ -1,0 +1,35 @@
+@import url('reset.css');
+@import url('header.css');
+@import url('footer.css');
+
+
+
+
+
+
+
+
+
+
+.formulario {
+   background-color:  #fff8ed;
+   padding: 4vw;
+}
+
+.formulario div {
+    color: white;
+    padding: 2vw;
+    background-color: #420906;
+    border-radius: 8px;
+    border: 3px solid #7b1e17;
+}
+
+.formulario li {
+    margin: 3vw 5vw 3vw 5vw;
+}
+
+.formulario li input {
+    color:white;
+    border-bottom: 1px solid white;
+}
+
