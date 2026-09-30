@@ -1,204 +1,313 @@
 @import url("header.css");
 @import url("footer.css");
 
+
+/* ===== BASE ===== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: #111;
-  color: white;
+  margin: 0;
+  background: #420906;
+  color: #fff;
   font-family: "Open Sans", Arial, sans-serif;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Cinzel", serif;
+}
 
-/* === Banner === */
+
+/* ===== BANNER ===== */
 
 .banner {
-  min-height: 380px;
-  padding: 50px 10%;
+  min-height: 420px;
+  padding: 70px 10%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+
   background:
-    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.7)),
-    url("https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1600&q=80");
-  background-size: cover;
-  background-position: center;
+    linear-gradient(
+      rgba(0, 0, 0, .45),
+      rgba(0, 0, 0, .78)
+    ),
+    url("https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1600&q=80")
+    center / cover;
+}
+
+.ornamento {
+  margin-bottom: 15px;
+  color: #d69d2a;
+  font-size: 14px;
 }
 
 .banner h1 {
-  color: white;
-  font-family: "Cinzel", serif;
-  font-size: 38px;
+  max-width: 800px;
+  margin: 0 0 15px;
+
+  color: #fff;
+  font-size: clamp(32px, 5vw, 52px);
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.15;
   letter-spacing: 1px;
 }
 
 .banner p {
-  max-width: 550px;
+  max-width: 600px;
+  margin: 0;
+
   color: #e9e3da;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.8;
 }
 
 
-/* === Seção Sobre === */
+/* ===== SOBRE NÓS ===== */
 
 .sobre {
-  padding: 75px 15%;
+  padding: 90px 10%;
   background: #420906;
   text-align: center;
 }
 
 .sobre h2,
-.integrantes h2 {
-  margin-bottom: 25px;
+.objetivo h2,
+.integrantes h2,
+.tecnologias h2 {
+  margin: 0 0 30px;
 
   color: #d69d2a;
-
-  font-family: "Cinzel", serif;
-  font-size: 28px;
+  font-size: clamp(26px, 3vw, 36px);
   font-weight: 600;
-
   letter-spacing: 1px;
 }
 
 .sobre p {
   max-width: 950px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
+
   color: #f4eee6;
-  font-size: 15px;
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 17px;
   line-height: 1.9;
   text-align: justify;
 }
 
+.sobre p:last-child {
+  margin-bottom: 0;
+}
 
-/* === Seção Integrantes === */
+
+/* ===== OBJETIVO ===== */
+
+.objetivo {
+  padding: 85px 10%;
+  background: #fff8ed;
+  color: #420906;
+}
+
+.objetivo-conteudo {
+  max-width: 900px;
+  margin: auto;
+}
+
+.numero {
+  color: #a87517;
+  font-family: "Cinzel", serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.objetivo h2 {
+  margin-top: 10px;
+  color: #420906;
+}
+
+.objetivo p {
+  max-width: 850px;
+  margin: 0;
+
+  color: #51453d;
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+
+/* ===== INTEGRANTES ===== */
 
 .integrantes {
-  padding: 75px 5%;
-  background: #fff8ed;
+  padding: 90px 5%;
+  background: #f7ecda;
   text-align: center;
 }
 
+.integrantes h2 {
+  color: #420906;
+}
+
+.subtitulo {
+  max-width: 650px;
+  margin: -10px auto 0;
+
+  color: #665b53;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* ===== EQUIPE ===== */
+
 .equipe {
-  max-width: 1000px;
-  margin: 40px auto 0;
+  max-width: 1100px;
+  margin: 45px auto 0;
+
   display: flex;
   justify-content: center;
   gap: 25px;
   flex-wrap: wrap;
 }
 
-/* === Div Cards === */
+
+/* ===== CARDS ===== */
 
 .card {
   width: 220px;
   overflow: hidden;
+
   background: #fff;
-  border: 1px solid #111;
-  border-radius: 8px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+
   cursor: pointer;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  transition: 0.3s ease;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .18);
+  transition: .3s ease;
 }
 
 .card:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.45);
+  transform: translateY(-8px);
+
 }
+
+.card.ativo {
+  transform: translateY(-8px);
+
+
+  box-shadow:
+    0 0 0 3px rgba(214, 157, 42, .2),
+    0 15px 30px rgba(0, 0, 0, .25);
+}
+
+
+/* ===== FOTO ===== */
 
 .foto {
+  width: 100%;
   height: 200px;
-  background: #f7ecda;
+  overflow: hidden;
+
+  background: #eadbc4;
 }
 
-.card p {
-  min-height: 65px;
-  padding: 15px;
+.foto img {
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  object-fit: cover;
+
+  transition: .4s;
+}
+
+.card:hover .foto img {
+  transform: scale(1.05);
+}
+
+
+/* ===== NOME DO INTEGRANTE ===== */
+
+.card-info {
+  min-height: 85px;
+  padding: 14px 10px;
+
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+}
+
+.card-info p {
+  margin: 0 0 7px;
+
   color: #420906;
-  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.4;
 }
 
+.card-info span {
+  color: #a87517;
 
-/* === ID Informação === */
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+
+/* ===== INFORMAÇÃO DO INTEGRANTE ===== */
 
 #informacao {
-  width: 70%;
+  width: min(900px, 90%);
+  min-height: 150px;
+
   margin: 45px auto 0;
-  padding: 25px 30px;
+  padding: 28px 32px;
+
   background: #420906;
-  border-radius: 4px;
+  border-left: 5px solid #d69d2a;
+  border-radius: 8px;
+
   color: #f5f2ec;
+
   text-align: left;
   font-size: 14px;
   line-height: 1.8;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .18);
 }
 
-/* === Celular === */
+#informacao strong {
+  display: inline-block;
+  margin-bottom: 8px;
 
-@media (max-width: 700px) {
-
-  .banner {
-    min-height: 300px;
-    padding: 35px 25px;
-  }
-
-  .banner h1 {
-    font-size: 27px;
-  }
-
-  .banner p {
-    font-size: 13px;
-  }
-
-  .sobre {
-    padding: 55px 25px;
-  }
-
-  .sobre h2,
-  .integrantes h2 {
-    font-size: 24px;
-  }
-
-  .sobre p {
-    font-size: 14px;
-    line-height: 1.8;
-  }
-
-  .integrantes {
-    padding: 55px 20px;
-  }
-
-  .equipe {
-    margin-top: 30px;
-    gap: 18px;
-  }
-
-  .card {
-    width: 155px;
-  }
-
-  .foto {
-    height: 145px;
-  }
-
-  .card p {
-    min-height: 65px;
-    padding: 12px 8px;
-    font-size: 12px;
-  }
-
-  #informacao {
-    width: 90%;
-    padding: 20px;
-    font-size: 13px;
-  }
-
+  color: #d69d2a;
+  font-family: "Cinzel", serif;
+  font-size: 19px;
 }
+
+#informacao b {
+  color: #d69d2a;
+}
+
+.selecione {
+  display: block;
+  padding: 25px 0;
+
+  color: #e9e3da;
+  text-align: center;
+  font-size: 13px;
+}
+
+
+
