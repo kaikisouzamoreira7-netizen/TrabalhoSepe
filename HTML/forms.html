@@ -13,12 +13,12 @@
         <img src="CSS/IMG/ROMA.jpg" alt="Logo Roma Antiga" />
 
         <ul>
-          <li><a class="ativo" href="index.html">INÍCIO</a></li>
-          <li><a href="HTML/comercio.html">COMÉRCIO</a></li>
-          <li><a href="HTML/tecnologia.html">TECNOLOGIA</a></li>
-          <li><a href="HTML/rotas.html">ROTAS</a></li>
-          <li><a href="HTML/poder.html">PODER</a></li>
-          <li><a href="HTML/sobre.html">SOBRE</a></li>
+          <li><a class="ativo" href="../index.html">INÍCIO</a></li>
+          <li><a href="comercio.html">COMÉRCIO</a></li>
+          <li><a href="tecnologia.html">TECNOLOGIA</a></li>
+          <li><a href="rotas.html">ROTAS</a></li>
+          <li><a href="poder.html">PODER</a></li>
+          <li><a href="sobre.html">SOBRE</a></li>
         </ul>
       </nav>
     </header>
@@ -30,35 +30,58 @@
 
         <section class="formulario">
 
-            <form>
+          <div class="container">
+            <div>
+              <img src="CSS/IMG/ROMA.jpg" alt="">
+              <h1>FALE <span>CONOSCO</span></h1>
+              <p>Tem alguma dúvida, sugestão ou informação que gostaria de compartilhar? Entre em contato conosco! Sua mensagem é importante para ajudar a aprimorar nosso projeto e tornar a experiência sobre a Roma Antiga cada vez mais completa.</p>
+
+            </div>
+
+            <div>
+              <form>
                 <ul>
                     <li>
-                        <label for="nome">Nome*</label>
-                        <div>
-                            <input type="text" id="nome" name="nome"  required>
+                        <label for="nome">Nome completo <span>*</span></label>
+                        <div class="conteudo">
+                          <img src="CSS/IMG/nome.svg" alt="">
+                            <input type="text" id="nome" placeholder="Digite seu nome" name="nome"  required>
                         </div>
                         
                     </li>
 
                     <li>
-                        <label for="email">E-mail*</label>
-                        <div>
-                            <input type="email" id="email" name="email"  required>
+                        <label for="email">E-mail <span>*</span></label>
+                        <div class="conteudo">
+                          <img src="CSS/IMG/email.svg" alt="">
+                            <input type="email" id="email" name="email" placeholder="exemplo@gmail.com"  required>
                         </div>
                         
                     </li>
 
                     <li>
                         <label for="telefone">Telefone</label>
-                        <div>
-                            <input type="tel" id="telefone"  name="telefone">
+                        <div class="conteudo">
+                          <img src="CSS/IMG/telefone.svg" alt="">
+                            <input type="tel" id="telefone" placeholder="(00) 00000-0000"  name="telefone">
+                        </div>
+                        
+                    </li>
+
+                    <li>
+                        <label for="msg">Mensagem <span>*</span></label>
+                        <div class="conteudo">
+                          <textarea name="msg" placeholder="Escreva sua mensagem" required id="msg"></textarea>
+                            
                         </div>
                         
                     </li>
 
                     <li class="botao">
-                        <button type="submit">Enviar</button>
-                        <button type="reset">Limpar</button>
+                      
+                      <button type="submit">Enviar</button>
+                      <button type="reset">Limpar</button>
+                    
                     <li>
                 </ul>
 
@@ -66,6 +89,12 @@
 
 
             </form>
+            </div>
+            
+
+          </div>
+
+            
 
         </section>
 
