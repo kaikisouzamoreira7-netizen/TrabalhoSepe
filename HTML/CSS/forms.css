@@ -2,10 +2,25 @@
 @import url('header.css');
 @import url('footer.css');
 
-
-
-
-
+main {
+     position: relative;
+  min-height: 720px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(20, 5, 3, 0.92) 0%,
+      rgba(20, 5, 3, 0.78) 45%,
+      rgba(20, 5, 3, 0.35) 100%
+    ),
+    url("IMG/Roma-Antiga.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 80px 8%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
 
 
 
@@ -17,11 +32,17 @@
 .formulario p {
     margin: 3vw 5vw 3vw 5vw;
 }
-
-.formulario {
-   background-color:  #fff8ed;
-   padding: 4vw;
+.formulario .contatos img {
+    width: 30px;
+    margin-right: 5px;
 }
+
+.formulario div.contatos a {
+    display: flex;
+    align-items: center;
+    margin: 1vw 5vw 1vw 5vw;
+}
+
 
 .formulario > .container  {
     color: white;
@@ -42,7 +63,9 @@
 }
 
 
-
+.formulario .forms {
+    margin-top: 5vw;
+}
 
 
 .formulario .conteudo {
@@ -61,6 +84,7 @@
     padding: 0.5vw 0.7vw 0.5vw 0.7vw;
     border-radius: 5px;
     margin-right: 1vw;
+    transition: 0.2s ease;
 }
 
 .formulario button:hover{
@@ -75,5 +99,16 @@
     color: #9B9187;
 }
 
+@media (min-width: 750px){
+    .formulario  div.container {
+        display: flex;
+        
+        padding: 0vw;
+    }
 
+    .formulario div.forms {
+        border-left: 1px solid #D99020;
+        margin-top: 0vw;
+    }
+}
 

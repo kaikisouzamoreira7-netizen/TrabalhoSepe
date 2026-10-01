@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="512" height="512">
+  <g transform="rotate(45 50 50)">
+    <!-- Corpo do lápis -->
+    <path fill="#D8831B" d="M30 42 L62 42 L62 58 L30 58 Z"/>
+    <!-- Borracha / Parte traseira -->
+    <path fill="#D8831B" d="M22 42 L28 42 L28 58 L22 58 C20 58 18 56 18 50 C18 44 20 42 22 42 Z"/>
+    <!-- Ponta do lápis virada para a direita -->
+    <path fill="#D8831B" d="M64 42 L80 50 L64 58 Z"/>
+  </g>
+</svg>
