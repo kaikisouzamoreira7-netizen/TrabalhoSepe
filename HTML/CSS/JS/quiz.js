@@ -2,12 +2,12 @@ const perguntas = [
   {
     pergunta: "Qual era uma das principais funções das estradas romanas?",
     alternativas: [
-      "Facilitar o transporte de pessoas, tropas e mercadorias",
       "Servir apenas para cerimônias religiosas",
+      "Facilitar o transporte de pessoas, tropas e mercadorias",
       "Impedir a circulação entre as províncias",
       "Ligar somente pequenas aldeias",
     ],
-    resposta: 0,
+    resposta: 1,
   },
 
   {
@@ -50,23 +50,23 @@ const perguntas = [
     pergunta:
       "Além da função militar, as estradas romanas contribuíam diretamente para:",
     alternativas: [
-      "A circulação comercial e administrativa",
       "O isolamento das províncias",
       "A redução das cidades",
+      "A circulação comercial e administrativa",
       "A proibição do comércio marítimo",
     ],
-    resposta: 0,
+    resposta: 2,
   },
 
   {
     pergunta: "Qual era uma característica importante do Direito Romano?",
     alternativas: [
-      "Organizar relações jurídicas e sociais por meio de leis",
       "Ser utilizado apenas pelo exército",
       "Regular somente o comércio",
       "Ser exclusivamente religioso",
+      "Organizar relações jurídicas e sociais por meio de leis",
     ],
-    resposta: 0,
+    resposta: 3,
   },
 
   {
@@ -91,24 +91,24 @@ const perguntas = [
     pergunta:
       "A integração territorial romana dependia principalmente da combinação entre:",
     alternativas: [
-      "Estradas, administração e forças militares",
       "Religião, isolamento e agricultura",
       "Portos, muralhas e ausência de leis",
+      "Estradas, administração e forças militares",
       "Exército, templos e proibição comercial",
     ],
-    resposta: 0,
+    resposta: 2,
   },
 
   {
     pergunta:
       "Qual alternativa melhor explica a importância das vias romanas para o Império?",
     alternativas: [
-      "Permitiam a circulação de pessoas, mercadorias, informações e tropas",
       "Tinham função exclusivamente militar",
       "Eram utilizadas somente dentro da cidade de Roma",
       "Serviam principalmente para cerimônias públicas",
+      "Permitiam a circulação de pessoas, mercadorias, informações e tropas",
     ],
-    resposta: 0,
+    resposta: 3,
   },
 ];
 
