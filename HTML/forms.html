@@ -1,155 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Fale Conosco | Roma Antiga</title>
+    <link rel="stylesheet" href="CSS/forms.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="CSS/forms.css">
-</head>
-
-<body>
-
-  <header>
-    <nav>
-      <img src="CSS/IMG/ROMA.jpg" alt="Logo Roma Antiga" />
-
-      <ul>
-        <li><a href="../index.html">INÍCIO</a></li>
-        <li><a href="comercio.html">COMÉRCIO</a></li>
-        <li><a href="tecnologia.html">TECNOLOGIA</a></li>
-        <li><a href="rotas.html">ROTAS</a></li>
-        <li><a href="poder.html">PODER</a></li>
-        <li><a href="sobre.html">SOBRE</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section class="banner">
-
-    </section>
-
-    <section class="formulario">
-
-      <div class="container">
-        <div>
-          <h1>FALE <span>CONOSCO</span></h1>
-          <p>Tem alguma dúvida, sugestão ou informação que gostaria de compartilhar? Entre em contato conosco! Sua
-            mensagem é importante para ajudar a aprimorar nosso projeto e tornar a experiência sobre a Roma Antiga cada
-            vez mais completa.</p>
-
-          <div class="contatos">
-            <a href="https://www.instagram.com/romaantigasepe?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="><img src="CSS/IMG/whatssap_icon.svg" alt="">(47) 99999-9999</a>
-
-            <a href="https://www.instagram.com/romaantigasepe?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw=="><img src="CSS/IMG/icone-camera-dourado.svg" alt="">@romaantigasepe</a>
+  <body>
+    <header>
+      <nav>
+        <img src="CSS/IMG/ROMA.jpg" alt="Logo Roma Antiga" />
+        <ul>
+          <li><a href="../index.html">INÍCIO</a></li>
+          <li><a href="comercio.html">COMÉRCIO</a></li>
+          <li><a href="tecnologia.html">TECNOLOGIA</a></li>
+          <li><a href="rotas.html">ROTAS</a></li>
+          <li><a href="poder.html">PODER</a></li>
+          <li><a href="sobre.html">SOBRE</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="formulario">
+        <div class="container">
+          <div>
+            <h1>FALE <span>CONOSCO</span></h1>
+            <p>
+              Tem alguma dúvida, sugestão ou informação que gostaria de
+              compartilhar? Entre em contato conosco! Sua mensagem é importante
+              para ajudar a aprimorar nosso projeto e tornar a experiência sobre
+              a Roma Antiga cada vez mais completa.
+            </p>
+            <div class="contatos">
+              <a
+                href="https://www.instagram.com/romaantigasepe/"
+                target="_blank"
+              >
+                <img src="CSS/IMG/whatssap_icon.svg" alt="WhatsApp" />
+                (47) 99999-9999
+              </a>
+              <a
+                href="https://www.instagram.com/romaantigasepe/"
+                target="_blank"
+              >
+                <img src="CSS/IMG/icone-camera-dourado.svg" alt="Instagram" />
+                @romaantigasepe
+              </a>
+            </div>
           </div>
-
-
+          <div class="forms">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input
+                type="hidden"
+                name="access_key"
+                value="7cb355ad-d4d4-4cd6-a3e0-c68af3a57a06"
+              />
+              <input
+                type="hidden"
+                name="redirect"
+                value="http://127.0.0.1:5500/TrabalhoSepe/HTML/obrigado.html"
+              />
+              <ul>
+                <li>
+                  <label for="nome">Nome completo <span>*</span></label>
+                  <div class="conteudo">
+                    <img src="CSS/IMG/nome.svg" alt="" />
+                    <input
+                      type="text"
+                      id="nome"
+                      name="nome"
+                      placeholder="Digite seu nome"
+                      required
+                    />
+                  </div>
+                </li>
+                <li>
+                  <label for="email">E-mail <span>*</span></label>
+                  <div class="conteudo">
+                    <img src="CSS/IMG/email.svg" alt="" />
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="exemplo@gmail.com"
+                      required
+                    />
+                  </div>
+                </li>
+                <li>
+                  <label for="telefone">Telefone</label>
+                  <div class="conteudo">
+                    <img src="CSS/IMG/telefone.svg" alt="" />
+                    <input
+                      type="tel"
+                      id="telefone"
+                      name="telefone"
+                      placeholder="(00) 00000-0000"
+                    />
+                  </div>
+                </li>
+                <li>
+                  <label for="msg">Mensagem <span>*</span></label>
+                  <div class="conteudo">
+                    <img src="CSS/IMG/telefone.svg" alt="" />
+                    <textarea
+                      id="msg"
+                      name="msg"
+                      placeholder="Escreva sua mensagem"
+                      required
+                    ></textarea>
+                  </div>
+                </li>
+                <li class="botao">
+                  <button type="submit">ENVIAR</button>
+                  <button type="reset">LIMPAR</button>
+                </li>
+              </ul>
+            </form>
+          </div>
         </div>
-
-        <div class="forms">
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="7cb355ad-d4d4-4cd6-a3e0-c68af3a57a06">
-            <input type="hidden" name="redirect" value="http://127.0.0.1:5500/TrabalhoSepe/HTML/obrigado.html">
-            <ul>
-              <li>
-                <label for="nome">Nome completo <span>*</span></label>
-                <div class="conteudo">
-                  <img src="CSS/IMG/nome.svg" alt="">
-                  <input type="text" id="nome" placeholder="Digite seu nome" name="nome" required>
-                </div>
-
-              </li>
-
-              <li>
-                <label for="email">E-mail <span>*</span></label>
-                <div class="conteudo">
-                  <img src="CSS/IMG/email.svg" alt="">
-                  <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required>
-                </div>
-
-              </li>
-
-              <li>
-                <label for="telefone">Telefone</label>
-                <div class="conteudo">
-                  <img src="CSS/IMG/telefone.svg" alt="">
-                  <input type="tel" id="telefone" placeholder="(00) 00000-0000" name="telefone">
-                </div>
-
-              </li>
-
-              <li>
-                <label for="msg">Mensagem <span>*</span></label>
-                <div class="conteudo">
-                  <img src="CSS/IMG/telefone.svg" alt="">
-                  <textarea name="msg" placeholder="Escreva sua mensagem" required id="msg"></textarea>
-
-                </div>
-
-              </li>
-
-              <li class="botao">
-
-                <button type="submit">Enviar</button>
-                <button type="reset">Limpar</button>
-
-              <li>
-            </ul>
-
-
-
-
-          </form>
-        </div>
-
-
-      </div>
-
-
-
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="footer-container">
-      <div class="footer-info">
-        <img id="logo-Footer" src="HTML/CSS/IMG/ROMA.jpg" alt="Roma Antiga" />
-      </div>
-
-      <div class="footer-links">
-        <a href="#">Timeline</a>
-        <a href="#">Quiz</a>
-        <a href="#">Fontes</a>
-        <a href="#">Glossário</a>
-        <a href="#">Contribua</a>
-        <a href="#">Fale Conosco</a>
-      </div>
-
-      <div class="footer-cadastro">
-        <h3>CADASTRE-SE</h3>
-
-        <input type="text" placeholder="Nome" />
-        <input type="email" placeholder="E-mail" />
-
-        <button type="submit">CADASTRAR</button>
-      </div>
-    </div>
-
-    <div class="footer-redes">
-      <a href="https://wa.me/5547996095892" target="_blank"><img src="HTML/CSS/IMG/whatsapp 1.svg"
-          alt="icon-insta" /></a>
-      <a href="https://www.instagram.com/romaantigasepe/" target="_blank"><img src="HTML/CSS/IMG/instagram 1.svg"
-          alt="icon-face" /></a>
-    </div>
-
-    <div class="footer-bottom">
-      <p>© 2026 Roma Antiga — SEPE</p>
-    </div>
-  </footer>
-
-</body>
-
+      </section>
+    </main>
+  </body>
 </html>
