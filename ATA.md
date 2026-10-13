@@ -364,7 +364,7 @@
 
 **Ausente:**
 
-* Cauã Wlodarczyk - Faltou de Vadiagem
+* Cauã Wlodarczyk *
 
 **Responsabilidades:**
 
