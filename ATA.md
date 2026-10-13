@@ -342,3 +342,33 @@
 
 ---
 
+
+* ## 13º dia — 13/10/2026
+
+**Grupo:**
+
+* Cauã Wlodarczyk
+* Guilherme Luciano da Silva
+* Kaiki de Souza Moreira
+* Andreus Cesar Coelho
+
+### Responsabilidades
+
+| Área      | Responsáveis                                                    |
+| --------- | --------------------------------------------------------------- |
+| Figma     | Nenhuma alteração .                                               |
+| GitHub    | Andreus Cesar Coelho e Kaiki de Souza Moreira.                                      |
+| CSS       | Kaiki de Souza Moreira e Guilherme Luciano da Silva.                                          |
+| HTML      | Kaiki de Souza Moreira e GUilherme Luciano da Silva.                                       |
+| Pesquisas | Não foram realizadas pesquisas nesse dia.                       |
+
+**Ausente:**
+
+* Cauã Wlodarczyk - Faltou de Vadiagem
+
+**Responsabilidades:**
+
+Reunião entre os integrantes presentes referente ao Painel de Integração
+
+* Discutimos sobre nossa participação no Painel Integração, chegando a conclusão primaria de que nossa apresentação nos rendeu diversos beneficios, tais como um entendimento melhor do assunto central do nosso site, devido a necessidade de apresentar a alunos, professores e etc, mesmo quando nem todos os integrantes estavam presente, afinal, diversas vezes foi necessario apresentar a "parte do colega". Além do mais foi proveitoso a diversidade de conhecimentos e cultural presente no Painel de Integração, saímos de lá sabendo sobre coisas que podem de alguma forma agregar em nossas vidas no futuro.
+
