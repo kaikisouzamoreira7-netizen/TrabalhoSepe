@@ -1,6 +1,11 @@
 @import url("footer.css");
 @import url("header.css");
 
+
+html {
+  font-size: 16px;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     background-color: #f5f2ec;
@@ -8,6 +13,7 @@ body {
 }
 
 .banner {
+    font-weight: bold;
     width: 100%;
     min-height: 300px;
 
@@ -21,7 +27,6 @@ body {
 
     background-size: cover;
     background-position: center;
-
     display: flex;
     align-items: center;
     padding: 30px 25px;
@@ -33,11 +38,12 @@ body {
 }
 
 .banner h1 {
-    font-size: 30px;
-    line-height: 1.15;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-    font-family: "Cinzel", serif;
+    color: white;
+  font-family: "Cinzel", serif;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 2px;
 }
 
 .banner h1 span {
@@ -76,6 +82,7 @@ body {
 }
 
 .imperadores {
+    
     width: 100%;
     max-width: 1100px;
     padding: 20px;
@@ -87,11 +94,12 @@ body {
 }
 
 .imperador {
+   
     min-width: 0;
     overflow: hidden;
     background-color: white;
     border: 1px solid #e4ded4;
-    border-radius: 0 0 8px 8px;
+    border-radius: 2px 2px 8px 8px;
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
     transition: 0.4s ease;
 }
@@ -102,6 +110,7 @@ body {
 }
 
 .imperador img {
+    
     width: 100%;
     height: 260px;
     display: block;

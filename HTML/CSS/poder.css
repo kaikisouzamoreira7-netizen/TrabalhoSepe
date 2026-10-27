@@ -160,6 +160,23 @@ body {
 }
 
 
+.botao-imperadores{
+    
+   display: block;
+  width: fit-content;
+  margin: 40px auto 0;
+  padding: 11px 18px;
+  background-color: #420906;
+  color: white;
+  border-radius: 6px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+
 /* === Desktop === */
 
 @media (min-width: 900px) {
