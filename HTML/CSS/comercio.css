@@ -1,37 +1,31 @@
+
 @import url("header.css");
 @import url("footer.css");
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #fff8ed;
   color: #333;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
-
-/* === Banner === */
 
 .banner h1 {
   padding: 80px 15px;
-
   background-image:
-    linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)),
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.58)),
     url("IMG/Imagem roma.webp");
-
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
   color: white;
-
   text-align: center;
-
-  font-family: "Cinzel", serif;
-  font-size: 30px;
-  line-height: 1.2;
-  letter-spacing: 4px;
+  font-family: "Urbanist", serif;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
 }
 
 .banner span {
@@ -39,150 +33,110 @@ body {
   font-weight: 600;
 }
 
-/* === História === */
-
 .containerHistoria {
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 40px 18px;
   display: flex;
-  max-width: 1000px;
-  gap: 25px;
-  margin: 0 auto;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .cardAbout {
-  margin-bottom: 25px;
-
-  padding: 22px;
-
-  background-color: #ffffff;
-
-  box-shadow: 0 10px 8px 3px rgba(0, 0, 0, 0.2);
-
+  flex: 1;
+  padding: 25px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
   border-radius: 8px;
-
-  line-height: 1.6;
-
-  text-align: justify;
+  line-height: 1.7;
 }
 
 .cardAbout h2 {
+  margin-bottom: 15px;
   color: #420906;
-
   font-family: "Cinzel", serif;
-
-  font-size: 22px;
-
+  font-size: 20px;
   font-weight: 700;
 
   text-align: center;
-
   letter-spacing: 0.5px;
-
-  margin-bottom: 15px;
 }
 
 .cardAbout p {
   font-family: "Open Sans", sans-serif;
-
   font-size: 14px;
-}
-.cardAbout {
-  flex: 1;
-
-  margin-bottom: 0;
+  text-align: justify;
 }
 
-/* === Estrutura do Comércio === */
+/* ESTRUTURA DO COMÉRCIO */
 
 .estruturaComercio {
-  padding: 40px 18px;
-  max-width: 1000px;
-
+  max-width: 1150px;
   margin: 0 auto;
-  background-color: #fff8ed;
+  padding: 45px 18px;
 }
 
-.estruturaComercio h2 {
-  text-align: center;
-
-  margin-bottom: 20px;
-
-  font-family: "Cinzel", serif;
-
-  font-size: 22px;
+.estruturaComercio > h2 {
+  margin-bottom: 30px;
 
   color: #420906;
 
+  font-family: "Cinzel", serif;
+  font-size: clamp(20px, 3vw, 26px);
   font-weight: 700;
+
+  text-align: center;
+  line-height: 1.4;
 }
+
+/* CARDS */
 
 .containerEstrutura {
-  max-width: 1000px;
   display: grid;
-
-  grid-template-columns: repeat(2, 1fr);
-
+  grid-template-columns: 1fr;
   gap: 25px;
-  margin: 0 auto;
-}
-
-.cardEstrutura:hover{
-   transition: 0.4s ease;
-  transform: translateY(-8px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
-
 }
 
 .cardEstrutura {
-  box-shadow: 0 10px 8px 3px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+
+  margin-bottom: 5px;
+
   background-color: white;
+
   border: 1px solid #dfd5c8;
   border-radius: 10px;
-  margin-bottom: 30px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+
+  transition: 0.3s ease;
 }
 
-.cardEstrutura h4 {
-  padding: 14px 15px 0;
-  color: #420906;
-  font-family: "Cinzel", serif;
-  letter-spacing: 1px;
-  font-size: 16px;
-  font-weight: 700;
-}
-
-.cardEstrutura span{
-  font-weight: bold;
-  color: #610702;
-}
-
-.estruturaComercio img {
+.cardEstrutura img {
   display: block;
 
   width: 100%;
-
-  height: 155px;
+  height: 180px;
 
   object-fit: cover;
 }
 
 .cardEstrutura h3 {
   margin: 0;
-
-  padding: 18px 15px 5px;
+  padding: 18px 15px 8px;
 
   color: #420906;
 
   font-family: "Cinzel", serif;
-
-  letter-spacing: 1px;
-
   font-size: 16px;
-
   font-weight: 700;
 
   text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
 }
+
+/* DETALHES DOS CARDS */
 
 .cardEstrutura details {
   padding-bottom: 18px;
@@ -191,25 +145,26 @@ body {
 .cardEstrutura summary {
   width: fit-content;
 
-  margin: 13px auto 5px;
-
-  padding: 8px 15px;
+  margin: 13px auto 10px;
+  padding: 9px 18px;
 
   background-color: #420906;
-
   color: #fff8ed;
 
   border-radius: 5px;
 
   font-family: "Open Sans", sans-serif;
-
   font-size: 11px;
-
   font-weight: bold;
 
   list-style: none;
-
   cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.cardEstrutura summary::-webkit-details-marker {
+  display: none;
 }
 
 .cardEstrutura summary:hover {
@@ -217,45 +172,130 @@ body {
 }
 
 .cardEstrutura details p {
-  margin: 4px 18px 0;
+  margin: 10px 18px 0;
 
-  color: #212121;
+  color: #333;
 
   font-family: "Open Sans", sans-serif;
-
   font-size: 13px;
-
-  line-height: 1.55;
+  line-height: 1.7;
 
   text-align: justify;
 }
 
-/* === Botão Mercadorias === */
+.cardEstrutura h4 {
+  padding: 18px 18px 0;
+
+  color: #420906;
+
+  font-family: "Cinzel", serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.cardEstrutura span {
+  color: #610702;
+  font-weight: bold;
+}
+
+.cardEstrutura details ul {
+  padding: 0 18px;
+  margin-top: 10px;
+}
+
+.cardEstrutura details li {
+  margin-bottom: 12px;
+}
+
+/* BOTÃO MERCADORIAS */
 
 #mercadoria-button {
   display: block;
-
   width: fit-content;
 
-  margin: 40px auto 0;
-
-  padding: 11px 18px;
+  margin: 35px auto 0;
+  padding: 12px 22px;
 
   background-color: #420906;
-
   color: white;
 
   border-radius: 6px;
 
   font-family: "Open Sans", sans-serif;
-
   font-size: 14px;
-
   font-weight: 600;
 
   text-decoration: none;
+  text-align: center;
+
+  transition: 0.3s ease;
 }
 
 #mercadoria-button:hover {
   background-color: #610702;
+}
+
+/* TABLETS E DESKTOPS */
+
+@media (min-width: 768px) {
+
+  /* BANNER */
+
+  .banner h1 {
+    min-height: 350px;
+    padding: 90px 20px;
+  }
+
+  /* HISTÓRIA */
+
+  .containerHistoria {
+    padding: 60px 25px;
+
+    flex-direction: row;
+    align-items: stretch;
+    gap: 30px;
+  }
+
+  .cardAbout {
+    padding: 30px;
+  }
+
+  .cardAbout h2 {
+    font-size: 22px;
+  }
+
+  /* ESTRUTURA */
+
+  .estruturaComercio {
+    padding: 60px 25px;
+  }
+
+  .containerEstrutura {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+  }
+
+  .cardEstrutura img {
+    height: 190px;
+  }
+
+  .cardEstrutura:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+  }
+
+}
+
+/* TELAS GRANDES */
+
+@media (min-width: 1024px) {
+
+  .containerEstrutura {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .cardEstrutura img {
+    height: 200px;
+  }
+
 }

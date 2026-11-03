@@ -1,10 +1,11 @@
-
-@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 header {
   background: #420906;
   color: white;
   padding: 12px 5%;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
 }
 
 header nav {
@@ -13,78 +14,62 @@ header nav {
   margin: auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 25px;
+  flex-direction: column;
+  gap: 15px;
+  padding: 10px 0;
 }
 
 header img {
-  width: 60px;
+  width: 55px;
   height: auto;
-  display: block;
 }
 
-header ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px 24px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+header li {
+  margin-bottom: 2vw;
 }
 
 header a {
   color: white;
   text-decoration: none;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   font-weight: 500;
   text-transform: uppercase;
   transition: color 0.3s ease;
 }
-
 header a:hover,
 header a.ativo {
   color: #d69d2a;
 }
 
-header .usuario-logado {
-  color: #f7d17d;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-}
+@media (min-width: 769px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-header .logout-btn {
-  background: transparent;
-  border: 1px solid #f7d17d;
-  color: white;
-  padding: 8px 12px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-header .logout-btn:hover {
-  background: #f7d17d;
-  color: #420906;
-}
-
-@media (max-width: 700px) {
   header nav {
-    flex-direction: column;
-    gap: 15px;
-    padding: 10px 0;
+    display: flex;
+    align-items: center;
   }
 
   header img {
-    width: 55px;
+    width: 60px;
+    margin-bottom: 0;
   }
 
   header ul {
-    gap: 12px 18px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 0;
+  }
+
+  header li {
+    margin-bottom: 0;
   }
 
   header a {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
 }

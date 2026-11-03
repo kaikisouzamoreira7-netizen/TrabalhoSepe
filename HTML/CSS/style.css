@@ -1,6 +1,7 @@
 
 @import url("header.css");
 @import url("footer.css");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --vinho: #420906;
@@ -22,22 +23,17 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3 {
-  font-family: "Cinzel", serif;
+h1,
+h2,
+h3 {
   font-weight: 500;
+  font-family: "Urbanist", sans-serif;
 }
 
-a {
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-/* BANNER */
 .banner {
-  min-height: 650px;
-  display: flex;
   align-items: center;
-  padding: 70px 8%;
+  min-height: 520px;
+  padding: 45px 6%;
   background:
     linear-gradient(90deg, #140503eb, #14050380, #14050359),
     url("IMG/Roma-Antiga.webp") center / cover;
@@ -45,9 +41,9 @@ a {
 }
 
 .banner h1 {
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
   line-height: 1.1;
   margin-bottom: 25px;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
 }
 
 .banner h1 span {
@@ -61,9 +57,15 @@ a {
   line-height: 1.8;
 }
 
-/* BOTÃO EXPLORAR */
+#mini-titulo {
+  color: var(--dourado);
+  font-size: 0.8rem;
+  font-family: "Fredoka",sans-serif;
+}
+
 .explorar {
-  width: min(320px, 100%);
+  width: 100%;
+  max-width: 300px;
   color: var(--branco);
   background: #420906dc;
   border: 1px solid #e0ad55;
@@ -80,9 +82,6 @@ a {
   list-style: none;
 }
 
-.explorar summary::-webkit-details-marker {
-  display: none;
-}
 
 .explorar summary::after {
   content: "+";
@@ -110,23 +109,13 @@ a {
   margin-bottom: 12px;
 }
 
-/* INTRODUÇÃO */
 .introducao {
   max-width: 1200px;
   margin: auto;
-  padding: 90px 7%;
+  padding: 60px 7%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-}
-
-#mini-titulo,
-.mini-titulo {
-  color: var(--dourado);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
+  grid-template-columns: 1fr;
+  gap: 25px;
 }
 
 .introducao h2 {
@@ -136,8 +125,9 @@ a {
 }
 
 .introducao-texto {
-  padding-left: 35px;
-  border-left: 1px solid #d8c7aa;
+  padding: 25px 0 0;
+  border-left: 0;
+  border-top: 1px solid #d8c7aa;
 }
 
 .introducao-texto p {
@@ -146,32 +136,32 @@ a {
   margin-bottom: 18px;
 }
 
-/* CARTÕES */
+
 .exploracao {
-  padding: 80px 7%;
+  padding: 55px 6%;
   background: #f4eee5;
 }
 
 .exploracao > h2 {
   max-width: 1200px;
-  margin: 0 auto 40px;
+  margin: 0 auto 20px;
   color: var(--vinho);
-  font-size: clamp(1.7rem, 3vw, 2.3rem);
+  font-size: clamp(1.5rem, 3vw, 2.3rem);
 }
 
 .cards {
   max-width: 1200px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 25px;
 }
 
 .card {
   padding: 30px;
   background: var(--branco);
-  border-bottom: 3px solid var(--dourado);
   transition: 0.3s;
+  border-radius: 4px;
 }
 
 .card:hover {
@@ -214,77 +204,31 @@ a {
   margin-left: 8px;
 }
 
+@media (min-width: 768px) {
 
-
-/* CHAMADA FINAL */
-.frase-fixa {
-  padding: 80px 7%;
-  text-align: center;
-  background: var(--vinho);
-}
-
-.frase-conteudo {
-  max-width: 800px;
-  margin: auto;
-}
-
-.frase-fixa .mini-titulo {
-  color: var(--dourado);
-}
-
-.frase-fixa h2 {
-  color: var(--branco);
-  font-size: clamp(1.7rem, 3vw, 2.4rem);
-  line-height: 1.4;
-  margin-bottom: 20px;
-}
-
-.frase-fixa p {
-  color: #ddd;
-  line-height: 1.8;
-  margin-bottom: 20px;
-}
-
-/* RESPONSIVIDADE */
-@media (max-width: 850px) {
   .banner {
-    min-height: 580px;
-    padding: 60px 7%;
+    min-height: auto;
+    padding: 70px 8%;
   }
 
   .introducao {
-    grid-template-columns: 1fr;
-    gap: 25px;
-    padding: 60px 7%;
+    padding: 90px 7%;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
   }
 
   .introducao-texto {
-    padding: 25px 0 0;
-    border-left: 0;
-    border-top: 1px solid #d8c7aa;
+    padding-left: 35px;
+    padding-top: 0;
+    border-left: 1px solid #d8c7aa;
+    border-top: 0;
   }
 
   .cards {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-}
-
-@media (max-width: 550px) {
-  .banner {
-    min-height: 520px;
-    padding: 45px 6%;
-    background-position: center;
-  }
-
-  .cards {
-    grid-template-columns: 1fr;
-  }
 
   .exploracao {
-    padding: 55px 6%;
-  }
-
-  .frase-fixa {
-    padding: 55px 7%;
+    padding: 80px 7%;
   }
 }
