@@ -64,7 +64,7 @@ function kaiki(card) {
   mostrarInformacao(
     card,
     "Kaiki De Souza Moreira",
-    "Poder & Mercadorias",
+    "Poder, Imperadores & Mercadorias",
     "Gerenciamento do GitHub e desenvolvimento das páginas",
     "Kaiki foi o principal responsável para o desenvolvimento da estilização (CSS) e da marcação (HTML) da página Poder e Mercadorias. Ele também foi o coordenador da equipe, auxiliando e delegando as funções.",
   );
@@ -82,7 +82,6 @@ function andreus(card) {
   );
 }
 
-/* ===== BOTÃO VOLTAR AO TOPO ===== */
 
 window.addEventListener("scroll", function () {
   const botao = document.getElementById("topo");
