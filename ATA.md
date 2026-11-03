@@ -404,7 +404,7 @@ Reunião entre os integrantes presentes referente ao Painel de Integração
 
 O figma foi nossa principal responsabilidade por conta que no ínicio do projeto fizemos um modelo do figma, e agora temos um modelo totalmente diferente no nosso repositório e agora precisamos alterar o figma.
 
-* ## 14º dia — 20/10/2026
+* ## 15º dia — 27/10/2026
 
 **Grupo:**
 
@@ -431,3 +431,30 @@ O figma foi nossa principal responsabilidade por conta que no ínicio do projeto
 
 O figma foi nossa principal responsabilidade por conta que no ínicio do projeto fizemos um modelo do figma, e agora temos um modelo totalmente diferente no nosso repositório e agora precisamos alterar o figma.
 
+
+* ## 16º dia — 03/11/2026
+
+**Grupo:**
+
+* Cauã Wlodarczyk
+* Guilherme Luciano da Silva
+* Kaiki de Souza Moreira
+* Andreus Cesar Coelho
+
+### Responsabilidades
+
+| Área      | Responsáveis                                                    |
+| --------- | --------------------------------------------------------------- |
+| Figma     |  Cauã W.                                                        |
+| GitHub    |  Cauã Wlodarczyk                                                |
+| CSS       |  Guilherme, Andreus, Kaiki                                      |
+| HTML      |  Guilherme, Andreus, Kaiki                                      |
+| Pesquisas |  Ninguém                                                        |
+
+**Ausente:**
+
+* Nenhum ausente *
+
+**Responsabilidades:**
+
+O figma ainda está em processo de atualização, e o resto da equipe está corrigindo erros, e melhorando as páginas já existentes.
