@@ -1,5 +1,7 @@
 @import url("reset.css");
 @import url("header.css");
+@import url("footer.css");
+
 
 main {
   min-height: 100vh;

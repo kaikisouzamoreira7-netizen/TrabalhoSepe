@@ -1,3 +1,4 @@
+@import url("footer.css");
 :root {
   --bordo: #420906;
   --bordo-claro: #7b1e17;
@@ -110,6 +111,18 @@ body {
   text-transform: uppercase;
 }
 
+#voltar {
+  width: 100%;
+  height: 50px;
+  color: var(--bordo);
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
 .descricao {
   margin: 0 0 35px;
 
@@ -180,7 +193,7 @@ body {
   height: 50px;
 
   margin-top: 8px;
-
+  margin-bottom: 8px;
   border: 1px solid var(--dourado);
 
   background: var(--bordo);
