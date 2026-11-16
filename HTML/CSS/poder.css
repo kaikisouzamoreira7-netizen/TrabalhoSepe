@@ -1,221 +1,220 @@
 @import url("header.css");
 @import url("footer.css");
-
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
+:root {
+  --vinho: #420906;
+  --vinho-claro: #7b1e17;
+  --dourado: #d6a13b;
+  --bege: #fff8ed;
+  --creme: #f5f2ec;
+  --texto: #39312c;
+}
 body {
-    background-color: #fff8ed;
-    color: #333;
-    font-family: "Open Sans", sans-serif;
-    user-select: none;
-}
-
-
-/* === Banner === */
-
-.banner {
-    min-height: 500px;
-    display: flex;
-    align-items: center;
-    padding: 50px 25px;
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)),
-        url("IMG/poderroma.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.banner-conteudo {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.banner h1 {
-    color: white;
-    font-family: "Cinzel", serif;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 1.1;
-    letter-spacing: 1px;
-}
-
-.banner h1 span {
-    color: #d69d2a;
-}
-
-.banner p {
-    max-width: 600px;
-    margin-top: 5px;
-    color: #f5f2ec;
-    font-size: 14px;
-    line-height: 1.7;
-}
-
-
-/* === Seção Cards === */
-
-.cards {
-    padding: 65px 25px;
-    background-color: #f5f2ec;
-}
-
-.cards-introducao {
-    max-width: 750px;
-    margin: 0 auto 45px;
-    text-align: center;
-}
-
-.titulo-secao {
-    margin-bottom: 5px;
-    color: #d69d2a;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 3px;
-}
-
-.cards-introducao h2 {
-    margin-bottom: 6px;
-    color: #420906;
-    font-family: "Cinzel", serif;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 1.35;
-}
-
-.cards-introducao h2 span {
-    color: #7b1e17;
-}
-
-.cards-introducao > p:last-child {
-    color: #444;
-    font-size: 14px;
-    line-height: 1.8;
-}
-
-
-/* === Divs Cards === */
-
-.container-cards {
-    max-width: 1050px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
-}
-
-.card {
-    background-color: white;
-    border: 1px solid #dfd5c8;
-    border-radius: 7px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-}
-
-.card-conteudo {
-    padding: 25px;
-}
-
-.card h3 {
-    margin-bottom: 7px;
-    color: #420906;
-    font-family: "Cinzel", serif;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.4;
-}
-
-.card > .card-conteudo > p {
-    margin-bottom: 18px;
-    color: #444;
-    font-size: 13px;
-    line-height: 1.7;
-}
-
-.card details {
-    padding-top: 14px;
-    border-top: 1px solid #e5ddd3;
-}
-
-.card summary {
-    color: #420906;
-    font-size: 12px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.card summary::after {
-    content: "+";
-    margin-left: 8px;
-    color: #d69d2a;
-}
-
-.card details[open] summary::after {
-    content: "−";
-}
-
-.card details p {
-    margin-top: 12px;
-    color: #555;
-    font-size: 12px;
-    line-height: 1.7;
-}
-
-
-.botao-imperadores{
-    
-   display: block;
-  width: fit-content;
-  margin: 40px auto 0;
-  padding: 11px 18px;
-  background-color: #420906;
-  color: white;
-  border-radius: 6px;
+  margin: 0;
+  background-color: var(--bege);
+  color: var(--texto);
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
+  user-select: none;
 }
-
-
-
-/* === Desktop === */
-
-@media (min-width: 900px) {
-
-    .banner {
-        min-height: 620px;
-        padding: 70px 50px;
-    }
-
-    .banner h1 {
-        font-size: 45px;
-    }
-
-    .banner p {
-        font-size: 16px;
-    }
-
-
-    .cards {
-        padding: 85px 30px;
-    }
-
-    .cards-intro h2 {
-        font-size: 30px;
-    }
-
-    .container-cards {
-        grid-template-columns: 1fr 1fr;
-        gap: 30px;
-    }
-
-    .card {
-        transition: 0.3s ease;
-    }
-
-    .card:hover {
-        transform: translateY(-4px);
-
-        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
-    }
-
+.banner {
+  min-height: 390px;
+  display: flex;
+  align-items: center;
+  padding: 45px 20px;
+  background-image:
+    linear-gradient(rgba(35, 7, 4, 0.68), rgba(35, 7, 4, 0.65)),
+    url("IMG/poderroma.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.banner-conteudo {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+.banner h1 {
+  margin: 0 0 15px;
+  color: white;
+  font-family: "Cinzel", serif;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.4);
+}
+.banner h1 span {
+  color: var(--dourado);
+}
+.banner p {
+  max-width: 600px;
+  margin: 0;
+  color: #f5f2ec;
+  font-size: 13px;
+  line-height: 1.9;
+}
+.cards {
+  padding: 50px 16px 60px;
+  background-color: var(--creme);
+}
+.cards-introducao {
+  max-width: 750px;
+  margin: 0 auto 35px;
+  text-align: center;
+}
+.titulo-secao {
+  margin-bottom: 10px;
+  color: #a97920;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.cards-introducao h2 {
+  margin: 0 0 12px;
+  color: var(--vinho);
+  font-family: "Cinzel", serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.cards-introducao h2 span {
+  color: var(--vinho-claro);
+}
+.cards-introducao > p:last-child {
+  margin: 0;
+  color: #625951;
+  font-size: 13px;
+  line-height: 1.9;
+}
+.container-cards {
+  max-width: 1050px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+}
+.card {
+  overflow: hidden;
+  background-color: white;
+  border: 1px solid #e6d9c8;
+  border-radius: 13px;
+  box-shadow: 0 6px 20px rgba(66, 9, 6, 0.09);
+  transition: 0.3s ease;
+}
+.card-conteudo {
+  padding: 25px 22px;
+}
+.card h3 {
+  margin: 0 0 12px;
+  color: var(--vinho);
+  font-family: "Cinzel", serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.card > .card-conteudo > p {
+  margin: 0 0 20px;
+  color: #5b534c;
+  font-size: 13px;
+  line-height: 1.9;
+}
+.card details {
+  padding-top: 15px;
+  border-top: 1px solid #e9dfd3;
+}
+.card summary {
+  width: fit-content;
+  color: var(--vinho);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+  transition: 0.3s ease;
+}
+.card summary::-webkit-details-marker {
+  display: none;
+}
+.card summary::after {
+  content: " +";
+  margin-left: 7px;
+  color: var(--dourado);
+  font-size: 16px;
+}
+.card details[open] summary::after {
+  content: " −";
+}
+.card summary:hover {
+  color: var(--vinho-claro);
+}
+.card details p {
+  margin: 13px 0 0;
+  color: #625951;
+  font-size: 12px;
+  line-height: 1.9;
+}
+.botao-imperadores {
+  display: block;
+  width: fit-content;
+  max-width: 90%;
+  margin: 38px auto 0;
+  padding: 13px 25px;
+  background-color: var(--vinho);
+  color: white;
+  border: 2px solid var(--vinho);
+  border-radius: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(66, 9, 6, 0.16);
+  transition: 0.3s ease;
+}
+@media (min-width: 1024px) {
+  .banner {
+    min-height: 620px;
+    padding: 70px 50px;
+  }
+  .banner h1 {
+    font-size: 45px;
+    line-height: 1.3;
+    letter-spacing: 2px;
+  }
+  .banner p {
+    font-size: 15px;
+  }
+  .cards {
+    padding: 85px 30px;
+  }
+  .cards-introducao {
+    margin-bottom: 45px;
+  }
+  .cards-introducao h2 {
+    font-size: 31px;
+  }
+  .cards-introducao > p:last-child {
+    font-size: 14px;
+  }
+  .container-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+  }
+  .card-conteudo {
+    padding: 30px;
+  }
+  .card h3 {
+    font-size: 18px;
+  }
+  .card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 30px rgba(66, 9, 6, 0.15);
+  }
+  .botao-imperadores:hover {
+    background-color: var(--dourado);
+    color: var(--vinho);
+    border-color: var(--dourado);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(66, 9, 6, 0.2);
+  }
 }
