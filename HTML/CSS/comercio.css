@@ -1,6 +1,17 @@
-
 @import url("header.css");
 @import url("footer.css");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Nunito:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700&display=swap");
+
+:root {
+  --vinho: #420906;
+  --vinho-claro: #650f0a;
+  --dourado: #d6a13b;
+  --bege: #fff8ed;
+  --creme: #f5ead8;
+  --branco: #ffffff;
+  --texto: #39312c;
+  --cinza: #6b625b;
+}
 
 html {
   font-size: 16px;
@@ -8,89 +19,113 @@ html {
 }
 
 body {
-  background-color: #fff8ed;
-  color: #333;
+  margin: 0;
+  background-color: var(--bege);
+  color: var(--texto);
   font-family: "Nunito", sans-serif;
 }
 
 .banner h1 {
-  padding: 80px 15px;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.58)),
+  min-height: 180px;
+  margin: 0;
+  padding: 65px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background:
+    linear-gradient(rgba(40, 8, 5, 0.68), rgba(40, 8, 5, 0.65)),
     url("IMG/Imagem roma.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
+  color: var(--branco);
   text-align: center;
-  font-family: "Urbanist", serif;
-  font-size: 1.7rem;
-  letter-spacing: 2px;
+  font-family: "Cinzel", serif;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+  text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
 .banner span {
-  color: #d69d2a;
-  font-weight: 600;
+  color: var(--dourado);
+  font-weight: 700;
 }
 
 .containerHistoria {
-  max-width: 1100px;
+  max-width: 1150px;
   margin: 0 auto;
-  padding: 40px 18px;
+  padding: 40px 16px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 22px;
 }
 
 .cardAbout {
-  flex: 1;
-  padding: 25px;
-  background-color: #fff;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
-  border-radius: 8px;
-  line-height: 1.7;
+  padding: 25px 20px;
+  background-color: var(--branco);
+  border: 1px solid #eee1d0;
+  border-radius: 13px;
+  box-shadow: 0 6px 20px rgba(66, 9, 6, 0.08);
+  line-height: 1.8;
+  transition: 0.3s ease;
 }
 
 .cardAbout h2 {
-  margin-bottom: 15px;
-  color: #420906;
+  margin: 0 0 20px;
+  color: var(--vinho);
   font-family: "Cinzel", serif;
-  font-size: 20px;
+  font-size: 21px;
   font-weight: 700;
-
   text-align: center;
   letter-spacing: 0.5px;
 }
 
+.cardAbout h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 12px auto 0;
+  background-color: var(--dourado);
+  border-radius: 5px;
+}
+
 .cardAbout p {
+  margin: 0;
+  color: var(--cinza);
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 1.9;
   text-align: justify;
 }
 
-/* ESTRUTURA DO COMÉRCIO */
-
 .estruturaComercio {
-  max-width: 1150px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 45px 18px;
+  padding: 45px 16px 60px;
 }
 
 .estruturaComercio > h2 {
-  margin-bottom: 30px;
-
-  color: #420906;
-
+  margin: 0 0 35px;
+  color: var(--vinho);
   font-family: "Cinzel", serif;
-  font-size: clamp(20px, 3vw, 26px);
+  font-size: 23px;
   font-weight: 700;
-
   text-align: center;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
-/* CARDS */
-
+.estruturaComercio > h2::after {
+  content: "";
+  display: block;
+  width: 65px;
+  height: 4px;
+  margin: 14px auto 0;
+  background-color: var(--dourado);
+  border-radius: 10px;
+}
 .containerEstrutura {
   display: grid;
   grid-template-columns: 1fr;
@@ -99,67 +134,49 @@ body {
 
 .cardEstrutura {
   overflow: hidden;
-
-  margin-bottom: 5px;
-
-  background-color: white;
-
-  border: 1px solid #dfd5c8;
-  border-radius: 10px;
-
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
-
+  background-color: var(--branco);
+  border: 1px solid #eadfce;
+  border-radius: 13px;
+  box-shadow: 0 6px 20px rgba(66, 9, 6, 0.09);
   transition: 0.3s ease;
 }
 
 .cardEstrutura img {
   display: block;
-
   width: 100%;
-  height: 180px;
-
+  height: 190px;
   object-fit: cover;
 }
 
 .cardEstrutura h3 {
   margin: 0;
-  padding: 18px 15px 8px;
-
-  color: #420906;
-
+  padding: 20px 15px 12px;
+  color: var(--vinho);
   font-family: "Cinzel", serif;
   font-size: 16px;
   font-weight: 700;
-
   text-align: center;
   letter-spacing: 0.5px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
-/* DETALHES DOS CARDS */
-
 .cardEstrutura details {
-  padding-bottom: 18px;
+  padding-bottom: 20px;
 }
 
 .cardEstrutura summary {
   width: fit-content;
-
-  margin: 13px auto 10px;
-  padding: 9px 18px;
-
-  background-color: #420906;
-  color: #fff8ed;
-
-  border-radius: 5px;
-
-  font-family: "Open Sans", sans-serif;
-  font-size: 11px;
-  font-weight: bold;
-
+  margin: 12px auto;
+  padding: 10px 22px;
+  background-color: var(--vinho);
+  color: var(--branco);
+  border: 1px solid var(--vinho);
+  border-radius: 25px;
+  font-family: "Nunito", sans-serif;
+  font-size: 12px;
+  font-weight: 800;
   list-style: none;
   cursor: pointer;
-
   transition: 0.3s ease;
 }
 
@@ -167,135 +184,129 @@ body {
   display: none;
 }
 
-.cardEstrutura summary:hover {
-  background-color: #610702;
+.cardEstrutura summary::after {
+  content: " +";
+  color: var(--dourado);
+  font-size: 15px;
+}
+
+.cardEstrutura details[open] summary::after {
+  content: " −";
 }
 
 .cardEstrutura details p {
-  margin: 10px 18px 0;
-
-  color: #333;
-
+  margin: 15px 20px 0;
+  color: var(--cinza);
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
-  line-height: 1.7;
-
+  line-height: 1.8;
   text-align: justify;
 }
 
 .cardEstrutura h4 {
-  padding: 18px 18px 0;
-
-  color: #420906;
-
+  padding: 15px 20px 0;
+  color: var(--vinho);
   font-family: "Cinzel", serif;
   font-size: 15px;
   font-weight: 700;
 }
 
 .cardEstrutura span {
-  color: #610702;
+  color: #9b6815;
   font-weight: bold;
 }
 
 .cardEstrutura details ul {
-  padding: 0 18px;
-  margin-top: 10px;
+  padding: 0 25px;
+  margin-top: 12px;
 }
 
 .cardEstrutura details li {
   margin-bottom: 12px;
+  color: var(--cinza);
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
 }
-
-/* BOTÃO MERCADORIAS */
 
 #mercadoria-button {
   display: block;
   width: fit-content;
-
+  max-width: 100%;
   margin: 35px auto 0;
-  padding: 12px 22px;
-
-  background-color: #420906;
-  color: white;
-
-  border-radius: 6px;
-
-  font-family: "Open Sans", sans-serif;
+  padding: 13px 25px;
+  background-color: var(--vinho);
+  color: var(--branco);
+  border: 2px solid var(--vinho);
+  border-radius: 30px;
+  font-family: "Nunito", sans-serif;
   font-size: 14px;
-  font-weight: 600;
-
+  font-weight: 800;
   text-decoration: none;
   text-align: center;
-
+  box-shadow: 0 5px 15px rgba(66, 9, 6, 0.16);
   transition: 0.3s ease;
 }
 
 #mercadoria-button:hover {
-  background-color: #610702;
+  background-color: var(--dourado);
+  color: var(--vinho);
+  border-color: var(--dourado);
+  transform: translateY(-3px);
 }
 
-/* TABLETS E DESKTOPS */
-
-@media (min-width: 768px) {
-
-  /* BANNER */
-
+@media (min-width: 1024px) {
   .banner h1 {
     min-height: 350px;
-    padding: 90px 20px;
+    padding: 100px 30px;
+    font-size: 40px;
   }
 
-  /* HISTÓRIA */
-
   .containerHistoria {
-    padding: 60px 25px;
-
-    flex-direction: row;
-    align-items: stretch;
+    padding: 75px 25px;
     gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .cardAbout {
-    padding: 30px;
+    padding: 35px;
   }
-
-  .cardAbout h2 {
-    font-size: 22px;
-  }
-
-  /* ESTRUTURA */
 
   .estruturaComercio {
-    padding: 60px 25px;
+    padding: 70px 25px 85px;
   }
-
-  .containerEstrutura {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 25px;
-  }
-
-  .cardEstrutura img {
-    height: 190px;
-  }
-
-  .cardEstrutura:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
-  }
-
-}
-
-/* TELAS GRANDES */
-
-@media (min-width: 1024px) {
 
   .containerEstrutura {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
   }
 
   .cardEstrutura img {
-    height: 200px;
+    height: 220px;
   }
 
+  .cardEstrutura:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 30px rgba(66, 9, 6, 0.15);
+  }
+
+  .cardEstrutura img {
+    transition: transform 0.4s ease;
+  }
+
+  .cardEstrutura:hover img {
+    transform: scale(1.04);
+  }
+
+  .cardAbout:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(66, 9, 6, 0.13);
+  }
+
+
+  #mercadoria-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(66, 9, 6, 0.2);
+  }
 }
