@@ -9,6 +9,12 @@
   --creme: #f5f2ec;
   --texto: #39312c;
 }
+
+html {
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
 body {
   margin: 0;
   background-color: var(--bege);

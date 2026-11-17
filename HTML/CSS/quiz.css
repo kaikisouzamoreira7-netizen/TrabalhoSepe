@@ -7,6 +7,11 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
 .banner {
   min-height: 360px;
   display: flex;

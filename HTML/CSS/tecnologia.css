@@ -1,9 +1,11 @@
 @import url("header.css");
 @import url("footer.css");
-@import url('reset.css');
+@import url("reset.css");
 
 html {
   font-size: 16px;
+  user-select: none;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -11,8 +13,6 @@ body {
   color: #333;
   font-family: "Open Sans", sans-serif;
 }
-
-/* === Banner === */
 
 .banner {
   min-height: 600px;

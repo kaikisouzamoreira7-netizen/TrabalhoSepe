@@ -15,6 +15,7 @@
 
 html {
   scroll-behavior: smooth;
+  user-select: none;
 }
 
 body {
@@ -110,7 +111,7 @@ h3 {
 }
 
 .introducao {
-  max-width: 1200px;
+  max-width: 1600px;
   margin: auto;
   padding: 60px 7%;
   display: grid;
@@ -133,7 +134,11 @@ h3 {
 .introducao-texto p {
   color: var(--cinza);
   line-height: 1.8;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
+}
+
+.introducao-texto p:last-child {
+  margin-bottom: none;
 }
 
 

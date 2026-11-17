@@ -8,6 +8,10 @@
   --cor-botao-texto: #1a1410;
 }
 
+html {
+  scroll-behavior: smooth;
+  user-select: none;
+}
 
 body {
   position: relative;

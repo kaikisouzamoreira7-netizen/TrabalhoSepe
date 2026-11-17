@@ -3,6 +3,8 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
+  user-select: none;
 }
 
 body {

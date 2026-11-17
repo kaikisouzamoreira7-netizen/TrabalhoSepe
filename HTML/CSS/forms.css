@@ -2,18 +2,32 @@
 @import url("header.css");
 @import url("footer.css");
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+}
+
+body {
+  background-color: #fffaf3;
+}
 
 main {
-  min-height: 100vh;
+  min-height: auto;
+  padding: 30px 5%;
   display: flex;
   align-items: center;
+  justify-content: center;
   background:
-    linear-gradient(90deg, rgba(20, 5, 3, 0.9), rgba(20, 5, 3, 0.45)),
+    linear-gradient(rgba(20, 5, 3, 0.78), rgba(20, 5, 3, 0.85)),
     url("IMG/Roma-Antiga.webp");
   background-size: cover;
   background-position: center;
-  padding: 70px 8%;
-  box-sizing: border-box;
+  background-repeat: no-repeat;
 }
 
 .formulario {
@@ -24,100 +38,113 @@ main {
   max-width: 1100px;
   margin: auto;
   display: flex;
+  flex-direction: column;
   background: #160c09;
   color: white;
-  border: 1px solid #d99020;
+  border: 1px solid rgba(207, 145, 43, 0.25);
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
 .formulario > .container > div:first-child {
-  width: 45%;
-  padding: 45px;
-  box-sizing: border-box;
+  width: 100%;
+  padding: 25px 20px;
+  background: rgba(0, 0, 0, 0.35);
 }
 
 .formulario h1 {
-  font-size: 2.3rem;
-  margin: 0 0 25px;
-}
-
-.formulario span {
-  color: #d99020;
+  font-size: 1.8rem;
+  margin: 0 0 15px;
+  font-weight: 600;
+  color: #d69d2a;
 }
 
 .formulario p {
-  line-height: 1.7;
-  color: #cfc4bc;
-  margin-bottom: 30px;
+  line-height: 1.8;
+  font-size: 0.9rem;
+  color: #d0c4b9;
+  margin-bottom: 25px;
 }
 
 .formulario .contatos {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 16px;
 }
 
 .formulario .contatos a {
   display: flex;
   align-items: center;
-  color: white;
+  color: #fffaf3;
   text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
 }
 
 .formulario .contatos a:hover {
-  color: #d99020;
+  color: #d69d2a;
 }
 
 .formulario .contatos img {
   width: 28px;
-  margin-right: 10px;
+  height: 28px;
+  object-fit: contain;
+  margin-right: 12px;
 }
 
 .formulario .forms {
-  width: 55%;
-  padding: 45px;
-  box-sizing: border-box;
-  border-left: 1px solid #4b3025;
+  width: 100%;
+  padding: 25px 20px;
+  border-top: 1px solid #493027;
 }
 
 .formulario li {
-  margin-bottom: 18px;
-  list-style: none;
+  margin-bottom: 20px;
 }
 
 .formulario label {
   display: block;
-  margin-bottom: 7px;
+  margin-bottom: 9px;
   font-size: 0.9rem;
+  font-weight: 600;
+  color: #e0ad55;
 }
 
 .formulario .conteudo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 10px;
-  background: #1c100d;
+  gap: 12px;
+  padding: 12px 14px;
+  background: #21130f;
   border: 1px solid #493027;
-  border-radius: 5px;
+  border-radius: 8px;
+  transition:
+    border-color 0.3s,
+    background 0.3s;
 }
 
 .formulario .conteudo:focus-within {
-  border-color: #d99020;
+  border-color: #d69d2a;
+  background: #281811;
 }
 
 .formulario .conteudo img {
-  width: 22px;
+  width: 19px;
+  height: 19px;
+  object-fit: contain;
 }
 
 .formulario input,
 .formulario textarea {
   width: 100%;
-  border: 0;
-  outline: 0;
+
   background: transparent;
   color: white;
+  border: none;
+  outline: none;
   font-family: inherit;
+  font-size: 0.95rem;
 }
 
 .formulario input {
@@ -126,7 +153,7 @@ main {
 
 .formulario textarea {
   height: 90px;
-  resize: none;
+  resize: vertical;
 }
 
 .formulario ::placeholder {
@@ -135,61 +162,81 @@ main {
 
 .formulario .botao {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  gap: 12px;
   margin-top: 25px;
 }
 
 .formulario button {
-  padding: 10px 22px;
-  border: 0;
-  border-radius: 5px;
-  background: #d99020;
+  width: 100%;
+  padding: 12px 25px;
+  border: 1px solid #d69d2a;
+  border-radius: 6px;
+  background: #d69d2a;
   color: #1c100d;
+  font-size: 0.9rem;
   font-weight: bold;
   cursor: pointer;
+  transition:
+    background 0.3s,
+    color 0.3s;
 }
 
 .formulario button:hover {
-  background: #a86612;
+  background: #b87919;
+  border-color: #b87919;
 }
 
 .formulario button[type="reset"] {
   background: transparent;
-  color: #d99020;
-  border: 1px solid #d99020;
+  color: #e0ad55;
+  border: 1px solid #a86612;
 }
 
-@media (max-width: 750px) {
+.formulario button[type="reset"]:hover {
+  background: #420906;
+}
+
+@media (min-width: 768px) {
   main {
-    padding: 50px 5%;
+    min-height: 100vh;
+    padding: 45px 5%;
   }
 
   .formulario > .container {
-    display: block;
+    flex-direction: row;
   }
 
-  .formulario > .container > div:first-child,
-  .formulario .forms {
-    width: 100%;
-    padding: 30px;
+  .formulario > .container > div:first-child {
+    width: 45%;
+    padding: 45px;
   }
 
-  .formulario .forms {
-    border-left: 0;
-    border-top: 1px solid #4b3025;
-  }
-}
-
-@media (max-width: 500px) {
   .formulario h1 {
-    font-size: 1.8rem;
+    font-size: 2.3rem;
+  }
+
+  .formulario p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .formulario .contatos {
+    gap: 20px;
+  }
+
+  .formulario .forms {
+    width: 55%;
+    padding: 45px;
+    border-top: none;
+    border-left: 1px solid #493027;
   }
 
   .formulario .botao {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .formulario button {
-    width: 100%;
+    width: auto;
   }
 }
