@@ -495,7 +495,7 @@ O figma ainda está em processo de atualização, e o resto da equipe está corr
 * Kaiki de Souza Moreira
 * Andreus Cesar Coelho
 
-### Responsabilidades (para fazer em casa)
+### Responsabilidades
 
 | Área      | Responsáveis                                                    |
 | --------- | --------------------------------------------------------------- |
