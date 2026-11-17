@@ -256,7 +256,7 @@ body {
   transform: translateY(-3px);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .banner h1 {
     min-height: 350px;
     padding: 100px 30px;
@@ -279,7 +279,7 @@ body {
   }
 
   .containerEstrutura {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4,1fr);
     gap: 30px;
   }
 
