@@ -458,3 +458,54 @@ O figma foi nossa principal responsabilidade por conta que no ínicio do projeto
 **Responsabilidades:**
 
 O figma ainda está em processo de atualização, e o resto da equipe está corrigindo erros, e melhorando as páginas já existentes.
+
+
+* ## 17º dia — 10/11/2026
+
+**Grupo:**
+
+* Cauã Wlodarczyk
+* Guilherme Luciano da Silva
+* Kaiki de Souza Moreira
+* Andreus Cesar Coelho
+
+### Responsabilidades (para fazer em casa)
+
+| Área      | Responsáveis                                                    |
+| --------- | --------------------------------------------------------------- |
+| Figma     |  Cauã Wlodarczyk e Andreus Cesar Coelho                                                |
+| GitHub    |  Cauã Wlodarczyk                                                |
+| CSS       |  Guilherme, Kaiki                                               |
+| HTML      |  Guilherme, Kaiki                                               |
+| Pesquisas |  Andreus                                                        |
+
+**Ausente:**
+
+* Andreus Cesar Coelho *
+* Cauã Wlodarczyk *
+* Guilherme Luciano da Silva (justificado)*
+* Kaiki de Souza Moreira *
+
+* ## 18º dia — 17/11/2026
+
+**Grupo:**
+
+* Cauã Wlodarczyk
+* Guilherme Luciano da Silva
+* Kaiki de Souza Moreira
+* Andreus Cesar Coelho
+
+### Responsabilidades (para fazer em casa)
+
+| Área      | Responsáveis                                                    |
+| --------- | --------------------------------------------------------------- |
+| Figma     |  Cauã Wlodarczyk e Andreus Cesar Coelho                                                |
+| GitHub    |  Ninguém                                                |
+| CSS       |  Guilherme, Kaiki                                               |
+| HTML      |  Guilherme, Kaiki                                               |
+| Pesquisas |  Ninguém                                                        |
+
+**Ausente:**
+
+* Andreus Cesar Coelho *
+* Cauã Wlodarczyk *

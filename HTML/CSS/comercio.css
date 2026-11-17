@@ -16,7 +16,6 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-  user-select: none;
 }
 
 body {
@@ -29,7 +28,7 @@ body {
 .banner h1 {
   min-height: 180px;
   margin: 0;
-  padding: 65px 18px;
+  padding: 55px 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,8 +42,8 @@ body {
   color: var(--branco);
   text-align: center;
   font-family: "Cinzel", serif;
-  font-size: 25px;
-  letter-spacing: 1.5px;
+  font-size: 23px;
+  letter-spacing: 1px;
   line-height: 1.5;
   text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
 }
@@ -55,12 +54,12 @@ body {
 }
 
 .containerHistoria {
-  max-width: 1150px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 16px;
+  padding: 35px 16px;
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 20px;
 }
 
 .cardAbout {
@@ -77,7 +76,7 @@ body {
   margin: 0 0 20px;
   color: var(--vinho);
   font-family: "Cinzel", serif;
-  font-size: 21px;
+  font-size: 19px;
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.5px;
@@ -103,16 +102,17 @@ body {
 }
 
 .estruturaComercio {
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 45px 16px 60px;
+  padding: 45px 25px 60px;
 }
 
 .estruturaComercio > h2 {
   margin: 0 0 35px;
   color: var(--vinho);
   font-family: "Cinzel", serif;
-  font-size: 23px;
+  font-size: 22px;
   font-weight: 700;
   text-align: center;
   line-height: 1.5;
@@ -124,58 +124,75 @@ body {
   width: 65px;
   height: 4px;
   margin: 14px auto 0;
+
   background-color: var(--dourado);
   border-radius: 10px;
 }
+
 .containerEstrutura {
   display: grid;
   grid-template-columns: 1fr;
   gap: 25px;
+  align-items: stretch;
 }
 
 .cardEstrutura {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   overflow: hidden;
+
   background-color: var(--branco);
   border: 1px solid #eadfce;
   border-radius: 13px;
-  box-shadow: 0 6px 20px rgba(66, 9, 6, 0.09);
+
+  box-shadow: 0 5px 18px rgba(66, 9, 6, 0.07);
   transition: 0.3s ease;
 }
 
 .cardEstrutura img {
   display: block;
   width: 100%;
-  height: 190px;
+  height: 200px;
   object-fit: cover;
 }
 
 .cardEstrutura h3 {
+  min-height: 85px;
   margin: 0;
-  padding: 20px 15px 12px;
+  padding: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   color: var(--vinho);
   font-family: "Cinzel", serif;
   font-size: 16px;
   font-weight: 700;
+  line-height: 1.6;
   text-align: center;
-  letter-spacing: 0.5px;
-  line-height: 1.5;
 }
 
 .cardEstrutura details {
-  padding-bottom: 20px;
+  margin-top: auto;
+  padding: 0 20px 22px;
 }
 
 .cardEstrutura summary {
+  display: block;
   width: fit-content;
-  margin: 12px auto;
-  padding: 10px 22px;
+  margin: 0 auto;
+  padding: 11px 25px;
   background-color: var(--vinho);
   color: var(--branco);
   border: 1px solid var(--vinho);
   border-radius: 25px;
   font-family: "Nunito", sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 800;
+  text-align: center;
+
   list-style: none;
   cursor: pointer;
   transition: 0.3s ease;
@@ -196,20 +213,24 @@ body {
 }
 
 .cardEstrutura details p {
-  margin: 15px 20px 0;
+  margin: 20px 0 0;
+
   color: var(--cinza);
   font-family: "Open Sans", sans-serif;
-  font-size: 13px;
-  line-height: 1.8;
-  text-align: justify;
+  font-size: 14px;
+  line-height: 1.9;
+  text-align: left;
 }
 
 .cardEstrutura h4 {
-  padding: 15px 20px 0;
+  margin: 20px 0 10px;
+  padding: 0;
+
   color: var(--vinho);
   font-family: "Cinzel", serif;
   font-size: 15px;
   font-weight: 700;
+  line-height: 1.6;
 }
 
 .cardEstrutura span {
@@ -218,24 +239,25 @@ body {
 }
 
 .cardEstrutura details ul {
-  padding: 0 25px;
-  margin-top: 12px;
+  padding-left: 20px;
+  margin: 12px 0 0;
 }
 
 .cardEstrutura details li {
   margin-bottom: 12px;
+
   color: var(--cinza);
   font-family: "Open Sans", sans-serif;
-  font-size: 13px;
-  line-height: 1.7;
+  font-size: 14px;
+  line-height: 1.8;
 }
 
 #mercadoria-button {
   display: block;
   width: fit-content;
   max-width: 100%;
-  margin: 35px auto 0;
-  padding: 13px 25px;
+  margin: 40px auto 0;
+  padding: 14px 28px;
   background-color: var(--vinho);
   color: var(--branco);
   border: 2px solid var(--vinho);
@@ -249,37 +271,41 @@ body {
   transition: 0.3s ease;
 }
 
-#mercadoria-button:hover {
-  background-color: var(--dourado);
-  color: var(--vinho);
-  border-color: var(--dourado);
-  transform: translateY(-3px);
-}
-
 @media (min-width: 768px) {
   .banner h1 {
     min-height: 350px;
     padding: 100px 30px;
     font-size: 40px;
+    letter-spacing: 1.5px;
   }
 
   .containerHistoria {
-    padding: 75px 25px;
-    gap: 30px;
+    padding: 65px 25px;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
 
   .cardAbout {
-    padding: 35px;
+    padding: 30px;
+  }
+
+  .cardAbout h2 {
+    font-size: 21px;
   }
 
   .estruturaComercio {
-    padding: 70px 25px 85px;
+    padding: 65px 35px 80px;
+  }
+
+  .estruturaComercio > h2 {
+    font-size: 23px;
+    margin-bottom: 35px;
   }
 
   .containerEstrutura {
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
   }
 
@@ -287,27 +313,8 @@ body {
     height: 220px;
   }
 
-  .cardEstrutura:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 14px 30px rgba(66, 9, 6, 0.15);
-  }
-
-  .cardEstrutura img {
-    transition: transform 0.4s ease;
-  }
-
-  .cardEstrutura:hover img {
-    transform: scale(1.04);
-  }
-
-  .cardAbout:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 28px rgba(66, 9, 6, 0.13);
-  }
-
-
-  #mercadoria-button:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(66, 9, 6, 0.2);
+  .cardEstrutura h3 {
+    min-height: 90px;
+    font-size: 17px;
   }
 }
