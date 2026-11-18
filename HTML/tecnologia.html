@@ -1,261 +1,89 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Tecnologia | Roma Antiga</title>
-    <link rel="stylesheet" href="CSS/tecnologia.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Roma Antiga</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Open+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Ibarra+Real+Nova:wght@400;500;600&family=Open+Sans:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/login.css">
+</head>
 
-  <body>
-    <header>
-      <nav>
-        <a href="../index.html"><img src="CSS/IMG/ROMA.jpg" alt="Logo Roma Antiga" /></a>
+<body>
+  <main class="login-container">
+    <section class="login-box">
+      <h1>ROMA</h1>
 
-        <ul>
-          <li><a href="../index.html">INÍCIO</a></li>
-          <li><a href="comercio.html">COMÉRCIO</a></li>
-          <li><a class="ativo" href="tecnologia.html">TECNOLOGIA</a></li>
-          <li><a href="rotas.html">ROTAS</a></li>
-          <li><a href="poder.html">PODER</a></li>
-          <li><a href="sobre.html">SOBRE</a></li>
-          <li><a href="login.html">LOGIN</a></li>
-        </ul>
-      </nav>
-    </header>
+      <div id="loginView">
+        <h2>Entrar</h2>
 
-    <main>
-      <section class="banner">
-        <div class="banner-conteudo">
-          <h1>
-            TECNOLOGIAS QUE
-            <span><br/>TRANSFORMARAM UM IMPÉRIO</span>
-          </h1>
-          <p>
-            Conheça as técnicas e construções que ajudaram Roma a conectar
-            cidades, transportar mercadorias e organizar um dos maiores impérios
-            da Antiguidade.
-          </p>
-        </div>
-      </section>
+        <p class="descricao">Acesse sua conta para continuar.</p>
 
-      <section class="introducao">
-        <div class="introducao-texto">
-          <h2>
-            O que eram as
-            <span>Tecnologias Romanas</span>
-          </h2>
-
-          <p>
-            As tecnologias romanas foram conhecimentos e técnicas utilizados para resolver problemas do cotidiano e melhorar a organização das cidades e do território. Elas contribuíram para facilitar a circulação de pessoas e mercadorias, o abastecimento das cidades e o desenvolvimento das atividades econômicas.
-          </p>
-        </div>
-      </section>
-
-      <section class="tecnologias">
-        <div class="titulo-secao">
-          <p>PRINCIPAIS TECNOLOGIAS</p>
-
-          <h2>
-            Construções que marcaram
-            <span>Roma</span>
-          </h2>
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
         </div>
 
-        <div class="container-tecnologias">
-
-          <div class="card-tecnologia">
-            <img src="CSS/IMG/estradaromana.jpg" alt="Estrada romana" />
-
-            <div class="card-conteudo">
-
-              <h3>ESTRADAS</h3>
-
-              <p>
-                As estradas romanas eram vias construídas para facilitar o deslocamento de pessoas e tropas por grandes distâncias. Sua construção exigia planejamento, conhecimento do terreno, mão de obra e materiais adequados.
-              </p>
-
-              <details>
-                <summary>SAIBA MAIS</summary>
-
-                <p>
-                  Elas podiam receber diferentes camadas de pedras e outros materiais para garantir maior resistência e durabilidade. A pavimentação permitia que pessoas, mercadorias e tropas percorressem grandes distâncias com mais facilidade, ligando diferentes regiões do território romano. Assim, as estradas facilitavam a circulação e atendiam às necessidades econômicas e militares de Roma
-                </p>
-              </details>
-            </div>
-          </div>
-
-
-          <div class="card-tecnologia">
-            <img src="CSS/IMG/aqueduto.webp" alt="Aqueduto romano" />
-
-            <div class="card-conteudo">
-
-              <h3>AQUEDUTOS</h3>
-
-              <p>
-                Os aquedutos romanos eram estruturas construídas para transportar água de fontes até as cidades. Eles foram importantes para garantir o abastecimento de água em diferentes áreas urbanas.
-              </p>
-
-              <details>
-                <summary>SAIBA MAIS</summary>
-
-                <p>
-                  A água era conduzida principalmente pela força da gravidade, por isso o percurso precisava ser cuidadosamente planejado para manter a inclinação adequada. A construção exigia conhecimentos de engenharia, medição e análise do terreno. Os aquedutos podiam atravessar vales e terrenos irregulares, levando água para fontes, termas, residências e outros espaços públicos.
-                </p>
-              </details>
-            </div>
-          </div>
-
-
-          <div class="card-tecnologia">
-            <img src="CSS/IMG/construcaoromana.jpg" alt="Construção romana" />
-
-            <div class="card-conteudo">
-
-              <h3>CONCRETO ROMANO</h3>
-
-              <p>
-                O concreto romano era um material de construção utilizado pelos romanos para criar estruturas resistentes e duráveis. Seu uso foi importante para o desenvolvimento da engenharia e da arquitetura romana.
-              </p>
-
-              <details>
-                <summary>SAIBA MAIS</summary>
-
-                <p>
-                  Ele era produzido a partir da mistura de materiais como cal, água e agregados, formando um material que podia ser utilizado em diferentes tipos de construções. Os romanos aperfeiçoaram seu uso e aplicaram o concreto na construção de estruturas maiores e mais resistentes, contribuindo para a construção de pontes, edifícios, portos e outras obras.
-                </p>
-              </div>
-            </div>
-          </article>
-
-
-          <div class="card-tecnologia">
-            <img src="CSS/IMG/ponteromana.jpg" alt="Ponte romana" />
-
-            <div class="card-conteudo">
-
-              <h3>PONTES</h3>
-
-              <p>
-                As pontes romanas eram construções feitas para permitir a passagem por rios e outros obstáculos naturais. Elas eram importantes para manter as rotas terrestres e facilitar a circulação pelo território romano.
-              </p>
-
-              <details>
-                <summary>SAIBA MAIS</summary>
-
-                <p>
-                Os romanos utilizavam arcos e materiais resistentes para construir pontes capazes de suportar o peso de pessoas, animais, carroças e tropas. Assim, mesmo quando um rio interrompia uma rota terrestre, a ponte permitia que o caminho continuasse, facilitando o transporte e a circulação entre diferentes regiões.
-                </p>
-              </details>
-            </div>
-          </div>
-
-          <div class="card-tecnologia">
-            <img src="CSS/IMG/porto.jpg" alt="Porto romano" />
-
-            <div class="card-conteudo">
-
-              <h3>PORTOS</h3>
-
-              <p>
-                Os portos romanos eram estruturas construídas para receber e movimentar navios e mercadorias. Eles eram importantes para o comércio e para a circulação de produtos entre diferentes regiões.
-              </p>
-
-              <details>
-                <summary>SAIBA MAIS</summary>
-
-                <p>
-                  Os portos permitiam o embarque e desembarque de mercadorias transportadas pelo mar. Sua construção e organização ajudavam a aumentar a capacidade de receber navios, facilitando o transporte de produtos e conectando diferentes partes do território romano por meio das rotas marítimas.
-                </p>
-              </details>
-            </div>
-          </div>
-
-          <div class="card-tecnologia">
-            <img
-              src="CSS/IMG/cloaca.jpg"
-              alt="Sistema de saneamento romano"
-            />
-
-            <div class="card-conteudo">
-              <h3>SANEAMENTO</h3>
-
-              <p>
-                O saneamento romano reunia técnicas e estruturas utilizadas para melhorar as condições de higiene e organização das cidades. Ele fazia parte das soluções criadas pelos romanos para lidar com as necessidades das áreas urbanas.
-              </p>
-
-              <details>
-                <summary>SAIBA MAIS</summary>
-
-                <p>
-                  Entre essas estruturas estavam os sistemas de esgoto e de abastecimento de água, que ajudavam a transportar e controlar a água e os resíduos das cidades. Essas obras exigiam planejamento e conhecimentos de engenharia, ajudando no funcionamento das cidades.
-                </p>
-              </details>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="circulacao">
-        <div class="circulacao-conteudo">
-          <div class="circulacao-texto">
-
-            <h2>
-              Tecnologia como base da
-              <span>expansão</span>
-            </h2>
-
-            <p>
-              A tecnologia foi fundamental para que Roma conseguisse expandir, controlar e integrar um território gigantesco. Estradas, pontes, aquedutos, portos e outras obras permitiam que soldados, comerciantes, mercadorias, água e informações circulassem entre regiões muito distantes. Assim, a tecnologia não servia apenas para melhorar a vida cotidiana: ela também dava suporte à economia, ao exército e à administração do Império Romano.
-            </p>
-          </div>
-
-          
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="footer-container">
-        <div class="footer-info">
-          <img id="logo-Footer" src="CSS/IMG/ROMA.jpg" alt="roma-logo" />
+        <div class="campo">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
         </div>
 
-        <div class="footer-links">
-          <a href="quiz.html">Quiz</a>
-          <a href="fontes.html">Fontes</a>
-          <a href="forms.html">Fale Conosco</a>
-        </div>
+        <button type="button">ENTRAR</button>
 
-        <div class="footer-cadastro">
-          <h3>CADASTRE-SE</h3>
+        <p id="mensagem"></p>
 
-          <input type="text" placeholder="Nome" />
-          <input type="email" placeholder="E-mail" />
+        <a id="voltar" href="../index.html">VOLTAR</a>
 
-          <button type="submit">CADASTRAR</button>
+        <div class="cadastro">
+          <p>Ainda não possui uma conta?</p>
+          <button type="button" id="cadastrarBtn">CRIAR CONTA</button>
         </div>
       </div>
+    </section>
+  </main>
 
-      <div class="footer-redes">
-        <a href="https://wa.me/5547996095892" target="_blank"><img src="CSS/IMG/whatsapp 1.svg" alt="icon-insta" /></a>
-        <a href="https://www.instagram.com/romaantigasepe/" target="_blank"><img src="CSS/IMG/instagram 1.svg" alt="icon-face" /></a>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <img id="logo-Footer" src="CSS/IMG/ROMA.jpg" alt="roma-logo">
       </div>
 
-      <div class="footer-bottom">
-        <p>© 2026 Roma Antiga — SEPE</p>
+      <div class="footer-links">
+        <a href="quiz.html">Quiz</a>
+        <a href="fontes.html">Fontes</a>
+        <a href="forms.html">Fale Conosco</a>
       </div>
-    </footer>
-    <script src="CSS/JS/login.js"></script>
-  </body>
+
+      <div class="footer-cadastro">
+        <h3>CADASTRE-SE</h3>
+        <input type="text" placeholder="Nome">
+        <input type="email" placeholder="E-mail">
+        <button type="button">CADASTRAR</button>
+      </div>
+    </div>
+
+    <div class="footer-redes">
+      <a href="https://wa.me/5547996095892" target="_blank">
+        <img src="CSS/IMG/whatsapp 1.svg" alt="WhatsApp">
+      </a>
+
+      <a href="https://www.instagram.com/romaantigasepe/" target="_blank">
+        <img src="CSS/IMG/instagram 1.svg" alt="Instagram">
+      </a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Roma Antiga — SEPE</p>
+    </div>
+  </footer>
+</body>
+
 </html>
