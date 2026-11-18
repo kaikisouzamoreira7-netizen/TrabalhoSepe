@@ -1,160 +1,89 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Login | Roma Antiga</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Roma Antiga</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Open+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Open+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" href="CSS/reset.css" />
-    <link rel="stylesheet" href="CSS/login.css" />
-  </head>
+  <link rel="stylesheet" href="CSS/reset.css">
+  <link rel="stylesheet" href="CSS/login.css">
+</head>
 
-  <body>
-    <main class="login-container">
-      <section class="login-box">
-        <h1>ROMA</h1>
+<body>
+  <main class="login-container">
+    <section class="login-box">
+      <h1>ROMA</h1>
 
-        <div id="loginView">
-          <h2>Entrar</h2>
+      <div id="loginView">
+        <h2>Entrar</h2>
 
-          <p class="descricao">Acesse sua conta para continuar.</p>
+        <p class="descricao">Acesse sua conta para continuar.</p>
 
-          <form id="loginForm">
-            <div class="campo">
-              <label for="email">E-mail</label>
-
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Digite seu e-mail"
-                required
-              />
-            </div>
-
-            <div class="campo">
-              <label for="senha">Senha</label>
-
-              <input
-                type="password"
-                id="senha"
-                name="senha"
-                placeholder="Digite sua senha"
-                required
-              />
-            </div>
-
-            <button type="submit">ENTRAR</button>
-            <a id="voltar" href="../index.html">VOLTAR</a>
-
-            <p id="mensagem"></p>
-          </form>
-
-          <div class="cadastro">
-            <p>Ainda não possui uma conta?</p>
-
-            <button type="button" id="cadastrarBtn">CRIAR CONTA</button>
-          </div>
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
         </div>
 
-        <div id="cadastroView" class="hidden">
-          <h2>Criar conta</h2>
-
-          <p class="descricao">
-            Cadastre-se para guardar suas informações no banco local do site.
-          </p>
-
-          <form id="registerForm">
-            <div class="campo">
-              <label for="nome">Nome</label>
-              <input
-                type="text"
-                id="nome"
-                name="nome"
-                placeholder="Digite seu nome"
-                required
-              />
-            </div>
-
-            <div class="campo">
-              <label for="cadastroEmail">E-mail</label>
-              <input
-                type="email"
-                id="cadastroEmail"
-                name="cadastroEmail"
-                placeholder="Digite seu e-mail"
-                required
-              />
-            </div>
-
-            <div class="campo">
-              <label for="cadastroSenha">Senha</label>
-              <input
-                type="password"
-                id="cadastroSenha"
-                name="cadastroSenha"
-                placeholder="Crie sua senha"
-                required
-              />
-            </div>
-
-            <button type="submit">CADASTRAR</button>
-
-            <p id="registerMensagem"></p>
-          </form>
-
-          <div class="cadastro">
-            <p>Já tem uma conta?</p>
-
-            <button type="button" id="voltarLoginBtn">VOLTAR AO LOGIN</button>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer-container">
-        <div class="footer-info">
-          <img id="logo-Footer" src="CSS/IMG/ROMA.jpg" alt="roma-logo" />
+        <div class="campo">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
         </div>
 
-        <div class="footer-links">
-          <a href="quiz.html">Quiz</a>
-          <a href="fontes.html">Fontes</a>
-          <a href="forms.html">Fale Conosco</a>
-        </div>
+        <button type="button">ENTRAR</button>
 
-        <div class="footer-cadastro">
-          <h3>CADASTRE-SE</h3>
+        <p id="mensagem"></p>
 
-          <input type="text" placeholder="Nome" />
-          <input type="email" placeholder="E-mail" />
+        <a id="voltar" href="../index.html">VOLTAR</a>
 
-          <button type="submit">CADASTRAR</button>
+        <div class="cadastro">
+          <p>Ainda não possui uma conta?</p>
+          <button type="button" id="cadastrarBtn">CRIAR CONTA</button>
         </div>
       </div>
+    </section>
+  </main>
 
-      <div class="footer-redes">
-        <a href="https://wa.me/5547996095892" target="_blank"
-          ><img src="CSS/IMG/whatsapp 1.svg" alt="icon-insta"
-        /></a>
-        <a href="https://www.instagram.com/romaantigasepe/" target="_blank"
-          ><img src="CSS/IMG/instagram 1.svg" alt="icon-face"
-        /></a>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <img id="logo-Footer" src="CSS/IMG/ROMA.jpg" alt="roma-logo">
       </div>
 
-      <div class="footer-bottom">
-        <p>© 2026 Roma Antiga — SEPE</p>
+      <div class="footer-links">
+        <a href="quiz.html">Quiz</a>
+        <a href="fontes.html">Fontes</a>
+        <a href="forms.html">Fale Conosco</a>
       </div>
-    </footer>
 
-    <script src="CSS/JS/login.js"></script>
-  </body>
+      <div class="footer-cadastro">
+        <h3>CADASTRE-SE</h3>
+        <input type="text" placeholder="Nome">
+        <input type="email" placeholder="E-mail">
+        <button type="button">CADASTRAR</button>
+      </div>
+    </div>
+
+    <div class="footer-redes">
+      <a href="https://wa.me/5547996095892" target="_blank">
+        <img src="CSS/IMG/whatsapp 1.svg" alt="WhatsApp">
+      </a>
+
+      <a href="https://www.instagram.com/romaantigasepe/" target="_blank">
+        <img src="CSS/IMG/instagram 1.svg" alt="Instagram">
+      </a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Roma Antiga — SEPE</p>
+    </div>
+  </footer>
+</body>
+
 </html>
